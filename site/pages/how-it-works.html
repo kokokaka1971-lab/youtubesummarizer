@@ -1,0 +1,134 @@
+<section class="page-head">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="kicker">How it works</p>
+    <h1>How to Summarize a YouTube Video</h1>
+    <p class="lede">
+      Paste a link, pick a depth, take the notes with you — about sixty seconds
+      start to finish, free and without an account. Here is exactly what happens
+      in between, and what the tool cannot do.
+    </p>
+    <div class="head-actions">
+      <a class="btn btn-primary btn-lg" href="/#try">Try it now</a>
+      <a class="btn btn-soft btn-lg" href="/features">See the features</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap-narrow">
+    <ol class="flow">
+      <li class="flow-step reveal">
+        <span class="flow-num">1</span>
+        <div>
+          <h2>Step 1: Paste the YouTube link</h2>
+          <p>
+            The URL is parsed the moment you stop typing. Watch links, <code>youtu.be</code>
+            short links, Shorts, embeds, live replays and bare video ids all resolve to the
+            same eleven-character id.
+          </p>
+          <p>
+            As soon as that id is valid, the video's real title, channel and thumbnail are
+            fetched and shown — so you know you've got the right video before spending a
+            summary on it.
+          </p>
+        </div>
+      </li>
+
+      <li class="flow-step reveal">
+        <span class="flow-num">2</span>
+        <div>
+          <h2>Step 2: The transcript is fetched</h2>
+          <p>
+            Summarization runs on the video's transcript, with timings attached to every
+            line. Where YouTube has captions — human or auto-generated — those are used
+            directly. Where it doesn't, Pro transcribes the audio instead.
+          </p>
+          <p>
+            The timings matter as much as the words. They're what makes it possible to
+            attach a timestamp to every chapter and claim later, and they're carried through
+            the whole pipeline rather than discarded after the first step.
+          </p>
+          <p class="note">
+            If no transcript can be reached at all, you get told that plainly. You will never
+            get a confident summary of a video nobody could read.
+          </p>
+        </div>
+      </li>
+
+      <li class="flow-step reveal">
+        <span class="flow-num">3</span>
+        <div>
+          <h2>Step 3: The AI reads it, rather than skimming</h2>
+          <p>
+            The transcript goes to a large language model with the timing markers intact and
+            a brief that's deliberately narrow: find the actual argument, keep what's
+            specific, drop what's filler, and anchor each section to where it begins.
+          </p>
+          <p>
+            The result comes back as structured data — a TL;DR, a list of takeaways, chapters
+            with start times, and headed note sections — rather than as prose that then has to
+            be picked apart. That's why switching between the four views is instant: they were
+            all produced in the same pass.
+          </p>
+        </div>
+      </li>
+
+      <li class="flow-step reveal">
+        <span class="flow-num">4</span>
+        <div>
+          <h2>Step 4: Copy, export or share the summary</h2>
+          <p>
+            Copy it as Markdown, download it as a file, or send the link. Notes that stay
+            inside the tool that made them aren't much use, so the export is plain Markdown
+            with real heading levels and working links — the kind that survives a paste into
+            Notion, Obsidian, or a document.
+          </p>
+          <p>
+            Your recent summaries stay a click away in the sidebar. Without an account they
+            live in your browser's local storage and nowhere else.
+          </p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap wrap-narrow">
+    <div class="section-head reveal">
+      <p class="kicker">Honest limits</p>
+      <h2>What a YouTube summarizer can't do</h2>
+      <p class="section-lede">Worth knowing before you rely on it.</p>
+    </div>
+
+    <div class="faq">
+      <details class="qa reveal" open>
+        <summary>It can't summarize a video with no words in it<span class="qa-chev" aria-hidden="true"></span></summary>
+        <div class="qa-body"><p>Music videos, silent timelapses, and footage where the meaning is entirely visual have nothing for a transcript-based tool to work with. You'll get told, rather than given a summary invented from the title.</p></div>
+      </details>
+      <details class="qa reveal">
+        <summary>It can't read a private video<span class="qa-chev" aria-hidden="true"></span></summary>
+        <div class="qa-body"><p>Unlisted videos work if you have the link. Private ones don't — we can only reach what your link can reach.</p></div>
+      </details>
+      <details class="qa reveal">
+        <summary>It can't tell you whether the video is right<span class="qa-chev" aria-hidden="true"></span></summary>
+        <div class="qa-body"><p>A summary reflects what was said, not whether it's true. If a video is confidently wrong, the summary will be a faithful account of a confidently wrong argument. The timestamps are there so you can go and judge for yourself.</p></div>
+      </details>
+      <details class="qa reveal">
+        <summary>Auto-generated captions carry their own errors<span class="qa-chev" aria-hidden="true"></span></summary>
+        <div class="qa-body"><p>Where YouTube's automatic captions mis-hear a name or a technical term, that error flows downstream. Heavy accents, poor audio, and specialist vocabulary are where this shows up most — another reason every claim keeps its timestamp.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <h2>That's the whole process.</h2>
+      <p>It takes longer to describe than to run. Try it on something from your watch-later.</p>
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize a video — free</a>
+    </div>
+  </div>
+</section>

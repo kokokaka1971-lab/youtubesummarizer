@@ -1,0 +1,647 @@
+<!-- ── HERO ──────────────────────────────────────────── -->
+  <section class="hero" id="top">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="wrap">
+
+      <div class="hero-grid">
+        <!-- Left: the pitch and the tool -->
+        <div class="hero-copy reveal">
+          <h1>Free YouTube Video Summarizer</h1>
+          <p class="hero-tagline"><em>Watch less. Know more.</em></p>
+          <p class="lede">
+            Paste any YouTube link and get an AI video summary in seconds — a sharp
+            TL;DR, the key takeaways, and timestamped chapters you can click straight
+            into. Free, online, and no sign-up required.
+          </p>
+
+          <div class="tool" id="try">
+            <form class="tool-form" id="sumForm" novalidate>
+              <div class="field" id="field">
+                <svg class="field-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+                <input
+                  id="url"
+                  name="url"
+                  type="url"
+                  inputmode="url"
+                  autocomplete="off"
+                  spellcheck="false"
+                  placeholder="Paste a YouTube link…"
+                  aria-label="YouTube video URL"
+                  aria-describedby="fieldHint"
+                />
+                <button class="paste-btn" id="pasteBtn" type="button" title="Paste from clipboard">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="3" width="8" height="4" rx="1.5"/><path d="M16 5h2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2"/></svg>
+                  Paste
+                </button>
+              </div>
+              <button class="btn btn-primary btn-lg" id="submitBtn" type="submit">
+                <span class="btn-label">Summarize</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+                <span class="spinner" aria-hidden="true"></span>
+              </button>
+            </form>
+
+            <div class="samples">
+              <span class="samples-label">Try one</span>
+              <button type="button" class="chip" data-url="https://www.youtube.com/watch?v=aircAruvnKk">Neural networks</button>
+              <button type="button" class="chip" data-url="https://www.youtube.com/watch?v=UF8uR6Z6KLc">Commencement talk</button>
+              <button type="button" class="chip" data-url="https://www.youtube.com/watch?v=8aGhZQkoFbQ">What is a tensor?</button>
+            </div>
+
+            <p class="hint" id="fieldHint">
+              <span class="kbd-hint"><kbd>/</kbd> to focus · <kbd>Ctrl</kbd>+<kbd>Enter</kbd> to run · </span>free, no signup
+            </p>
+
+            <p class="tool-notice">
+              <strong>Early access.</strong> Transcript access isn't live yet, so a run
+              returns an example of the output format rather than a real summary.
+            </p>
+
+            <!-- Live preview as soon as a valid link is detected -->
+            <div class="preview" id="preview" hidden>
+              <div class="preview-thumb">
+                <img id="pvThumb" alt="" width="160" height="90" />
+                <span class="preview-play" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg>
+                </span>
+              </div>
+              <div class="preview-meta">
+                <p class="preview-title" id="pvTitle">Loading…</p>
+                <p class="preview-sub" id="pvChannel">—</p>
+              </div>
+              <button type="button" class="icon-btn preview-clear" id="pvClear" aria-label="Clear video">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+              </button>
+            </div>
+
+            <p class="error" id="error" role="alert" hidden></p>
+          </div>
+        </div>
+
+        <!-- Right: what comes back. Mirrors the real result panel. -->
+        <figure class="hp reveal">
+          <figcaption class="hp-cap">What comes back</figcaption>
+
+          <div class="hp-sheet">
+            <div class="hp-tabs" role="tablist" aria-label="Summary views">
+              <button type="button" role="tab" id="hpt-tldr" aria-controls="hpp-tldr" aria-selected="true" class="is-on">TL;DR</button>
+              <button type="button" role="tab" id="hpt-take" aria-controls="hpp-take" aria-selected="false" tabindex="-1">Takeaways</button>
+              <button type="button" role="tab" id="hpt-chap" aria-controls="hpp-chap" aria-selected="false" tabindex="-1">Chapters</button>
+              <button type="button" role="tab" id="hpt-note" aria-controls="hpp-note" aria-selected="false" tabindex="-1">Notes</button>
+            </div>
+
+            <div class="hp-body">
+              <div class="hp-panel is-on" role="tabpanel" id="hpp-tldr" aria-labelledby="hpt-tldr" tabindex="0">
+                <p class="hp-tldr">
+                  The argument in three sentences, with the caveats the speaker
+                  actually made left intact — and nothing added between them.
+                </p>
+              </div>
+
+              <div class="hp-panel" role="tabpanel" id="hpp-take" aria-labelledby="hpt-take" tabindex="0" hidden>
+                <ul class="hp-points">
+                  <li>Each point is one specific claim, not a description of the topic.</li>
+                  <li>Ordered by what changes your decisions, not by when it was said.</li>
+                  <li>Hedges survive — "might" stays "might".</li>
+                  <li>Numbers, names and dates carry across verbatim.</li>
+                </ul>
+              </div>
+
+              <div class="hp-panel" role="tabpanel" id="hpp-chap" aria-labelledby="hpt-chap" tabindex="0" hidden>
+                <div class="hp-chapters">
+                  <div class="hp-ch"><span class="hp-ts">0:00</span><span>Opening and framing</span></div>
+                  <div class="hp-ch"><span class="hp-ts">2:34</span><span>The core argument</span></div>
+                  <div class="hp-ch"><span class="hp-ts">8:08</span><span>Worked example</span></div>
+                  <div class="hp-ch"><span class="hp-ts">15:02</span><span>Objections</span></div>
+                </div>
+              </div>
+
+              <div class="hp-panel" role="tabpanel" id="hpp-note" aria-labelledby="hpt-note" tabindex="0" hidden>
+                <div class="hp-notes">
+                  <h3>Context</h3>
+                  <p>Who is speaking, what question the video answers, and what it assumes you already know.</p>
+                  <h3>The argument, step by step</h3>
+                  <p>Each premise in the order it is built, with the evidence attached to it.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hp-foot">
+              <span class="hp-badge">Every line links back to its second</span>
+            </div>
+          </div>
+        </figure>
+      </div>
+
+      <!-- Result -->
+      <section class="result" id="result" hidden aria-live="polite">
+        <header class="result-head">
+          <div class="result-title">
+            <h2 id="resTitle">Summary</h2>
+            <p class="result-sub" id="resSub"></p>
+          </div>
+          <div class="result-actions">
+            <button class="btn btn-soft" id="copyBtn" type="button">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+              <span>Copy</span>
+            </button>
+            <button class="btn btn-soft" id="mdBtn" type="button">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>
+              <span>Markdown</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="Summary views">
+          <button role="tab" id="tab-tldr" aria-controls="panel-tldr" aria-selected="true" class="tab is-active">TL;DR</button>
+          <button role="tab" id="tab-points" aria-controls="panel-points" aria-selected="false" tabindex="-1" class="tab">Key takeaways</button>
+          <button role="tab" id="tab-chapters" aria-controls="panel-chapters" aria-selected="false" tabindex="-1" class="tab">Chapters</button>
+          <button role="tab" id="tab-notes" aria-controls="panel-notes" aria-selected="false" tabindex="-1" class="tab">Full notes</button>
+        </div>
+
+        <div class="panels" id="panels">
+          <div role="tabpanel" id="panel-tldr" aria-labelledby="tab-tldr" class="panel is-active" tabindex="0"></div>
+          <div role="tabpanel" id="panel-points" aria-labelledby="tab-points" class="panel" tabindex="0" hidden></div>
+          <div role="tabpanel" id="panel-chapters" aria-labelledby="tab-chapters" class="panel" tabindex="0" hidden></div>
+          <div role="tabpanel" id="panel-notes" aria-labelledby="tab-notes" class="panel" tabindex="0" hidden></div>
+        </div>
+
+        <footer class="result-foot" id="resFoot"></footer>
+      </section>
+
+      <!-- Recent, from localStorage -->
+      <section class="recent" id="recent" hidden>
+        <div class="recent-head">
+          <h2>Recent</h2>
+          <button type="button" class="link-btn" id="clearRecent">Clear</button>
+        </div>
+        <ul class="recent-list" id="recentList"></ul>
+      </section>
+
+      <!-- Product facts, not usage metrics. Each one is verifiable on this site. -->
+      <ul class="hero-facts reveal">
+        <li><span class="hf-num">38</span><span class="hf-key">languages, in and out</span></li>
+        <li><span class="hf-num">4</span><span class="hf-key">summary depths from one run</span></li>
+        <li><span class="hf-num">5</span><span class="hf-key">free summaries a day, no card</span></li>
+        <li><span class="hf-num">0</span><span class="hf-key">accounts needed to start</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── WHAT IS IT ────────────────────────────────────── -->
+  <section class="section editorial" id="what-is">
+    <div class="wrap">
+
+      <!-- Opening spread: heading + lead on the left, the figure on the right -->
+      <div class="ed-open">
+        <div class="ed-lead reveal">
+          <p class="kicker">The basics</p>
+          <h2>What is a <em>YouTube video summarizer</em>?</h2>
+          <p class="ed-drop">
+            A YouTube video summarizer reads a video's transcript and turns it into
+            something you can read in a fraction of the time. You paste a link, the
+            AI works through what was actually said, and you get back the argument
+            in condensed form — a short TL;DR, the key points, and a breakdown of
+            the video's sections.
+          </p>
+          <p>
+            The reason it works is arithmetic, not magic. Summarizing isn't a
+            shortcut so much as a correction: it removes the padding that exists
+            only because the medium is speech.
+          </p>
+        </div>
+
+        <figure class="ed-figure reveal">
+          <p class="ed-figure-label">In a forty-minute talk</p>
+
+          <div class="ed-bar">
+            <div class="ed-bar-head">
+              <span class="ed-figure-num">5,000</span>
+              <span class="ed-bar-key">words spoken</span>
+            </div>
+            <div class="ed-track" aria-hidden="true"><span style="width:100%"></span></div>
+          </div>
+
+          <div class="ed-bar is-core">
+            <div class="ed-bar-head">
+              <span class="ed-figure-num">400</span>
+              <span class="ed-bar-key">that carry the argument</span>
+            </div>
+            <div class="ed-track" aria-hidden="true"><span style="width:8%"></span></div>
+          </div>
+
+          <p class="ed-ratio">
+            <span class="ed-ratio-num">8<span class="ed-ratio-pct">%</span></span>
+            <span class="ed-ratio-key">of a talk carries its argument. The rest is
+              pacing, analogy and recap — necessary when you're listening, wasted
+              when you're reading.</span>
+          </p>
+
+          <figcaption>
+            People speak at roughly 130 words a minute. You read three to four times
+            faster than that — so the same argument reaches you in a fraction of the
+            time it took to say.
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Pull quote -->
+      <blockquote class="ed-quote reveal">
+        <p>A summary you can't verify is just a confident paragraph.</p>
+      </blockquote>
+
+      <!-- The four things -->
+      <div class="ed-block">
+        <div class="ed-block-head reveal">
+          <h3>What separates a good summary from a bad one</h3>
+          <p>
+            Plenty of tools labelled "summarizer" reformat the caption file and hand
+            it back. That's a transcript, not a summary — the same five thousand
+            words with paragraph breaks. Four things have to happen in between.
+          </p>
+        </div>
+
+        <ol class="ed-list">
+          <li class="reveal">
+            <span class="ed-num">01</span>
+            <h4>Cut the disfluency, keep the meaning</h4>
+            <p>
+              Stripping the "um"s is easy. The hard part is that speakers repeat
+              themselves for emphasis, and that looks identical to repeating
+              themselves because they lost the thread.
+            </p>
+          </li>
+          <li class="reveal">
+            <span class="ed-num">02</span>
+            <h4>Recover the structure</h4>
+            <p>
+              The sections were real — the speaker had an outline. They're just not
+              marked in the text, so they have to be inferred from the content
+              itself rather than found.
+            </p>
+          </li>
+          <li class="reveal">
+            <span class="ed-num">03</span>
+            <h4>Separate claims from scaffolding</h4>
+            <p>
+              Most of a talk is setup, analogy and recap. Telling a claim apart from
+              a vivid way of restating the previous claim is most of the work.
+            </p>
+          </li>
+          <li class="reveal is-marked">
+            <span class="ed-num">04</span>
+            <h4>Keep every claim tied to its moment</h4>
+            <p>
+              The one most tools skip. Ours links each chapter and takeaway back to
+              its timestamp, so checking a claim costs one click instead of a
+              rewatch. <a href="/blog/why-timestamps-matter">Why that matters</a>.
+            </p>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Coda -->
+      <aside class="ed-coda reveal">
+        <h3>When you should still watch the video</h3>
+        <p>
+          A summary tells you what a video said, not whether it's true, and it can't
+          carry a demonstration, a visual proof, or a performance. Use it to decide
+          what deserves your attention and to find the part you need — then watch
+          that part properly.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ── FEATURES ──────────────────────────────────────── -->
+  <section class="section section-alt" id="features">
+    <div class="wrap">
+
+      <div class="fx-head reveal">
+        <p class="kicker">Features</p>
+        <h2>Why use <em>this</em> AI YouTube summarizer</h2>
+        <p class="fx-lede">
+          Most summary tools hand you the caption file with paragraph breaks and
+          call it a summary. Six places where that difference actually shows.
+        </p>
+      </div>
+
+      <div class="fx-ledger">
+        <div class="fx-labels" aria-hidden="true">
+          <span></span>
+          <span class="fx-lab">Most summary tools</span>
+          <span class="fx-lab is-ours">YouTubeSummarizer</span>
+        </div>
+
+        <div class="fx-row reveal">
+          <h3>Compression</h3>
+          <p class="fx-them"><span class="fx-mini">Most tools</span>The same five thousand words, reflowed into paragraphs. Still an hour to read.</p>
+          <p class="fx-us"><span class="fx-mini">Here</span>A three-hour podcast becomes a brief you read over a coffee — without losing the argument that made it worth watching.</p>
+        </div>
+
+        <div class="fx-row reveal">
+          <h3>Verification</h3>
+          <p class="fx-them"><span class="fx-mini">Most tools</span>Timings are discarded at the first step, so no claim can be traced back.</p>
+          <p class="fx-us"><span class="fx-mini">Here</span>Every chapter and takeaway links to the second it came from. Checking a claim is one click, not a rewatch.</p>
+        </div>
+
+        <div class="fx-row reveal">
+          <h3>Depth</h3>
+          <p class="fx-them"><span class="fx-mini">Most tools</span>One fixed output. A shorter or longer version means running it again.</p>
+          <p class="fx-us"><span class="fx-mini">Here</span>TL;DR, key takeaways, timestamped chapters and full notes — all from one run, switched instantly.</p>
+        </div>
+
+        <div class="fx-row reveal">
+          <h3>Languages</h3>
+          <p class="fx-them"><span class="fx-mini">Most tools</span>English in, English out — and technical terms guessed at in translation.</p>
+          <p class="fx-us"><span class="fx-mini">Here</span>38 languages in both directions, with terms of art kept in their original form alongside the translation.</p>
+        </div>
+
+        <div class="fx-row reveal">
+          <h3>Fidelity</h3>
+          <p class="fx-them"><span class="fx-mini">Most tools</span>Hedges get smoothed into confident claims, which reads better and means something else.</p>
+          <p class="fx-us"><span class="fx-mini">Here</span>"We think this might generalise" stays exactly that. Contested points are marked contested, not averaged.</p>
+        </div>
+
+        <div class="fx-row reveal">
+          <h3>Portability</h3>
+          <p class="fx-them"><span class="fx-mini">Most tools</span>Your notes live in their interface, readable for as long as you keep paying.</p>
+          <p class="fx-us"><span class="fx-mini">Here</span>Clean Markdown into Notion, Obsidian or a file. Your notes in your system, not locked in ours.</p>
+        </div>
+      </div>
+
+      <p class="section-more"><a href="/features">See everything it does<span aria-hidden="true">→</span></a></p>
+    </div>
+  </section>
+
+  <!-- ── HOW ───────────────────────────────────────────── -->
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="kicker">How it works</p>
+        <h2>How to summarize a YouTube video in 3 steps</h2>
+      </div>
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step-num">01</span>
+          <h3>Step 1: Paste the YouTube link</h3>
+          <p>Any <code>youtube.com</code>, <code>youtu.be</code>, Shorts or live-replay URL. We pull the transcript the moment you hit enter.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-num">02</span>
+          <h3>Step 2: Pick your summary depth</h3>
+          <p>One line, ten bullets, a chapter map, or full notes. Change your mind as often as you like — it's the same run.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-num">03</span>
+          <h3>Step 3: Copy, export or share it</h3>
+          <p>Copy, export to Markdown, or share a link. Your last summaries stay in this browser so you can pick up where you left off.</p>
+        </li>
+      </ol>
+      <p class="section-more"><a href="/how-it-works">What happens under the hood<span aria-hidden="true">→</span></a></p>
+    </div>
+  </section>
+
+  <!-- ── USE CASES ─────────────────────────────────────── -->
+  <section class="section section-alt" id="usecases">
+    <div class="wrap">
+      <div class="ucx">
+
+        <aside class="ucx-aside reveal">
+          <p class="kicker">Use cases</p>
+          <h2>Who uses our <em>YouTube video summarizer</em></h2>
+          <p class="ucx-intro">
+            Everyone pastes the same link into the same box. What changes is which
+            of the four outputs does the work — and that turns out to map closely
+            onto why you were watching in the first place.
+          </p>
+          <a class="ucx-all" href="/use-cases">
+            Browse all use cases
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+          </a>
+        </aside>
+
+        <ol class="ucx-index">
+          <li class="ucx-entry reveal">
+            <a href="/use-cases/students">
+              <span class="ucx-num">01</span>
+              <span class="ucx-body">
+                <span class="ucx-role">Students</span>
+                <span class="ucx-line">Turn a semester of recorded lectures into a revision pack.</span>
+                <span class="ucx-detail">
+                  <span class="ucx-tag">Lives in</span>
+                  the chapter map — the shape of the lecture, plus the five minutes
+                  worth rewatching instead of the ninety.
+                </span>
+              </span>
+              <svg class="ucx-arrow" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+            </a>
+          </li>
+
+          <li class="ucx-entry reveal">
+            <a href="/use-cases/researchers">
+              <span class="ucx-num">02</span>
+              <span class="ucx-body">
+                <span class="ucx-role">Researchers</span>
+                <span class="ucx-line">Triage a forty-talk conference playlist in an afternoon.</span>
+                <span class="ucx-detail">
+                  <span class="ucx-tag">Lives in</span>
+                  the TL;DR to shortlist, then the timestamps — because a claim you
+                  cite needs the second it was said.
+                </span>
+              </span>
+              <svg class="ucx-arrow" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+            </a>
+          </li>
+
+          <li class="ucx-entry reveal">
+            <a href="/use-cases/creators">
+              <span class="ucx-num">03</span>
+              <span class="ucx-body">
+                <span class="ucx-role">Creators</span>
+                <span class="ucx-line">Find the gap twenty videos on your topic all left open.</span>
+                <span class="ucx-detail">
+                  <span class="ucx-tag">Lives in</span>
+                  reading many at once — the pattern only shows up when you can hold
+                  the whole field in your head.
+                </span>
+              </span>
+              <svg class="ucx-arrow" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+            </a>
+          </li>
+
+          <li class="ucx-entry reveal">
+            <a href="/use-cases/teams">
+              <span class="ucx-num">04</span>
+              <span class="ucx-body">
+                <span class="ucx-role">Teams</span>
+                <span class="ucx-line">Send the six bullets instead of the two-hour keynote.</span>
+                <span class="ucx-detail">
+                  <span class="ucx-tag">Lives in</span>
+                  the takeaways — one person watches, everyone gets the argument,
+                  links included for whoever wants more.
+                </span>
+              </span>
+              <svg class="ucx-arrow" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRICING ───────────────────────────────────────── -->
+  <section class="section" id="pricing">
+    <div class="wrap">
+
+      <div class="rate-head reveal">
+        <div class="rate-head-copy">
+          <p class="kicker">Pricing</p>
+          <h2>Free YouTube summarizer <em>pricing</em></h2>
+        </div>
+        <div class="toggle" role="group" aria-label="Billing period">
+          <button type="button" class="toggle-opt is-active" id="mo" aria-pressed="true">Monthly</button>
+          <button type="button" class="toggle-opt" id="yr" aria-pressed="false">Yearly <span class="save">−20%</span></button>
+        </div>
+      </div>
+
+      <div class="rates">
+        <article class="rate reveal">
+          <p class="rate-tag"></p>
+          <h3>Free</h3>
+          <p class="rate-desc">For the occasional long video.</p>
+          <p class="rate-price">
+            <span class="cur">$</span><span class="amt" data-m="0" data-y="0">0</span><span class="per">/month</span>
+          </p>
+          <a class="btn btn-soft btn-block" href="/#try">Start summarizing</a>
+          <ul class="rate-list">
+            <li>5 summaries a day</li>
+            <li>Videos up to 30 minutes</li>
+            <li>TL;DR and key takeaways</li>
+            <li>Copy and Markdown export</li>
+          </ul>
+        </article>
+
+        <article class="rate is-featured reveal">
+          <p class="rate-tag">Coming soon</p>
+          <h3>Pro</h3>
+          <p class="rate-desc">For people who learn on YouTube daily.</p>
+          <p class="rate-price">
+            <span class="cur">$</span><span class="amt" data-m="12" data-y="10">12</span><span class="per">/month</span>
+          </p>
+          <a class="btn btn-primary btn-block" href="/contact">Join the waitlist</a>
+          <ul class="rate-list">
+            <li>Unlimited summaries</li>
+            <li>Any length, including live replays</li>
+            <li>Chapters, full notes, and 38 languages</li>
+            <li>Playlist and batch processing</li>
+            <li>Searchable history across devices</li>
+          </ul>
+        </article>
+
+        <article class="rate reveal">
+          <p class="rate-tag">Coming soon</p>
+          <h3>Team</h3>
+          <p class="rate-desc">For teams that share what they learn.</p>
+          <p class="rate-price">
+            <span class="cur">$</span><span class="amt" data-m="39" data-y="32">39</span><span class="per">/month</span>
+          </p>
+          <a class="btn btn-soft btn-block" href="/contact">Talk to us</a>
+          <ul class="rate-list">
+            <li>Everything in Pro, 5 seats included</li>
+            <li>Shared workspace and history</li>
+            <li>A house summary format</li>
+            <li>API access</li>
+            <li>Priority processing</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="rate-foot">
+        <p class="section-more"><a href="/pricing">Compare the plans in detail<span aria-hidden="true">→</span></a></p>
+        <p class="fineprint">Prices in USD. Pro and Team are not open yet — join the waitlist and we'll tell you when they are. The free tier needs no card.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ───────────────────────────────────────────── -->
+  <section class="section section-alt" id="faq">
+    <div class="wrap">
+
+      <div class="qa-head reveal">
+        <div class="qa-head-copy">
+          <p class="kicker">FAQ</p>
+          <h2>YouTube video summarizer <em>questions</em></h2>
+        </div>
+        <div class="qa-head-aside">
+          <p>
+            The ten things people ask before pasting a first link — captions,
+            length, accuracy and what happens to your data.
+          </p>
+          <a class="qa-all" href="/faq">
+            Read every question
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="qa-grid">
+        <div class="faq reveal">
+          <details class="qa" open>
+            <summary>Do I need an account to try it?<span class="qa-chev" aria-hidden="true"></span></summary>
+            <div class="qa-body"><p>No. Paste a link and go. An account only matters once you want history that follows you between devices, or the limits lifted.</p></div>
+          </details>
+          <details class="qa">
+            <summary>What if the video has no captions?<span class="qa-chev" aria-hidden="true"></span></summary>
+            <div class="qa-body"><p>If YouTube has no transcript — auto-generated or human — we transcribe the audio ourselves on Pro. On Free you'll get a clear message rather than a summary of nothing.</p></div>
+          </details>
+          <details class="qa">
+            <summary>How long can a video be?<span class="qa-chev" aria-hidden="true"></span></summary>
+            <div class="qa-body"><p>Thirty minutes on Free. On Pro there's no ceiling — eight-hour conference streams and full audiobook readings both work, they just take a little longer.</p></div>
+          </details>
+          <details class="qa">
+            <summary>Is it accurate?<span class="qa-chev" aria-hidden="true"></span></summary>
+            <div class="qa-body"><p>Every claim stays anchored to the timestamp it came from, so you can check it in one click. That's the honest answer: a summary is a starting point, and we make verifying it fast rather than asking you to take it on faith.</p></div>
+          </details>
+          <details class="qa">
+            <summary>Do you store the videos or my summaries?<span class="qa-chev" aria-hidden="true"></span></summary>
+            <div class="qa-body"><p>We never store video files. Without an account, your recent summaries live in this browser's local storage and nowhere else — clearing them here clears them, full stop.</p></div>
+          </details>
+        </div>
+
+        <div class="faq reveal">
+          <details class="qa">
+            <summary>Can I use this for private or unlisted videos?<span class="qa-chev" aria-hidden="true"></span></summary>
+            <div class="qa-body"><p>Unlisted links work if you have the URL. Private videos don't — we can only read what your link can reach.</p></div>
+          </details>
+          <details class="qa">
+            <summary>How do I summarize a YouTube video for free?<span class="qa-chev" aria-hidden="true"></span></summary>
+            <div class="qa-body"><p>Copy the video's URL, paste it into the box at the top of this page, and press Summarize. You'll have a TL;DR, key takeaways and timestamped chapters in a few seconds. There's no account, no card, and no trial countdown — the free plan covers five videos a day, every day.</p></div>
+          </details>
+          <details class="qa">
+            <summary>Can it summarize long videos and podcasts?<span class="qa-chev" aria-hidden="true"></span></summary>
+            <div class="qa-body"><p>Yes. Thirty minutes is the ceiling on the free plan; on Pro there isn't one. Two-hour podcasts, eight-hour conference streams and full lecture recordings all work — longer videos simply take a little longer to process, because there's more transcript to read.</p></div>
+          </details>
+          <details class="qa">
+            <summary>Does it work on YouTube Shorts and live replays?<span class="qa-chev" aria-hidden="true"></span></summary>
+            <div class="qa-body"><p>Both. Any <code>youtube.com/shorts/</code> or <code>/live/</code> URL resolves the same way a normal watch link does, along with <code>youtu.be</code> short links, embeds, and a bare video ID pasted on its own.</p></div>
+          </details>
+          <details class="qa">
+            <summary>How is this different from pasting a transcript into ChatGPT?<span class="qa-chev" aria-hidden="true"></span></summary>
+            <div class="qa-body"><p>Mostly the timestamps. Copying a transcript into a chat window throws away the timings, so the summary you get back can't be traced to any particular moment — you either trust it or rewatch. Here the timings survive the whole pipeline, so every chapter and claim links back to the second it came from. You also skip the fetching and pasting, and get four depths from one run rather than re-prompting for each.</p></div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ───────────────────────────────────────────── -->
+  <section class="cta">
+    <div class="wrap">
+      <div class="cta-box reveal">
+        <h2>You have 400 hours of watch-later.</h2>
+        <p>Start with one. Paste a link and see what you've been sitting on.</p>
+        <a class="btn btn-primary btn-lg" href="#try">Summarize a video — free</a>
+      </div>
+    </div>
+  </section>
