@@ -240,15 +240,23 @@
       submit.classList.add('is-busy');
       submit.disabled = true;
       try {
-        const r = await fetch('/api/contact', {
+        // Static builds post to a form service; the Node server handles
+        // /api/contact itself. Both return JSON.
+        const endpoint = cForm.dataset.endpoint || '/api/contact';
+        const r = await fetch(endpoint, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
           body: JSON.stringify(data)
         });
-        const out = await r.json();
-        if (!r.ok) throw new Error(out.error || 'Could not send that.');
+        const out = await r.json().catch(() => ({}));
+        if (!r.ok) {
+          throw new Error(
+            out.error || out.errors?.[0]?.message || 'Could not send that — please email us instead.'
+          );
+        }
         cForm.reset();
-        status.textContent = out.message;
+        status.textContent =
+          out.message || "Thanks — that's with us. We'll reply within a working day.";
         status.classList.add('is-ok');
         toast('Message received');
       } catch (err) {

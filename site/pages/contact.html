@@ -16,7 +16,11 @@
 
       <div class="contact-form-wrap reveal">
         <h2>Send us a message</h2>
-        <form id="contactForm" class="stack" novalidate>
+        <!-- data-endpoint lets the static build post straight to a form service.
+             Replace FORM_ID with your Formspree form id before going live;
+             with the attribute removed it falls back to the Node /api/contact. -->
+        <form id="contactForm" class="stack" novalidate
+              data-endpoint="https://formspree.io/f/FORM_ID">
           <div class="field-group">
             <label for="cName">Your name</label>
             <input id="cName" name="name" type="text" autocomplete="name" required />
