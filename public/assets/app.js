@@ -279,6 +279,45 @@
     saveRecent(vid);
   }
 
+
+  /* --- Demo output, generated in the browser ---------------------------
+     On static hosting there is no /api/summarize to call. Rather than
+     showing a network error on the page's main call to action, we render
+     the same demo payload the server would have returned, with the same
+     "Demo output" badge and a reason. Nothing is presented as a real
+     summary that isn't one. */
+  function localDemo(video, reason, ms) {
+    return {
+      video,
+      tldr:
+        'This is demo output for \u201c' + video.title + '\u201d, not a real summary — ' +
+        'it is here so the interface is fully reviewable. ' + reason +
+        ' With a transcript connected, this panel holds two or three sentences ' +
+        "capturing the video's actual argument.",
+      takeaways: [
+        'Each takeaway is one specific claim from the video, not a description of its topic.',
+        'Takeaways are ordered by how much they change what you would do.',
+        'Anything contested in the video is marked as contested rather than flattened.',
+        'Numbers, names and dates are carried across verbatim so they stay checkable.',
+        'Where the speaker hedges, the hedge survives into the summary.',
+        'Nothing appears here that is not in the transcript.'
+      ],
+      chapters: [
+        { start: 0, title: 'Opening and framing', summary: 'What the video sets out to answer, and for whom.' },
+        { start: 154, title: 'The core argument', summary: 'The central claim, and the evidence offered for it.' },
+        { start: 488, title: 'Worked example', summary: 'The argument applied to a concrete case.' },
+        { start: 902, title: 'Objections', summary: 'The strongest counterpoints raised and how they are answered.' },
+        { start: 1315, title: 'What to do with this', summary: 'The practical upshot and what to read next.' }
+      ],
+      notes: [
+        { heading: 'Context', points: ['Who is speaking and what they are known for.', 'What question the video is answering.', 'What background it assumes you already have.'] },
+        { heading: 'The argument, step by step', points: ['Each premise, in the order it is built.', 'The evidence attached to each one.', 'Where the reasoning rests on an assumption rather than a fact.'] },
+        { heading: 'Open questions', points: ['What the video raises but does not settle.', 'What a sceptical viewer would still want answered.'] }
+      ],
+      meta: { demo: true, reason, model: '', words: 0, videoMinutes: 0, readMinutes: 1, ms }
+    };
+  }
+
   /* --- Submit --- */
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -300,13 +339,30 @@
     showSkeleton();
 
     try {
-      const r = await fetch('/api/summarize', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id })
-      });
-      const data = await r.json();
-      if (!r.ok) throw new Error(data.error || 'Something went wrong');
+      const t0 = Date.now();
+      let data = null;
+
+      try {
+        const r = await fetch('/api/summarize', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id })
+        });
+        // A static host answers with its 404 page, not JSON — that is the
+        // signal that there is no summarizer behind this deployment.
+        const ct = r.headers.get('content-type') || '';
+        if (!ct.includes('application/json')) throw new Error('no-api');
+        data = await r.json();
+        if (!r.ok) throw new Error(data.error || 'Something went wrong');
+      } catch (err) {
+        if (err.message !== 'no-api' && !(err instanceof TypeError)) throw err;
+        data = localDemo(
+          currentVideo || { id, title: 'YouTube video ' + id, channel: '', thumb: '' },
+          'Transcript access is not connected on this deployment yet.',
+          Date.now() - t0
+        );
+      }
+
       render(data);
     } catch (err) {
       result.hidden = true;
