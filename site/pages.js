@@ -459,6 +459,126 @@ export const PAGES = {
     schema: ['article', 'faq']
   },
 
+  'best-youtube-summarizer-for-students': {
+    path: '/best-youtube-summarizer-for-students',
+    file: 'best-youtube-summarizer-for-students.html',
+    section: 'guides',
+    title: 'Best YouTube Summarizer for Students',
+    description:
+      'What actually matters when picking a YouTube summarizer for lectures, how the main tools differ on published limits, and where each one falls short.',
+    cardKicker: 'For students',
+    cardImage: 'best-for-students-lead',
+    schema: ['article', 'faq']
+  },
+
+  'best-youtube-summarizer-for-long-videos': {
+    path: '/best-youtube-summarizer-for-long-videos',
+    file: 'best-youtube-summarizer-for-long-videos.html',
+    section: 'guides',
+    title: 'Best YouTube Summarizer for Long Videos',
+    description:
+      'How the main YouTube summarizers handle two and three-hour videos, what each publishes about its limits, and the one test that exposes silent truncation.',
+    cardKicker: 'Long videos',
+    cardImage: 'best-for-long-videos-lead',
+    schema: ['article', 'faq']
+  },
+
+  'best-youtube-summarizer-with-timestamps': {
+    path: '/best-youtube-summarizer-with-timestamps',
+    file: 'best-youtube-summarizer-with-timestamps.html',
+    section: 'guides',
+    title: 'Best YouTube Summarizer With Timestamps',
+    description:
+      'Which YouTube summarizers provide clickable timestamps, how to tell real ones from reconstructed ones, and why it matters more than any other feature.',
+    cardKicker: 'Timestamps',
+    cardImage: 'best-with-timestamps-lead',
+    schema: ['article', 'faq']
+  },
+
+  'best-free-youtube-summarizer': {
+    path: '/best-free-youtube-summarizer',
+    file: 'best-free-youtube-summarizer.html',
+    section: 'guides',
+    title: 'Best Free YouTube Summarizer',
+    description:
+      'Which YouTube summarizers are genuinely free, what each free tier actually publishes, and the limits that only surface once you are depending on the tool.',
+    cardKicker: 'Free tools',
+    cardImage: 'best-free-lead',
+    schema: ['article', 'faq']
+  },
+
+  'best-ai-youtube-summarizer': {
+    path: '/best-ai-youtube-summarizer',
+    file: 'best-ai-youtube-summarizer.html',
+    section: 'guides',
+    title: 'Best AI YouTube Summarizer',
+    description:
+      'What the AI in an AI YouTube summarizer actually does, why the model matters less than the pipeline around it, and how to judge output you cannot verify.',
+    cardKicker: 'AI tools',
+    cardImage: 'best-ai-summarizer-lead',
+    schema: ['article', 'faq']
+  },
+
+  'youtube-summarizer-alternatives': {
+    path: '/youtube-summarizer-alternatives',
+    file: 'youtube-summarizer-alternatives.html',
+    section: 'guides',
+    title: 'YouTube Summarizer Alternatives',
+    description:
+      'A map of the YouTube summarizer landscape by category — extensions, research tools, study platforms and web apps — and which kind suits which job.',
+    cardKicker: 'Alternatives',
+    cardImage: 'summarizer-alternatives-lead',
+    schema: ['article', 'faq']
+  },
+
+  'best-youtube-summarizer-without-signup': {
+    path: '/best-youtube-summarizer-without-signup',
+    file: 'best-youtube-summarizer-without-signup.html',
+    section: 'guides',
+    title: 'Best YouTube Summarizer Without Sign-Up',
+    description:
+      'Which YouTube summarizers work with no account, why most ask for one, and what you give up by staying anonymous. Published facts, checked and dated.',
+    cardKicker: 'No sign-up',
+    cardImage: 'best-without-signup-lead',
+    schema: ['article', 'faq']
+  },
+
+  'best-youtube-summarizer-for-podcasts': {
+    path: '/best-youtube-summarizer-for-podcasts',
+    file: 'best-youtube-summarizer-for-podcasts.html',
+    section: 'guides',
+    title: 'Best YouTube Summarizer for Podcasts',
+    description:
+      'What matters when summarizing three-hour podcast episodes, how the main tools compare on published terms, and the failure that hits long-form hardest.',
+    cardKicker: 'For podcasts',
+    cardImage: 'best-for-podcasts-lead',
+    schema: ['article', 'faq']
+  },
+
+  'best-youtube-summarizer-chrome-extension': {
+    path: '/best-youtube-summarizer-chrome-extension',
+    file: 'best-youtube-summarizer-chrome-extension.html',
+    section: 'guides',
+    title: 'Best YouTube Summarizer Chrome Extension',
+    description:
+      'We do not make a Chrome extension. Here is when an extension is the right choice, what to check before installing one, and when a web tool is better.',
+    cardKicker: 'Extensions',
+    cardImage: 'best-chrome-extension-lead',
+    schema: ['article', 'faq']
+  },
+
+  'youtube-summarizer-vs-transcript-tools': {
+    path: '/youtube-summarizer-vs-transcript-tools',
+    file: 'youtube-summarizer-vs-transcript-tools.html',
+    section: 'guides',
+    title: 'YouTube Summarizer vs Transcript Tools',
+    description:
+      'Transcript tools and summarizers answer different questions. Which to reach for, what each category does well, and why many tools blur the line.',
+    cardKicker: 'vs transcripts',
+    cardImage: 'summarizer-vs-transcript-lead',
+    schema: ['article', 'faq']
+  },
+
 };
 
 /** path → page, built once at import. */

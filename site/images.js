@@ -1244,6 +1244,498 @@ export const IMAGE_SLOTS = [
     alt: 'Test tubes lined up in a rack.',
     width: 1240,
     aspect: '16/9'
+  },
+
+  /* ---- Batch 03 - comparisons ---- */
+  {
+    id: 'best-for-students-lead',
+    provider: 'unsplash',
+    query: 'student studying at a desk with laptop and books',
+    alt: 'A student working at a desk covered in books and a laptop.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'best-for-students-table',
+    provider: 'pexels',
+    query: 'comparison chart printed on paper',
+    alt: 'A printed comparison chart on a desk.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-for-students-flashcards',
+    provider: 'unsplash',
+    query: 'stack of revision flashcards on a table',
+    alt: 'A stack of handwritten revision cards.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-for-students-revision',
+    provider: 'pexels',
+    query: 'student revising with highlighted notes',
+    alt: 'Highlighted revision notes spread out for study.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-for-students-lecture-test',
+    provider: 'unsplash',
+    query: 'empty lecture theatre seats',
+    alt: 'Rows of empty seats in a lecture theatre.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-for-students-limits',
+    provider: 'pexels',
+    query: 'wooden signpost with two arrows',
+    alt: 'A wooden signpost pointing two ways.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-for-long-videos-lead',
+    provider: 'unsplash',
+    query: 'long straight road disappearing into distance',
+    alt: 'A long road running to the horizon.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'best-for-long-videos-table',
+    provider: 'pexels',
+    query: 'spreadsheet of figures on a screen',
+    alt: 'A table of figures displayed on screen.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-for-long-videos-check',
+    provider: 'unsplash',
+    query: 'stopwatch held in a hand',
+    alt: 'A stopwatch held up in one hand.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-for-long-videos-output-length',
+    provider: 'pexels',
+    query: 'small card beside a thick book',
+    alt: 'A small index card next to a thick book.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-for-long-videos-candidates',
+    provider: 'unsplash',
+    query: 'sorting papers into two piles',
+    alt: 'Papers being sorted into two piles on a desk.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-for-long-videos-limits',
+    provider: 'pexels',
+    query: 'brick wall with a single gap',
+    alt: 'A brick wall with one gap in it.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-with-timestamps-lead',
+    provider: 'unsplash',
+    query: 'clock face beside a laptop on a desk',
+    alt: 'A clock face standing beside a laptop.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'best-with-timestamps-table',
+    provider: 'pexels',
+    query: 'printed table of data on a desk',
+    alt: 'A printed data table lying on a desk.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-with-timestamps-test',
+    provider: 'unsplash',
+    query: 'finger pressing a button',
+    alt: 'A finger pressing a single button.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-with-timestamps-export',
+    provider: 'pexels',
+    query: 'document open on a tablet screen',
+    alt: 'A text document open on a tablet.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-with-timestamps-chapters',
+    provider: 'unsplash',
+    query: 'coloured index tabs in a folder',
+    alt: 'Coloured index tabs separating pages in a folder.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-with-timestamps-limits',
+    provider: 'pexels',
+    query: 'measuring tape close up',
+    alt: 'A measuring tape extended across a surface.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-free-lead',
+    provider: 'unsplash',
+    query: 'free sign hanging in a window',
+    alt: 'A hand-lettered sign hanging in a window.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'best-free-limit-shapes',
+    provider: 'pexels',
+    query: 'four wooden blocks in a row',
+    alt: 'Four wooden blocks lined up in a row.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-free-hidden-limits',
+    provider: 'unsplash',
+    query: 'iceberg above and below water',
+    alt: 'An iceberg with most of its mass below the waterline.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-free-good-tier',
+    provider: 'pexels',
+    query: 'hand ticking a checklist',
+    alt: 'A hand ticking items on a checklist.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-free-tool-longevity',
+    provider: 'unsplash',
+    query: 'closed shop shutter',
+    alt: 'A closed metal shutter on a shopfront.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-free-our-limits',
+    provider: 'pexels',
+    query: 'number five chalked on a board',
+    alt: 'The number five chalked onto a board.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-ai-summarizer-lead',
+    provider: 'unsplash',
+    query: 'circuit board close up',
+    alt: 'A close-up of a circuit board.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'best-ai-pipeline',
+    provider: 'pexels',
+    query: 'factory production line machinery',
+    alt: 'Machinery along a production line.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-ai-models',
+    provider: 'unsplash',
+    query: 'row of identical light bulbs',
+    alt: 'A row of identical light bulbs.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-ai-tests',
+    provider: 'pexels',
+    query: 'laboratory beakers on a bench',
+    alt: 'Beakers lined up on a laboratory bench.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-ai-marketing',
+    provider: 'unsplash',
+    query: 'neon sign glowing at night',
+    alt: 'A glowing neon sign at night.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-ai-plumbing',
+    provider: 'pexels',
+    query: 'copper pipes and valves',
+    alt: 'Copper pipework with valves.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'summarizer-alternatives-lead',
+    provider: 'unsplash',
+    query: 'several doors in a corridor',
+    alt: 'A corridor lined with several doors.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'alternatives-categories',
+    provider: 'pexels',
+    query: 'four sorted groups of objects on a table',
+    alt: 'Objects sorted into four groups on a table.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'alternatives-research',
+    provider: 'unsplash',
+    query: 'desk covered in open books and papers',
+    alt: 'A desk covered with open books and papers.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'alternatives-paste-link',
+    provider: 'pexels',
+    query: 'keyboard close up with hands typing',
+    alt: 'Hands typing on a keyboard.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'alternatives-switching',
+    provider: 'unsplash',
+    query: 'railway points switching tracks',
+    alt: 'Railway points where two tracks diverge.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'alternatives-choosing',
+    provider: 'pexels',
+    query: 'person choosing between two paths',
+    alt: 'A walker at a fork in a path.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-without-signup-lead',
+    provider: 'unsplash',
+    query: 'open door with no lock',
+    alt: 'An open door standing ajar.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'without-signup-table',
+    provider: 'pexels',
+    query: 'clipboard with a form on a desk',
+    alt: 'A blank form on a clipboard.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'without-signup-tradeoffs',
+    provider: 'unsplash',
+    query: 'balance scales on a table',
+    alt: 'A set of balance scales on a table.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'without-signup-when-to-register',
+    provider: 'pexels',
+    query: 'key resting on a wooden table',
+    alt: 'A single key resting on a wooden table.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'without-signup-anonymous-limits',
+    provider: 'unsplash',
+    query: 'turnstile at an entrance',
+    alt: 'A metal turnstile at an entrance.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'without-signup-our-limits',
+    provider: 'pexels',
+    query: 'hand holding up five fingers',
+    alt: 'A hand held up showing five fingers.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-for-podcasts-lead',
+    provider: 'unsplash',
+    query: 'podcast microphone in a studio',
+    alt: 'A microphone set up in a recording studio.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'best-for-podcasts-table',
+    provider: 'pexels',
+    query: 'audio mixing desk faders',
+    alt: 'Faders on an audio mixing desk.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-for-podcasts-attribution',
+    provider: 'unsplash',
+    query: 'two microphones facing each other',
+    alt: 'Two microphones facing one another across a table.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-for-podcasts-map',
+    provider: 'pexels',
+    query: 'hand drawn timeline on paper',
+    alt: 'A timeline sketched out on paper.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-for-podcasts-audio',
+    provider: 'unsplash',
+    query: 'headphones on a mixing desk',
+    alt: 'Headphones resting on a mixing desk.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-for-podcasts-limits',
+    provider: 'pexels',
+    query: 'closed notebook beside a microphone',
+    alt: 'A closed notebook beside a microphone.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'best-chrome-extension-lead',
+    provider: 'unsplash',
+    query: 'browser window open on a laptop',
+    alt: 'A browser window open on a laptop screen.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'chrome-extension-vs-web',
+    provider: 'pexels',
+    query: 'two laptops side by side on a desk',
+    alt: 'Two laptops open side by side.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'chrome-extension-tests',
+    provider: 'unsplash',
+    query: 'magnifying glass over a keyboard',
+    alt: 'A magnifying glass held above a keyboard.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'chrome-extension-decision',
+    provider: 'pexels',
+    query: 'hand hovering over a light switch',
+    alt: 'A hand reaching for a light switch.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'chrome-extension-permissions',
+    provider: 'unsplash',
+    query: 'padlock on a metal gate',
+    alt: 'A padlock securing a metal gate.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'chrome-extension-browser',
+    provider: 'pexels',
+    query: 'laptop screen showing a web page',
+    alt: 'A web page open on a laptop screen.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'summarizer-vs-transcript-lead',
+    provider: 'unsplash',
+    query: 'thick document beside a short note',
+    alt: 'A thick document lying beside a short note.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'vs-transcript-comparison',
+    provider: 'pexels',
+    query: 'two columns of printed text',
+    alt: 'Two columns of printed text side by side.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'vs-transcript-which-when',
+    provider: 'unsplash',
+    query: 'toolbox with assorted tools',
+    alt: 'An open toolbox with assorted tools.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'vs-transcript-research',
+    provider: 'pexels',
+    query: 'library reading room desks',
+    alt: 'Desks in a library reading room.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'vs-transcript-workflow',
+    provider: 'unsplash',
+    query: 'numbered steps drawn on a whiteboard',
+    alt: 'Numbered steps drawn on a whiteboard.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'vs-transcript-hybrid',
+    provider: 'pexels',
+    query: 'two mismatched puzzle pieces',
+    alt: 'Two puzzle pieces that do not fit together.',
+    width: 1240,
+    aspect: '16/9'
   }
 ];
 

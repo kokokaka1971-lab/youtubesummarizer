@@ -1,0 +1,262 @@
+<section class="page-head">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="kicker">Guides</p>
+    <h1>Best YouTube Summarizer for Long Videos</h1>
+    <p class="lede">
+      Long videos are where summarizers separate, and where almost none of them publish
+      a straight answer about their limits. We make one of these tools; here is what is
+      actually documented, and the test that settles it in two seconds.
+    </p>
+    <div class="head-actions">
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize a long video</a>
+      <a class="btn btn-soft btn-lg" href="/long-youtube-video-summarizer">Long video guide</a>
+    </div>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="wrap wrap-narrow">
+    <!--image:best-for-long-videos-lead-->
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap-narrow">
+    <div class="prose">
+      <p>
+        Every tool in this category handles a twenty-minute explainer. The interesting
+        question starts around ninety minutes and becomes decisive past two hours.
+      </p>
+      <p>
+        What makes it hard to shop for is that length limits are rarely published. You
+        discover them by hitting them — or worse, by not noticing you have.
+      </p>
+
+      <h2>The failure mode is silence, not an error</h2>
+      <p>
+        A tool that refuses a four-hour video has told you something true. You go
+        elsewhere and lose a minute.
+      </p>
+      <p>
+        A tool that accepts it and returns a confident summary of the first forty minutes
+        has done something worse. The output reads as complete, every sentence in it is
+        accurate about the part that was read, and nothing marks the hour that went
+        missing.
+      </p>
+      <p>
+        There is a documented case of a long-video summary jumping from the 46-minute mark
+        straight to 2:44:00, with everything between absent from the output and no
+        indication given.
+      </p>
+
+      <h2>What the tools publish about length</h2>
+      <p>
+        Checked September 2026, drawing only on what each vendor documents. Limits move,
+        so verify before you depend on any of it.
+      </p>
+
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <caption>Published behaviour on long videos, September 2026</caption>
+          <thead>
+            <tr>
+              <th scope="col">Tool</th>
+              <th scope="col">Stated length limit</th>
+              <th scope="col">What it reads</th>
+              <th scope="col">Coverage visible?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">NotebookLM</th>
+              <td>Not published</td>
+              <td>Text transcript only, captions required</td>
+              <td>Sources are visible and citable</td>
+            </tr>
+            <tr>
+              <th scope="row">NoteGPT</th>
+              <td>Not published; quota-based plans</td>
+              <td>Transcript, with chat and mind maps</td>
+              <td>Not stated</td>
+            </tr>
+            <tr>
+              <th scope="row">Glasp</th>
+              <td>Not published</td>
+              <td>Transcript, timestamped summary</td>
+              <td>Timestamps let you check</td>
+            </tr>
+            <tr>
+              <th scope="row">This site</th>
+              <td>No length tier</td>
+              <td>Transcript in overlapping passes</td>
+              <td>Timestamps span the runtime</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        The striking column is the second one. For a category whose hardest problem is
+        length, almost nobody commits to a number — which is itself the most useful thing
+        the table tells you.
+      </p>
+
+      <!--image:best-for-long-videos-table-->
+
+      <h2>Why length breaks things</h2>
+      <p>
+        Three limits bite as a video grows, and they fail differently.
+      </p>
+      <p>
+        <strong>Fetch limits</strong> cap how much transcript is retrieved. <strong>Context
+        limits</strong> cap how much a model reads at once. <strong>Attention</strong> is
+        the subtle one: even when everything fits, research on long-context models found
+        performance degrades when the relevant information sits in the middle rather than
+        near either end.
+      </p>
+      <p>
+        That third one explains the pattern people report constantly — strong opening,
+        strong conclusion, vague middle. The research published as
+        <a href="https://aclanthology.org/2024.tacl-1.9/" rel="nofollow noopener" target="_blank">Lost
+        in the Middle</a> found exactly this degradation, and it is not fixed by a bigger
+        context window alone.
+      </p>
+
+      <h2>The two-second test</h2>
+      <p>
+        Whatever tool you are evaluating, this settles it faster than any review, and it
+        is the first of <a href="/best-youtube-summarizer">the seven tests we would run on any tool</a>.
+      </p>
+      <ol>
+        <li><strong>Compare the last timestamp with the runtime.</strong> A 2:50:00 video whose final citation is 0:52:00 was read to a third of its length.</li>
+        <li><strong>Check the spread.</strong> Evenly distributed suggests the whole thing was processed; clustered at the front means the tail was skimmed.</li>
+        <li><strong>Ask about the ending.</strong> Pick something specific from the last fifteen minutes and see whether the summary accounts for it.</li>
+      </ol>
+      <p>
+        Do this before reading the summary rather than after. Once you have formed an
+        impression from something incomplete, it is hard to discard — you will remember the
+        video as being about whatever the first third covered.
+      </p>
+
+      <!--image:best-for-long-videos-check-->
+
+      <h2>Timestamps are the feature that matters here</h2>
+      <p>
+        On short videos, timestamps are a convenience. On a three-hour replay they are the
+        only mechanism that makes an incomplete read visible.
+      </p>
+      <p>
+        A summary without them can be a summary of the first twenty minutes and you will
+        never know. That is why we would rank timestamp support above almost everything
+        else for this use case, and it is the reason
+        <a href="/youtube-summarizer-with-timestamps">we treat them as structural</a>
+        rather than decorative.
+      </p>
+      <p>
+        Glasp publishes clickable timestamped summaries. NotebookLM works from the
+        transcript and keeps sources citable. Both give you something to check against,
+        which is more than a plain prose summary offers.
+      </p>
+
+      <h2>Why the summary should not get longer</h2>
+      <p>
+        People expect a three-hour video to produce a longer summary and treat a short one
+        as a failure. It is the opposite.
+      </p>
+      <p>
+        A summary answers a fixed question: what did this argue, and where. Three hours
+        does not contain three times the argument of one hour — it contains the same kind
+        of argument with more examples, more setup and more digression around it.
+      </p>
+      <p>
+        What should grow with runtime is the chapter map, because there are genuinely more
+        sections to navigate. If the takeaway list grows in proportion to the input,
+        nothing was compressed.
+      </p>
+
+      <!--image:best-for-long-videos-output-length-->
+
+      <h2>Which long videos are worth it at all</h2>
+      <p>
+        Length alone does not make a good candidate — what matters is how unevenly the
+        value is spread.
+      </p>
+      <p>
+        A three-hour interview where twenty minutes matter is ideal. A three-hour
+        cumulative workshop is close to the worst case, because there is no part you can
+        safely skip and a map does not help you skip it.
+      </p>
+      <p>
+        The quick sort: would someone who watched only the last fifteen minutes understand
+        it? If yes, summarising serves you well. If no, the video wants watching and the
+        summary is a revision aid afterwards.
+      </p>
+
+      <!--image:best-for-long-videos-candidates-->
+
+      <h2>Where we fall short</h2>
+      <p>
+        We have no browser extension, so summaries do not appear inside the YouTube page
+        the way Glasp's do. We generate no mind maps or flashcards, which NoteGPT
+        publishes. And we cannot summarize a video with no caption track — we say so
+        rather than guessing, which is right but is still a no.
+      </p>
+      <p>
+        On long videos specifically, what we would claim is no length tier, overlapping
+        passes so the middle is not treated as leftovers, and timestamps spread across the
+        runtime so a gap is visible at a glance.
+      </p>
+      <p>
+        Test that claim rather than taking it. The last-timestamp check works on us
+        exactly as it works on anyone else.
+      </p>
+
+      <!--image:best-for-long-videos-limits-->
+
+      <h2>What to take from this</h2>
+      <p>
+        The category has no published answer to its own hardest question, which means you
+        cannot shop for length handling — you have to test it.
+      </p>
+      <p>
+        The good news is that testing takes two seconds and works on every tool equally.
+        Summarize your longest real video, look at the final timestamp, compare it with the
+        runtime. That single number tells you more than any comparison page, including this
+        one.
+      </p>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details class="qa">
+          <summary>What is the longest video these tools can handle?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Mostly unpublished, which is the problem. Rather than trusting a stated limit, run your longest real video through and compare the final timestamp with the runtime.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Why do long summaries miss the middle?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Either the transcript was truncated to fit, or it was read whole but attended to unevenly — long-context research finds accuracy drops for information sitting in the middle of a long input.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Does a longer video cost more?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Here it counts as one of your five daily free summaries regardless of length. Quota-based tools like NoteGPT price by usage, so check how a long video is counted before relying on it.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Do any of them handle livestream replays?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Anything that reads a caption track can, once captions exist after the stream ends. That can take a while on a long replay — see <a href="/youtube-livestream-summarizer">summarizing livestreams</a>.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Should I just split the video up?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>You should not have to, and doing it manually costs more than it saves. A chapter map over the full runtime gives you the same navigability without clipping anything.</p></div>
+        </details>
+      </div>
+    </div>
+
+    <div class="post-cta">
+      <h2>Run the coverage test</h2>
+      <p>Take your longest video, summarize it, and check where the final timestamp lands.</p>
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize a long video — free</a>
+    </div>
+
+    <!--related-->
+  </div>
+</section>

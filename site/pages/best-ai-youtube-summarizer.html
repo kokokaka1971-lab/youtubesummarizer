@@ -1,0 +1,243 @@
+<section class="page-head">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="kicker">Guides</p>
+    <h1>Best AI YouTube Summarizer</h1>
+    <p class="lede">
+      Every tool in this category is an AI YouTube summarizer, which makes the phrase
+      useless for choosing between them. What separates them is what happens before and
+      after the model runs.
+    </p>
+    <div class="head-actions">
+      <a class="btn btn-primary btn-lg" href="/#try">Try it</a>
+      <a class="btn btn-soft btn-lg" href="/how-it-works">How it works</a>
+    </div>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="wrap wrap-narrow">
+    <!--image:best-ai-summarizer-lead-->
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap-narrow">
+    <div class="prose">
+      <p>
+        We build one of these, so weigh this accordingly. The argument we would make is
+        that "which AI" is close to the least important question you can ask about a
+        summarizer.
+      </p>
+      <p>
+        The models are broadly comparable at this task. What differs is the plumbing
+        around them, and that is where quality is actually won or lost.
+      </p>
+
+      <h2>What the model actually does</h2>
+      <p>
+        Less than people assume. The pipeline is roughly four stages, and the model is one
+        of them.
+      </p>
+      <ol>
+        <li><strong>Fetch</strong> the caption track. No AI involved, and the commonest point of failure.</li>
+        <li><strong>Prepare</strong> it — clean disfluency, chunk long transcripts, carry timings.</li>
+        <li><strong>Summarize</strong> — the model reads and compresses.</li>
+        <li><strong>Reassemble</strong> — reconcile chunks, reattach structure, produce depths.</li>
+      </ol>
+      <p>
+        Swap a good model for a slightly better one and stage three improves marginally.
+        Get stage two wrong and a two-hour video silently loses its middle regardless of
+        which model you used.
+      </p>
+
+      <!--image:best-ai-pipeline-->
+
+      <h2>Where models genuinely differ</h2>
+      <p>
+        Two places, and neither is "quality of prose".
+      </p>
+      <p>
+        <strong>Context length</strong> decides how much transcript can be read at once.
+        This matters for long videos, though it is partly solved by chunking well rather
+        than by a bigger window.
+      </p>
+      <p>
+        <strong>Faithfulness</strong> — how prone a model is to producing statements the
+        source does not support. Research on abstractive summarization has found models
+        can hallucinate content unfaithful to the input document, and that fluency is what
+        makes it hard to spot.
+      </p>
+      <p>
+        That second one is why the checkability of the output matters more than the model
+        name. You cannot evaluate faithfulness by reading; you evaluate it by checking.
+      </p>
+
+      <h2>What the tools publish about their models</h2>
+      <p>
+        From each vendor's own pages, September 2026.
+      </p>
+
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <caption>Model approach as published, September 2026</caption>
+          <thead>
+            <tr>
+              <th scope="col">Tool</th>
+              <th scope="col">Model</th>
+              <th scope="col">Notable</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Glasp</th><td>Choice of ChatGPT, Claude, Gemini, Mistral</td><td>You pick the model</td></tr>
+            <tr><th scope="row">NotebookLM</th><td>Google's own</td><td>Grounded in sources you add</td></tr>
+            <tr><th scope="row">NoteGPT</th><td>Basic and premium tiers</td><td>Quotas differ by model class</td></tr>
+            <tr><th scope="row">This site</th><td>Not the differentiator we sell</td><td>Timings carried end to end</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Glasp's approach is interesting precisely because it makes the point: if you can
+        swap the model freely and the product still works, the model was not the product.
+      </p>
+
+      <!--image:best-ai-models-->
+
+      <h2>Judging output you cannot verify</h2>
+      <p>
+        This is the real problem with choosing an AI tool. The output is fluent by
+        construction, so reading it tells you almost nothing about whether it is right.
+      </p>
+      <p>
+        The US National Institute of Standards and Technology's
+        <a href="https://www.nist.gov/itl/ai-risk-management-framework" rel="nofollow noopener" target="_blank">AI
+        Risk Management Framework</a> frames trustworthiness around properties like
+        validity, accountability and transparency rather than output quality — which is a
+        useful lens here. You are not judging the prose; you are judging whether the system
+        lets you check it.
+      </p>
+      <p>
+        Practically that reduces to three questions. Can I trace a claim to its source?
+        Does the tool tell me when it could not do the job? Does it show me the full
+        extent of what it read?
+      </p>
+
+      <h2>The tests that survive model changes</h2>
+      <p>
+        These are worth writing down somewhere, because you will need them again the next
+        time this category reshuffles — which, on current form, will be within months.
+      </p>
+      <p>
+        Models get replaced constantly. Choosing on model means re-choosing every few
+        months, so choose on the properties that persist — which is the reasoning behind
+        <a href="/best-youtube-summarizer">the seven tests we would run on any tool</a>.
+      </p>
+      <ol>
+        <li><strong>Coverage.</strong> Last timestamp against runtime — exposes truncation whatever the model.</li>
+        <li><strong>Traceability.</strong> Click three timestamps; do they land on the claim?</li>
+        <li><strong>Honest failure.</strong> Feed a caption-less video; does it say so or invent something?</li>
+        <li><strong>Hedge survival.</strong> Find a qualified claim; did the qualification make it through?</li>
+      </ol>
+      <p>
+        A tool that passes those four with a mediocre model beats one that fails them with
+        an excellent one, because the failures are the expensive part.
+      </p>
+
+      <!--image:best-ai-tests-->
+
+      <h2>Why "powered by GPT-5" tells you nothing</h2>
+      <p>
+        It is a real signal about spend and very little about output. Everyone has access
+        to comparable models, and the marginal difference at summarising a clean transcript
+        is small next to the differences in pipeline.
+      </p>
+      <p>
+        It also ages badly. A page advertising a specific model version is a page that will
+        either be updated constantly or quietly become wrong.
+      </p>
+      <p>
+        We deliberately do not sell on model choice. Not because it is irrelevant, but
+        because it is the part of the system we can change next month without you
+        noticing — which is exactly what makes it a poor basis for choosing.
+      </p>
+
+      <!--image:best-ai-marketing-->
+
+      <h2>What "AI" hides in this category</h2>
+      <p>
+        The phrase does a lot of concealing. It suggests the hard part is intelligence,
+        when the hard parts are mostly unglamorous engineering.
+      </p>
+      <p>
+        <a href="/how-it-works">The process itself</a> is mostly unglamorous. Fetching a
+        caption track reliably is plumbing. Chunking a long transcript with
+        overlap so the middle is not lost is plumbing. Carrying timings through four
+        transformations is plumbing. None of it is AI, and all of it decides whether the
+        output is any good.
+      </p>
+      <p>
+        Which is why "AI-powered" on a landing page tells you nothing useful. Every tool
+        here is AI-powered. The question is whether anyone built the boring parts properly.
+      </p>
+
+      <!--image:best-ai-plumbing-->
+
+      <h2>Where we fall short</h2>
+      <p>
+        No browser extension, no flashcards or mind maps, no model picker of the kind
+        Glasp offers, and no summary at all when a video has no captions.
+      </p>
+      <p>
+        What we hold to is stage two and stage four — timings carried through rather than
+        reattached, long transcripts read in overlapping passes, and an explicit failure
+        when there is nothing to read. Judge that with the four tests above rather than on
+        anything we say here.
+      </p>
+
+      <h2>What to take from this</h2>
+      <p>
+        "Best AI" is not a question with an answer, because the AI is the interchangeable
+        part. Every tool here has access to comparable models and most will have swapped
+        theirs within a year.
+      </p>
+      <p>
+        What persists is whether the system lets you check it: traceable claims, visible
+        coverage, honest failure. Choose on those and you will not need to re-choose when
+        the next model ships.
+      </p>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details class="qa">
+          <summary>Which AI model is best for summarizing YouTube videos?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>They are close enough at this task that the pipeline around the model matters more. How the transcript is chunked, whether timings survive, and what happens on failure affect output far more than the model name.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Can I choose which AI model is used?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Glasp publishes a choice of ChatGPT, Claude, Gemini and Mistral. Most tools, including this one, do not expose that — the model is an implementation detail rather than a setting.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Do AI summarizers hallucinate?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Research on abstractive summarization has found models producing statements unsupported by the source. The commoner failure here is subtler: a real claim stripped of the condition that made it true.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Is a bigger context window better for long videos?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>It helps, but it is not sufficient. Long-context research finds accuracy drops for information in the middle of a long input, so how a tool chunks and reconciles matters as much as how much it can hold.</p></div>
+        </details>
+        <details class="qa">
+          <summary>How do I compare tools that all say "AI-powered"?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Ignore the phrase and test four things: coverage of a long video, whether timestamps land, what happens with no captions, and whether hedged claims survive. Those persist when models change.</p></div>
+        </details>
+      </div>
+    </div>
+
+    <div class="post-cta">
+      <h2>Judge the pipeline, not the model</h2>
+      <p>Run the four tests on whichever tools you are weighing up, including this one.</p>
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize a video — free</a>
+    </div>
+
+    <!--related-->
+  </div>
+</section>

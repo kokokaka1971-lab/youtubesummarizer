@@ -2429,5 +2429,1025 @@
       "photoUrl": "https://unsplash.com/photos/vape-pen-inspection-in-laboratory-XLhDvfz0sUM?utm_source=YouTubeSummarizer&utm_medium=referral"
     },
     "fetchedAt": "2026-09-15"
+  },
+  "best-for-students-lead": {
+    "file": "best-for-students-lead.jpg",
+    "provider": "unsplash",
+    "providerId": "ct1NZSUSWUc",
+    "width": 1600,
+    "height": 838,
+    "alt": "A student working at a desk covered in books and a laptop.",
+    "color": "#404040",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Fer Troulik",
+      "photographerUrl": "https://unsplash.com/@fertroulik?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/people-studying-at-tables-in-a-modern-library-ct1NZSUSWUc?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-for-students-table": {
+    "file": "best-for-students-table.jpg",
+    "provider": "pexels",
+    "providerId": "7580765",
+    "width": 1240,
+    "height": 698,
+    "alt": "A printed comparison chart on a desk.",
+    "color": "#BDC1C0",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "RDNE Stock project",
+      "photographerUrl": "https://www.pexels.com/@rdne",
+      "photoUrl": "https://www.pexels.com/photo/marker-on-top-of-white-printer-paper-7580765/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-for-students-flashcards": {
+    "file": "best-for-students-flashcards.jpg",
+    "provider": "unsplash",
+    "providerId": "aGNBtJAKF9Y",
+    "width": 1240,
+    "height": 698,
+    "alt": "A stack of handwritten revision cards.",
+    "color": "#260c0c",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Sari Serouji",
+      "photographerUrl": "https://unsplash.com/@sari1993?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/cards-against-humanity-playing-cards-aGNBtJAKF9Y?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-for-students-revision": {
+    "file": "best-for-students-revision.jpg",
+    "provider": "pexels",
+    "providerId": "5386468",
+    "width": 1240,
+    "height": 698,
+    "alt": "Highlighted revision notes spread out for study.",
+    "color": "#B89D8A",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "https://kaboompics.com/",
+      "photographerUrl": "https://www.pexels.com/@karola-g",
+      "photoUrl": "https://www.pexels.com/photo/close-up-photo-of-a-person-writing-on-notebook-5386468/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-for-students-lecture-test": {
+    "file": "best-for-students-lecture-test.jpg",
+    "provider": "unsplash",
+    "providerId": "e_RpjNyMgEM",
+    "width": 1240,
+    "height": 698,
+    "alt": "Rows of empty seats in a lecture theatre.",
+    "color": "#260c0c",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Tyler Callahan",
+      "photographerUrl": "https://unsplash.com/@tylercallahan?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/photography-of-theater-chairs-e_RpjNyMgEM?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-for-students-limits": {
+    "file": "best-for-students-limits.jpg",
+    "provider": "pexels",
+    "providerId": "32275748",
+    "width": 1240,
+    "height": 698,
+    "alt": "A wooden signpost pointing two ways.",
+    "color": "#98B2C1",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Jan van der Wolf",
+      "photographerUrl": "https://www.pexels.com/@jan-van-der-wolf-11680885",
+      "photoUrl": "https://www.pexels.com/photo/directional-signpost-against-blue-sky-32275748/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-for-long-videos-lead": {
+    "file": "best-for-long-videos-lead.jpg",
+    "provider": "unsplash",
+    "providerId": "mgfcRci18So",
+    "width": 1600,
+    "height": 838,
+    "alt": "A long road running to the horizon.",
+    "color": "#f3f3f3",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Derek Thomson",
+      "photographerUrl": "https://unsplash.com/@derekthomson?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/long-exposure-photography-of-black-concrete-road-on-open-area-during-daytime-mgfcRci18So?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-for-long-videos-table": {
+    "file": "best-for-long-videos-table.jpg",
+    "provider": "pexels",
+    "providerId": "6779714",
+    "width": 1240,
+    "height": 698,
+    "alt": "A table of figures displayed on screen.",
+    "color": "#CECFCE",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "photoUrl": "https://www.pexels.com/photo/white-printer-paper-beside-black-laptop-computer-6779714/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-for-long-videos-check": {
+    "file": "best-for-long-videos-check.jpg",
+    "provider": "unsplash",
+    "providerId": "xX_LgsPkx9k",
+    "width": 1240,
+    "height": 698,
+    "alt": "A stopwatch held up in one hand.",
+    "color": "#f3f3f3",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Kevin Andre",
+      "photographerUrl": "https://unsplash.com/@kevinandrephotography?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/person-holding-silver-pocket-watch-xX_LgsPkx9k?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-for-long-videos-output-length": {
+    "file": "best-for-long-videos-output-length.jpg",
+    "provider": "pexels",
+    "providerId": "17653598",
+    "width": 1240,
+    "height": 698,
+    "alt": "A small index card next to a thick book.",
+    "color": "#7F634D",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Amar  Preciado",
+      "photographerUrl": "https://www.pexels.com/@amar",
+      "photoUrl": "https://www.pexels.com/photo/books-and-cards-and-chessboard-17653598/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-for-long-videos-candidates": {
+    "file": "best-for-long-videos-candidates.jpg",
+    "provider": "pexels",
+    "providerId": "6636338",
+    "width": 1240,
+    "height": 698,
+    "alt": "Papers being sorted into two piles on a desk.",
+    "color": "#605A41",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "photoUrl": "https://www.pexels.com/photo/photo-of-a-person-picking-a-folder-6636338/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-for-long-videos-limits": {
+    "file": "best-for-long-videos-limits.jpg",
+    "provider": "pexels",
+    "providerId": "12684432",
+    "width": 1240,
+    "height": 698,
+    "alt": "A brick wall with one gap in it.",
+    "color": "#3D3A38",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Pranjall Kumar",
+      "photographerUrl": "https://www.pexels.com/@pranjall-kumar-150768",
+      "photoUrl": "https://www.pexels.com/photo/an-abandoned-building-12684432/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-with-timestamps-lead": {
+    "file": "best-with-timestamps-lead.jpg",
+    "provider": "unsplash",
+    "providerId": "IuXRooGHx9U",
+    "width": 1600,
+    "height": 838,
+    "alt": "A clock face standing beside a laptop.",
+    "color": "#262626",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Markus Spiske",
+      "photographerUrl": "https://unsplash.com/@markusspiske?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/black-laptop-computer-showing-95907-IuXRooGHx9U?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-with-timestamps-table": {
+    "file": "best-with-timestamps-table.jpg",
+    "provider": "pexels",
+    "providerId": "7688114",
+    "width": 1240,
+    "height": 698,
+    "alt": "A printed data table lying on a desk.",
+    "color": "#C9CBCD",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Kindel Media",
+      "photographerUrl": "https://www.pexels.com/@kindelmedia",
+      "photoUrl": "https://www.pexels.com/photo/a-person-holding-white-printer-paper-7688114/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-with-timestamps-test": {
+    "file": "best-with-timestamps-test.jpg",
+    "provider": "unsplash",
+    "providerId": "Lzys6r1xFD8",
+    "width": 1240,
+    "height": 698,
+    "alt": "A finger pressing a single button.",
+    "color": "#d9d9d9",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Franco Antonio Giovanella",
+      "photographerUrl": "https://unsplash.com/@francogio?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/person-showing-right-middle-finger-Lzys6r1xFD8?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-with-timestamps-export": {
+    "file": "best-with-timestamps-export.jpg",
+    "provider": "pexels",
+    "providerId": "5831672",
+    "width": 1240,
+    "height": 698,
+    "alt": "A text document open on a tablet.",
+    "color": "#899294",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "AlphaTradeZone",
+      "photographerUrl": "https://www.pexels.com/@alphatradezone",
+      "photoUrl": "https://www.pexels.com/photo/a-black-tablet-with-diagram-on-table-5831672/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-with-timestamps-chapters": {
+    "file": "best-with-timestamps-chapters.jpg",
+    "provider": "unsplash",
+    "providerId": "8EzNkvLQosk",
+    "width": 1240,
+    "height": 698,
+    "alt": "Coloured index tabs separating pages in a folder.",
+    "color": "#262640",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Maarten van den Heuvel",
+      "photographerUrl": "https://unsplash.com/@mvdheuvel?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/assorted-color-book-lot-8EzNkvLQosk?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-with-timestamps-limits": {
+    "file": "best-with-timestamps-limits.jpg",
+    "provider": "pexels",
+    "providerId": "19585984",
+    "width": 1240,
+    "height": 698,
+    "alt": "A measuring tape extended across a surface.",
+    "color": "#B2B7B1",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "William Warby",
+      "photographerUrl": "https://www.pexels.com/@wwarby",
+      "photoUrl": "https://www.pexels.com/photo/measuring-tapes-on-a-desk-19585984/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-free-lead": {
+    "file": "best-free-lead.jpg",
+    "provider": "unsplash",
+    "providerId": "L-EqT6iRuTg",
+    "width": 1600,
+    "height": 838,
+    "alt": "A hand-lettered sign hanging in a window.",
+    "color": "#262626",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "James",
+      "photographerUrl": "https://unsplash.com/@dutch_shooter?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/white-wooden-framed-glass-window-L-EqT6iRuTg?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-free-limit-shapes": {
+    "file": "best-free-limit-shapes.jpg",
+    "provider": "pexels",
+    "providerId": "38441989",
+    "width": 1240,
+    "height": 698,
+    "alt": "Four wooden blocks lined up in a row.",
+    "color": "#D28152",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Ann H",
+      "photographerUrl": "https://www.pexels.com/@ann-h-45017",
+      "photoUrl": "https://www.pexels.com/photo/wooden-star-shaped-blocks-on-orange-background-38441989/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-free-hidden-limits": {
+    "file": "best-free-hidden-limits.jpg",
+    "provider": "unsplash",
+    "providerId": "M-EwSRl8BK8",
+    "width": 1240,
+    "height": 698,
+    "alt": "An iceberg with most of its mass below the waterline.",
+    "color": "#c0d9d9",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Alexander Hafemann",
+      "photographerUrl": "https://unsplash.com/@mlenny?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/photo-of-iceberg-M-EwSRl8BK8?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-free-good-tier": {
+    "file": "best-free-good-tier.jpg",
+    "provider": "pexels",
+    "providerId": "8850721",
+    "width": 1240,
+    "height": 698,
+    "alt": "A hand ticking items on a checklist.",
+    "color": "#C3BFC0",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Tara Winstead",
+      "photographerUrl": "https://www.pexels.com/@tara-winstead",
+      "photoUrl": "https://www.pexels.com/photo/red-check-mark-in-a-box-8850721/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-free-tool-longevity": {
+    "file": "best-free-tool-longevity.jpg",
+    "provider": "unsplash",
+    "providerId": "lhmVFSc0Dag",
+    "width": 1240,
+    "height": 698,
+    "alt": "A closed metal shutter on a shopfront.",
+    "color": "#c0c0c0",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "engin akyurt",
+      "photographerUrl": "https://unsplash.com/@enginakyurt?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/a-red-fire-hydrant-sitting-on-the-side-of-a-building-lhmVFSc0Dag?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-free-our-limits": {
+    "file": "best-free-our-limits.jpg",
+    "provider": "pexels",
+    "providerId": "1010973",
+    "width": 1240,
+    "height": 698,
+    "alt": "The number five chalked onto a board.",
+    "color": "#272627",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Miguel Á. Padriñán",
+      "photographerUrl": "https://www.pexels.com/@padrinan",
+      "photoUrl": "https://www.pexels.com/photo/5-strike-symbol-1010973/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-ai-summarizer-lead": {
+    "file": "best-ai-summarizer-lead.jpg",
+    "provider": "unsplash",
+    "providerId": "cA8VTQeHU0c",
+    "width": 1600,
+    "height": 838,
+    "alt": "A close-up of a circuit board.",
+    "color": "#40738c",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Anne Nygård",
+      "photographerUrl": "https://unsplash.com/@polarmermaid?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/a-close-up-of-a-circuit-board-cA8VTQeHU0c?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-ai-pipeline": {
+    "file": "best-ai-pipeline.jpg",
+    "provider": "pexels",
+    "providerId": "36423820",
+    "width": 1240,
+    "height": 698,
+    "alt": "Machinery along a production line.",
+    "color": "#7D6E5B",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Keegan Checks",
+      "photographerUrl": "https://www.pexels.com/@keeganjchecks",
+      "photoUrl": "https://www.pexels.com/photo/industrial-glass-factory-interior-machinery-36423820/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-ai-models": {
+    "file": "best-ai-models.jpg",
+    "provider": "unsplash",
+    "providerId": "1NTFSnV-KLs",
+    "width": 1240,
+    "height": 698,
+    "alt": "A row of identical light bulbs.",
+    "color": "#262626",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Patrick Tomasso",
+      "photographerUrl": "https://unsplash.com/@impatrickt?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/lighted-vintage-light-bulbs-1NTFSnV-KLs?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-ai-tests": {
+    "file": "best-ai-tests.jpg",
+    "provider": "pexels",
+    "providerId": "8539752",
+    "width": 1240,
+    "height": 698,
+    "alt": "Beakers lined up on a laboratory bench.",
+    "color": "#9CA19D",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "https://kaboompics.com/",
+      "photographerUrl": "https://www.pexels.com/@karola-g",
+      "photoUrl": "https://www.pexels.com/photo/laboratory-equipment-on-table-8539752/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-ai-marketing": {
+    "file": "best-ai-marketing.jpg",
+    "provider": "unsplash",
+    "providerId": "k_pBB5wJtaU",
+    "width": 1240,
+    "height": 698,
+    "alt": "A glowing neon sign at night.",
+    "color": "#0c260c",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "ooneiroslyl",
+      "photographerUrl": "https://unsplash.com/@ooneiroslyl?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/red-and-white-game-on-led-signage-k_pBB5wJtaU?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-ai-plumbing": {
+    "file": "best-ai-plumbing.jpg",
+    "provider": "pexels",
+    "providerId": "7937299",
+    "width": 1240,
+    "height": 698,
+    "alt": "Copper pipework with valves.",
+    "color": "#8D8787",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Pavel Danilyuk",
+      "photographerUrl": "https://www.pexels.com/@pavel-danilyuk",
+      "photoUrl": "https://www.pexels.com/photo/steel-underground-heating-manifolds-7937299/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "summarizer-alternatives-lead": {
+    "file": "summarizer-alternatives-lead.jpg",
+    "provider": "unsplash",
+    "providerId": "_pJ-J37pn4I",
+    "width": 1600,
+    "height": 838,
+    "alt": "A corridor lined with several doors.",
+    "color": "#262626",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Peter Herrmann",
+      "photographerUrl": "https://unsplash.com/@tama66?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/a-close-up-of-a-brick-building-_pJ-J37pn4I?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "alternatives-categories": {
+    "file": "alternatives-categories.jpg",
+    "provider": "pexels",
+    "providerId": "9218627",
+    "width": 1240,
+    "height": 698,
+    "alt": "Objects sorted into four groups on a table.",
+    "color": "#AB9F9F",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "PNW Production",
+      "photographerUrl": "https://www.pexels.com/@pnw-prod",
+      "photoUrl": "https://www.pexels.com/photo/a-candle-near-a-tumbler-9218627/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "alternatives-research": {
+    "file": "alternatives-research.jpg",
+    "provider": "unsplash",
+    "providerId": "5v69Vl62NCM",
+    "width": 1240,
+    "height": 698,
+    "alt": "A desk covered with open books and papers.",
+    "color": "#c0c0c0",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Jesus Hilario H.",
+      "photographerUrl": "https://unsplash.com/@jesushilarioh?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/silver-imac-with-magic-mouse-and-keyboard-5v69Vl62NCM?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "alternatives-paste-link": {
+    "file": "alternatives-paste-link.jpg",
+    "provider": "pexels",
+    "providerId": "7662061",
+    "width": 1240,
+    "height": 698,
+    "alt": "Hands typing on a keyboard.",
+    "color": "#706355",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Szabó Viktor",
+      "photographerUrl": "https://www.pexels.com/@szaboviktor",
+      "photoUrl": "https://www.pexels.com/photo/person-typing-on-black-laptop-keyboard-7662061/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "alternatives-switching": {
+    "file": "alternatives-switching.jpg",
+    "provider": "unsplash",
+    "providerId": "8QZz0b3wsvE",
+    "width": 1240,
+    "height": 698,
+    "alt": "Railway points where two tracks diverge.",
+    "color": "#262626",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Mihai Lazăr",
+      "photographerUrl": "https://unsplash.com/@mihai14?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/train-rail-tracks-during-daytime-8QZz0b3wsvE?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "alternatives-choosing": {
+    "file": "alternatives-choosing.jpg",
+    "provider": "pexels",
+    "providerId": "10935486",
+    "width": 1240,
+    "height": 698,
+    "alt": "A walker at a fork in a path.",
+    "color": "#333834",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Варвара Курочкина",
+      "photographerUrl": "https://www.pexels.com/@barbara-chickenz",
+      "photoUrl": "https://www.pexels.com/photo/woman-standing-between-rocks-10935486/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-without-signup-lead": {
+    "file": "best-without-signup-lead.jpg",
+    "provider": "unsplash",
+    "providerId": "tVIv23vcuz4",
+    "width": 1600,
+    "height": 838,
+    "alt": "An open door standing ajar.",
+    "color": "#265973",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Jan Tinneberg",
+      "photographerUrl": "https://unsplash.com/@craft_ear?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/blue-wooden-door-tVIv23vcuz4?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "without-signup-table": {
+    "file": "without-signup-table.jpg",
+    "provider": "pexels",
+    "providerId": "6928994",
+    "width": 1240,
+    "height": 698,
+    "alt": "A blank form on a clipboard.",
+    "color": "#565655",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Leeloo The First",
+      "photographerUrl": "https://www.pexels.com/@leeloothefirst",
+      "photoUrl": "https://www.pexels.com/photo/close-up-shot-of-documents-6928994/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "without-signup-tradeoffs": {
+    "file": "without-signup-tradeoffs.jpg",
+    "provider": "unsplash",
+    "providerId": "dZAb0Km1ELY",
+    "width": 1240,
+    "height": 698,
+    "alt": "A set of balance scales on a table.",
+    "color": "#c0c0c0",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "User_Pascal",
+      "photographerUrl": "https://unsplash.com/@user_pascal?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/coffee-beans-are-being-weighed-on-a-digital-scale-dZAb0Km1ELY?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "without-signup-when-to-register": {
+    "file": "without-signup-when-to-register.jpg",
+    "provider": "pexels",
+    "providerId": "67094",
+    "width": 1240,
+    "height": 698,
+    "alt": "A single key resting on a wooden table.",
+    "color": "#7A6342",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Marcin Szmigiel",
+      "photographerUrl": "https://www.pexels.com/@marcin-szmigiel-14638",
+      "photoUrl": "https://www.pexels.com/photo/pink-and-white-key-chain-67094/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "without-signup-anonymous-limits": {
+    "file": "without-signup-anonymous-limits.jpg",
+    "provider": "unsplash",
+    "providerId": "CQItzcwo6e0",
+    "width": 1240,
+    "height": 698,
+    "alt": "A metal turnstile at an entrance.",
+    "color": "#c0c0c0",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Abi abdullah miyad",
+      "photographerUrl": "https://unsplash.com/@abi057?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/a-group-of-people-walking-around-a-building-CQItzcwo6e0?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "without-signup-our-limits": {
+    "file": "without-signup-our-limits.jpg",
+    "provider": "pexels",
+    "providerId": "1206877",
+    "width": 1240,
+    "height": 698,
+    "alt": "A hand held up showing five fingers.",
+    "color": "#717A7C",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Sebastiaan Stam",
+      "photographerUrl": "https://www.pexels.com/@sebastiaan9977",
+      "photoUrl": "https://www.pexels.com/photo/left-human-hand-on-grey-surface-1206877/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-for-podcasts-lead": {
+    "file": "best-for-podcasts-lead.jpg",
+    "provider": "unsplash",
+    "providerId": "waxDxYM2XI4",
+    "width": 1600,
+    "height": 838,
+    "alt": "A microphone set up in a recording studio.",
+    "color": "#8c7340",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Kit (formerly ConvertKit)",
+      "photographerUrl": "https://unsplash.com/@kit?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/person-holding-microphone-on-microphone-stand-waxDxYM2XI4?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-for-podcasts-table": {
+    "file": "best-for-podcasts-table.jpg",
+    "provider": "pexels",
+    "providerId": "32215665",
+    "width": 1240,
+    "height": 698,
+    "alt": "Faders on an audio mixing desk.",
+    "color": "#757776",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Matthias Wunderlich",
+      "photographerUrl": "https://www.pexels.com/@matthias-wunderlich-2151352699",
+      "photoUrl": "https://www.pexels.com/photo/close-up-of-a-professional-audio-mixer-32215665/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-for-podcasts-attribution": {
+    "file": "best-for-podcasts-attribution.jpg",
+    "provider": "unsplash",
+    "providerId": "NMbZ7QM3XWM",
+    "width": 1240,
+    "height": 698,
+    "alt": "Two microphones facing one another across a table.",
+    "color": "#262626",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "neil godding",
+      "photographerUrl": "https://unsplash.com/@neilgodding?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/grayscale-photography-of-condenser-microphone-with-pop-filter-NMbZ7QM3XWM?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-for-podcasts-map": {
+    "file": "best-for-podcasts-map.jpg",
+    "provider": "pexels",
+    "providerId": "4219134",
+    "width": 1240,
+    "height": 698,
+    "alt": "A timeline sketched out on paper.",
+    "color": "#B09E8F",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "https://kaboompics.com/",
+      "photographerUrl": "https://www.pexels.com/@karola-g",
+      "photoUrl": "https://www.pexels.com/photo/crop-unrecognizable-female-architect-making-sketch-with-pencil-at-work-4219134/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-for-podcasts-audio": {
+    "file": "best-for-podcasts-audio.jpg",
+    "provider": "unsplash",
+    "providerId": "LD6IRW3mUU8",
+    "width": 1240,
+    "height": 698,
+    "alt": "Headphones resting on a mixing desk.",
+    "color": "#f3f3f3",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Feelfarbig Magazine",
+      "photographerUrl": "https://unsplash.com/@feelfarbig?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/selective-focus-photography-of-gray-audio-mixer-LD6IRW3mUU8?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-for-podcasts-limits": {
+    "file": "best-for-podcasts-limits.jpg",
+    "provider": "pexels",
+    "providerId": "7689883",
+    "width": 1240,
+    "height": 698,
+    "alt": "A closed notebook beside a microphone.",
+    "color": "#7F8486",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Jep Gambardella",
+      "photographerUrl": "https://www.pexels.com/@jep-gambardella",
+      "photoUrl": "https://www.pexels.com/photo/headphones-with-microphone-on-desk-in-call-center-7689883/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "best-chrome-extension-lead": {
+    "file": "best-chrome-extension-lead.jpg",
+    "provider": "unsplash",
+    "providerId": "_sg8nXmpWDM",
+    "width": 1600,
+    "height": 838,
+    "alt": "A browser window open on a laptop screen.",
+    "color": "#f3f3f3",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "NordWood Themes",
+      "photographerUrl": "https://unsplash.com/@nordwood?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/macbook-pro-_sg8nXmpWDM?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "chrome-extension-vs-web": {
+    "file": "chrome-extension-vs-web.jpg",
+    "provider": "pexels",
+    "providerId": "7964513",
+    "width": 1240,
+    "height": 698,
+    "alt": "Two laptops open side by side.",
+    "color": "#8B9093",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Felicity Tai",
+      "photographerUrl": "https://www.pexels.com/@felicity-tai",
+      "photoUrl": "https://www.pexels.com/photo/side-view-of-a-woman-using-laptop-7964513/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "chrome-extension-tests": {
+    "file": "chrome-extension-tests.jpg",
+    "provider": "unsplash",
+    "providerId": "Z7Kk1ZfjWoM",
+    "width": 1240,
+    "height": 698,
+    "alt": "A magnifying glass held above a keyboard.",
+    "color": "#a6a6a6",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Murat Ts.",
+      "photographerUrl": "https://unsplash.com/@murtts?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/a-close-up-of-a-keyboard-and-a-mouse-Z7Kk1ZfjWoM?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "chrome-extension-decision": {
+    "file": "chrome-extension-decision.jpg",
+    "provider": "pexels",
+    "providerId": "6519918",
+    "width": 1240,
+    "height": 698,
+    "alt": "A hand reaching for a light switch.",
+    "color": "#484039",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "RDNE Stock project",
+      "photographerUrl": "https://www.pexels.com/@rdne",
+      "photoUrl": "https://www.pexels.com/photo/person-flipping-switches-6519918/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "chrome-extension-permissions": {
+    "file": "chrome-extension-permissions.jpg",
+    "provider": "unsplash",
+    "providerId": "Lexcm-6FHRU",
+    "width": 1240,
+    "height": 698,
+    "alt": "A padlock securing a metal gate.",
+    "color": "#59a6d9",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Zaqy Al Fattah",
+      "photographerUrl": "https://unsplash.com/@dizzydizz?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/silver-padlock-Lexcm-6FHRU?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "chrome-extension-browser": {
+    "file": "chrome-extension-browser.jpg",
+    "provider": "pexels",
+    "providerId": "6986455",
+    "width": 1240,
+    "height": 698,
+    "alt": "A web page open on a laptop screen.",
+    "color": "#707571",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "photoUrl": "https://www.pexels.com/photo/google-browser-on-laptop-6986455/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "summarizer-vs-transcript-lead": {
+    "file": "summarizer-vs-transcript-lead.jpg",
+    "provider": "unsplash",
+    "providerId": "-aIzs0PpVXY",
+    "width": 1600,
+    "height": 838,
+    "alt": "A thick document lying beside a short note.",
+    "color": "#262626",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Bruno Fernandes",
+      "photographerUrl": "https://unsplash.com/@brunosed?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/white-book-page-on-brown-wooden-table--aIzs0PpVXY?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "vs-transcript-comparison": {
+    "file": "vs-transcript-comparison.jpg",
+    "provider": "pexels",
+    "providerId": "158651",
+    "width": 1240,
+    "height": 698,
+    "alt": "Two columns of printed text side by side.",
+    "color": "#727172",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Pixabay",
+      "photographerUrl": "https://www.pexels.com/@pixabay",
+      "photoUrl": "https://www.pexels.com/photo/folded-newspapers-158651/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "vs-transcript-which-when": {
+    "file": "vs-transcript-which-when.jpg",
+    "provider": "unsplash",
+    "providerId": "EcE9dFfXwwE",
+    "width": 1240,
+    "height": 698,
+    "alt": "An open toolbox with assorted tools.",
+    "color": "#40260c",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Tekton",
+      "photographerUrl": "https://unsplash.com/@tekton_tools?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/black-and-red-tool-box-EcE9dFfXwwE?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "vs-transcript-research": {
+    "file": "vs-transcript-research.jpg",
+    "provider": "pexels",
+    "providerId": "37732193",
+    "width": 1240,
+    "height": 698,
+    "alt": "Desks in a library reading room.",
+    "color": "#69605B",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "SHOX ART",
+      "photographerUrl": "https://www.pexels.com/@shox",
+      "photoUrl": "https://www.pexels.com/photo/library-computer-workstations-in-quiet-study-area-37732193/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "vs-transcript-workflow": {
+    "file": "vs-transcript-workflow.jpg",
+    "provider": "unsplash",
+    "providerId": "2Q3Ivd-HsaM",
+    "width": 1240,
+    "height": 698,
+    "alt": "Numbered steps drawn on a whiteboard.",
+    "color": "#d9d9d9",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Jeswin Thomas",
+      "photographerUrl": "https://unsplash.com/@jeswinthomas?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/woman-in-white-and-red-polka-dot-long-sleeve-shirt-2Q3Ivd-HsaM?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "vs-transcript-hybrid": {
+    "file": "vs-transcript-hybrid.jpg",
+    "provider": "pexels",
+    "providerId": "10977908",
+    "width": 1240,
+    "height": 698,
+    "alt": "Two puzzle pieces that do not fit together.",
+    "color": "#60284F",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Ann H",
+      "photographerUrl": "https://www.pexels.com/@ann-h-45017",
+      "photoUrl": "https://www.pexels.com/photo/close-up-of-puzzle-elements-10977908/"
+    },
+    "fetchedAt": "2026-09-15"
   }
 }
