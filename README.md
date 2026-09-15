@@ -34,7 +34,70 @@ public/assets/favicon.svg favicon (SVG, crisp at any size)
 public/assets/icon-*.png  apple-touch-icon and large app icon
 server.js                 router + /api/video, /api/summarize, /api/contact
 data/                     contact form submissions (created on first message)
+
+site/images.js            the photo slots: id, search query, alt text
+site/image-manifest.json  what those slots resolved to — file + photographer
+site/image-tag.js         expands <!--image:slot--> into a <figure> at render
+tools/keyring.js          rotating API-key pool (see below)
+tools/images.js           Unsplash + Pexels clients
+tools/fetch-images.mjs    `npm run images` — resolve slots, download, credit
+public/assets/img/*.jpg   the downloaded photos, served from our own domain
 ```
+
+## Photos
+
+Photography comes from Unsplash and Pexels, fetched **at build time and never
+from the browser**. That is a security decision, not a performance one: the
+site deploys as static files to Apache shared hosting, where no process of ours
+is running, so a key used from the page would sit in plain sight in devtools
+and be scraped within days. Instead the keys stay on your machine, the photos
+are downloaded once into `public/assets/img/`, and what ships is ordinary
+`<img>` tags pointing at our own domain. Visitors never contact either provider.
+
+```
+npm run images                    fetch anything not already on disk
+npm run images -- --refresh <id>  re-pick one slot
+npm run images -- --refresh all   re-pick everything
+npm run images -- --dry-run       search only, download nothing
+```
+
+Keys live in `.env`, which is gitignored and never copied into `dist/`:
+
+```
+UNSPLASH_ACCESS_KEYS=key1,key2,...
+PEXELS_API_KEYS=key1,key2,...
+```
+
+**Key rotation.** Both providers rate-limit per key per hour — Unsplash allows
+only 50 requests/hour on a demo app, which a full refresh can approach. So each
+provider gets a pool. `tools/keyring.js` spends one key until it is finished,
+then moves to the next:
+
+- every response carries `x-ratelimit-remaining`, so a key is usually retired on
+  the request *before* it would have failed, rather than by burning one;
+- a 429 (or Unsplash's 403 "Rate Limit Exceeded") retires the key and **retries
+  the same request** on the next one, so a rate limit never surfaces as an error;
+- a key the provider rejects outright is dropped for the run, not retried;
+- a retired key comes back when its window resets — Pexels states the reset time
+  in a header, Unsplash's is a rolling hour;
+- when a whole pool is dry the fetcher falls back to the *other provider* rather
+  than failing, which is the main reason to configure both.
+
+Nothing logs a key value; messages say `key #3 of 7`.
+
+Re-running is free: slots already on disk are skipped, so only a `--refresh`
+costs quota. A fresh clone that hasn't fetched yet still builds — tokens expand
+to nothing and the build warns once.
+
+**Attribution** is carried from the API through `site/image-manifest.json` into
+a `<figcaption>` on every photo, with the UTM parameters Unsplash's guidelines
+require. `tools/fetch-images.mjs` also pings Unsplash's `download_location`
+endpoint whenever a photo is used, which their API terms require.
+
+Photos are cropped to their final aspect ratio at the CDN, so the saved file is
+exactly what gets painted: `width`/`height` on the `<img>` reserve the right box
+and the photo's own dominant colour fills it while it loads — no layout shift.
+Each page's lead photo also becomes its `og:image`.
 
 ## Site map
 

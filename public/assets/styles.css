@@ -3361,3 +3361,59 @@ kbd {
 @media (max-width: 680px) {
   .tool-notice { font-size: 12.8px; padding: 11px 13px; }
 }
+
+/* ---------- Photography ----------
+   Rendered by site/image-tag.js from a <!--image:slot--> token. The file is
+   pre-cropped to --ph-ratio at fetch time, and width/height are set on the
+   <img>, so the box is reserved before the bytes arrive; --ph-bg is the photo's
+   own dominant colour, which fills that box in the meantime instead of a flash
+   of white. */
+.ph {
+  margin: 0 0 8px;
+}
+
+.ph img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: var(--ph-ratio, 16 / 9);
+  object-fit: cover;
+  background: var(--ph-bg, var(--surface-2));
+  border-radius: var(--r-lg);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-md);
+}
+
+.ph-credit {
+  margin-top: 10px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--text-3);
+}
+
+.ph-credit a {
+  color: var(--text-2);
+  text-decoration: underline;
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 2px;
+}
+.ph-credit a:hover { color: var(--text); text-decoration-color: currentColor; }
+
+/* Dark mode: photographs sit brighter than the page, so take the edge off
+   rather than leaving them glowing against near-black. */
+:root[data-theme="dark"] .ph img {
+  filter: brightness(.9) saturate(.95);
+  box-shadow: var(--shadow-lg);
+}
+
+/* In-article photos sit inside .prose, so they inherit its 68ch measure —
+   deliberately narrower than the lead photo above the article, which keeps the
+   lead reading as the lead. They need their own rhythm against the text: a
+   clear gap above, a tighter one below so the credit stays attached. A figure
+   landing directly before a heading would otherwise double up on space. */
+.prose .ph {
+  margin: 34px 0 10px;
+}
+.prose .ph + h2 { margin-top: 30px; }
+.prose .ph + h3 { margin-top: 24px; }
+.prose .ph img { border-radius: var(--r-md); }

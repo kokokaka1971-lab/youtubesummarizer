@@ -5,3 +5,6 @@ data/
 *.log
 
 dist/
+
+# Deploy bundle — regenerated from dist/ on every build, like dist/ itself.
+site-upload.zip

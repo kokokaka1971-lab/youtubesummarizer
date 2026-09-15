@@ -7,6 +7,7 @@
  */
 
 import { schemaFor } from './schema.js';
+import { expandImages, leadImage } from './image-tag.js';
 
 const BRAND_DEFS = `
 <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
@@ -203,6 +204,15 @@ export function renderPage(page, body) {
     page.slug === 'home' ? page.title : withBrand.length <= 60 ? withBrand : page.title;
   const canonical = 'https://www.youtubesummarizer.com' + (page.path === '/' ? '/' : page.path);
 
+  // Photos are stored as <!--image:slot--> tokens in the page fragments and
+  // resolved here, so the dev server and the static build agree. A page that
+  // has one shares it instead of the app icon.
+  const lead = leadImage(body);
+  body = expandImages(body);
+  const ogImage = lead
+    ? `https://www.youtubesummarizer.com/assets/img/${lead.file}`
+    : 'https://www.youtubesummarizer.com/assets/icon-512.png';
+
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -215,7 +225,12 @@ export function renderPage(page, body) {
 <meta property="og:description" content="${page.description}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="${canonical}" />
-<meta property="og:image" content="https://www.youtubesummarizer.com/assets/icon-512.png" />
+<meta property="og:image" content="${ogImage}" />${
+  lead ? `
+<meta property="og:image:width" content="${lead.width}" />
+<meta property="og:image:height" content="${lead.height}" />
+<meta property="og:image:alt" content="${lead.alt.replace(/"/g, '&quot;')}" />` : ''
+}
 <meta property="og:site_name" content="YouTubeSummarizer" />
 <meta property="og:locale" content="en_US" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -236,6 +251,13 @@ ${schemaFor(page, body)}
     if (t) document.documentElement.setAttribute('data-theme', t);
   } catch (e) {}
 </script>
+<noscript>
+  <!-- .reveal elements start at opacity:0 and are switched on by an
+       IntersectionObserver in site.js. Without JavaScript that observer never
+       runs, so every revealed section — including all the photography — would
+       stay invisible. Show it all instead; the animation is decoration. -->
+  <style>.reveal { opacity: 1 !important; transform: none !important; }</style>
+</noscript>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>

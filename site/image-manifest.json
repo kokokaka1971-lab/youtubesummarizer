@@ -1,0 +1,393 @@
+{
+  "use-cases-students": {
+    "file": "use-cases-students.jpg",
+    "provider": "unsplash",
+    "providerId": "cXjcd98U4mY",
+    "width": 1600,
+    "height": 900,
+    "alt": "A student working through handwritten notes beside an open laptop.",
+    "color": "#262626",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "franco alva",
+      "photographerUrl": "https://unsplash.com/@dreamyframing?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/grayscale-photo-of-person-holding-book-cXjcd98U4mY?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "use-cases-researchers": {
+    "file": "use-cases-researchers.jpg",
+    "provider": "unsplash",
+    "providerId": "kcT-7cirBEw",
+    "width": 1600,
+    "height": 900,
+    "alt": "Stacked journal papers and a laptop on a library desk.",
+    "color": "#260c0c",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Eliott Reyna",
+      "photographerUrl": "https://unsplash.com/@eliottreyna?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/woman-reading-book-kcT-7cirBEw?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "use-cases-creators": {
+    "file": "use-cases-creators.jpg",
+    "provider": "pexels",
+    "providerId": "13929362",
+    "width": 1600,
+    "height": 900,
+    "alt": "A creator’s desk set up for recording, with a microphone and editing timeline on screen.",
+    "color": "#737067",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Mizuno K",
+      "photographerUrl": "https://www.pexels.com/@mizunokozuki",
+      "photoUrl": "https://www.pexels.com/photo/woman-using-smart-phone-on-tripod-and-a-laptop-computer-13929362/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "use-cases-teams": {
+    "file": "use-cases-teams.jpg",
+    "provider": "pexels",
+    "providerId": "7212946",
+    "width": 1600,
+    "height": 900,
+    "alt": "A small team around a table, laptops open, mid-discussion.",
+    "color": "#96959F",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Ivan S",
+      "photographerUrl": "https://www.pexels.com/@ivan-s",
+      "photoUrl": "https://www.pexels.com/photo/colleagues-using-a-laptop-7212946/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "blog-how-to-study": {
+    "file": "blog-how-to-study.jpg",
+    "provider": "unsplash",
+    "providerId": "WTo_tMTcJZI",
+    "width": 1600,
+    "height": 800,
+    "alt": "Revision notes and flashcards spread across a desk.",
+    "color": "#d9d9d9",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Carolina  Gonçalo",
+      "photographerUrl": "https://unsplash.com/@carolgoncalo?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/white-printer-paper-on-brown-wooden-table-WTo_tMTcJZI?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "blog-timestamps": {
+    "file": "blog-timestamps.jpg",
+    "provider": "pexels",
+    "providerId": "1078057",
+    "width": 1600,
+    "height": 800,
+    "alt": "A stopwatch held against a plain background.",
+    "color": "#763F1F",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Anton Makarenko",
+      "photographerUrl": "https://www.pexels.com/@anton-makarenko-109081",
+      "photoUrl": "https://www.pexels.com/photo/round-silver-colored-analog-stopwatch-on-brown-wooden-panel-1078057/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "blog-transcripts": {
+    "file": "blog-transcripts.jpg",
+    "provider": "unsplash",
+    "providerId": "92-mTYj5oGs",
+    "width": 1600,
+    "height": 800,
+    "alt": "Close-up of dense printed text running down a page.",
+    "color": "#c0c0c0",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Brett Jordan",
+      "photographerUrl": "https://unsplash.com/@brett_jordan?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/text-92-mTYj5oGs?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "about-hero": {
+    "file": "about-hero.jpg",
+    "provider": "pexels",
+    "providerId": "6958520",
+    "width": 1600,
+    "height": 900,
+    "alt": "Someone watching a recorded talk on a laptop, wearing headphones.",
+    "color": "#BFB3A8",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "https://kaboompics.com/",
+      "photographerUrl": "https://www.pexels.com/@karola-g",
+      "photoUrl": "https://www.pexels.com/photo/man-in-hoodie-sweater-using-a-laptop-6958520/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "blog-study-fluency": {
+    "file": "blog-study-fluency.jpg",
+    "provider": "unsplash",
+    "providerId": "sEgodrJdMGw",
+    "width": 1400,
+    "height": 788,
+    "alt": "A student watching a recorded tutorial, lit only by the screen.",
+    "color": "#0c5959",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Ralston Smith",
+      "photographerUrl": "https://unsplash.com/@rastanicreatives?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/man-in-black-shirt-using-computer-sEgodrJdMGw?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "blog-study-rewatch": {
+    "file": "blog-study-rewatch.jpg",
+    "provider": "pexels",
+    "providerId": "880989",
+    "width": 1400,
+    "height": 788,
+    "alt": "A clock on a desk beside a lamp, late in the evening.",
+    "color": "#1B2C3A",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Julien Bachelet",
+      "photographerUrl": "https://www.pexels.com/@julienblt",
+      "photoUrl": "https://www.pexels.com/photo/black-digital-alarm-clock-at-1-00-880989/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "blog-study-retrieval": {
+    "file": "blog-study-retrieval.jpg",
+    "provider": "unsplash",
+    "providerId": "3ym6i13Y9LU",
+    "width": 1400,
+    "height": 788,
+    "alt": "A hand writing on the first blank page of a notebook.",
+    "color": "#f3f3d9",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Mike Tinnion",
+      "photographerUrl": "https://unsplash.com/@m15ky?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/black-and-silver-retractable-pen-on-blank-book-3ym6i13Y9LU?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "blog-study-spacing": {
+    "file": "blog-study-spacing.jpg",
+    "provider": "pexels",
+    "providerId": "5706225",
+    "width": 1400,
+    "height": 788,
+    "alt": "A weekly planner open on a desk, days blocked out.",
+    "color": "#E5E9E8",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "https://kaboompics.com/",
+      "photographerUrl": "https://www.pexels.com/@karola-g",
+      "photoUrl": "https://www.pexels.com/photo/weekly-planner-next-to-a-black-pen-5706225/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "blog-study-gaps": {
+    "file": "blog-study-gaps.jpg",
+    "provider": "unsplash",
+    "providerId": "OEvLi8LM7cc",
+    "width": 1400,
+    "height": 788,
+    "alt": "A textbook page marked up with highlighter and margin notes.",
+    "color": "#d9d9d9",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "American Jael",
+      "photographerUrl": "https://unsplash.com/@americanjael?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/a-person-writing-on-a-notebook-with-colored-pens-OEvLi8LM7cc?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "blog-ts-hedge": {
+    "file": "blog-ts-hedge.jpg",
+    "provider": "pexels",
+    "providerId": "8761515",
+    "width": 1400,
+    "height": 788,
+    "alt": "A speaker mid-sentence in front of a conference audience.",
+    "color": "#928B81",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Pavel Danilyuk",
+      "photographerUrl": "https://www.pexels.com/@pavel-danilyuk",
+      "photoUrl": "https://www.pexels.com/photo/a-woman-holding-a-microphone-8761515/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "blog-ts-compression": {
+    "file": "blog-ts-compression.jpg",
+    "provider": "unsplash",
+    "providerId": "K-ZsC7YdJ6Y",
+    "width": 1400,
+    "height": 788,
+    "alt": "Archive boxes stacked in storage.",
+    "color": "#8c8c8c",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Sear Greyson",
+      "photographerUrl": "https://unsplash.com/@seargreyson?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/brown-binder-lot-K-ZsC7YdJ6Y?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "blog-ts-fluency": {
+    "file": "blog-ts-fluency.jpg",
+    "provider": "pexels",
+    "providerId": "28921759",
+    "width": 1400,
+    "height": 788,
+    "alt": "An open book showing two pages of clean, even typesetting.",
+    "color": "#D6D1CE",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Sedanur Kunuk",
+      "photographerUrl": "https://www.pexels.com/@sedanur-kunuk-78972032",
+      "photoUrl": "https://www.pexels.com/photo/open-book-and-coffee-cup-on-white-surface-28921759/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "blog-ts-pipeline": {
+    "file": "blog-ts-pipeline.jpg",
+    "provider": "unsplash",
+    "providerId": "4Ixm9K6TbYg",
+    "width": 1400,
+    "height": 788,
+    "alt": "An audio waveform laid out along an editing timeline.",
+    "color": "#404040",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Godfrey Nyangechi",
+      "photographerUrl": "https://unsplash.com/@atimagodie?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/black-and-red-headphones-on-black-computer-monitor-4Ixm9K6TbYg?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "blog-ts-test": {
+    "file": "blog-ts-test.jpg",
+    "provider": "pexels",
+    "providerId": "247781",
+    "width": 1400,
+    "height": 788,
+    "alt": "A magnifying glass held over a line of printed text.",
+    "color": "#927A57",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Pixabay",
+      "photographerUrl": "https://www.pexels.com/@pixabay",
+      "photoUrl": "https://www.pexels.com/photo/close-up-of-text-247781/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "blog-tr-speech": {
+    "file": "blog-tr-speech.jpg",
+    "provider": "unsplash",
+    "providerId": "c1ZN57GfDB0",
+    "width": 1400,
+    "height": 788,
+    "alt": "A studio microphone set up for recording speech.",
+    "color": "#262626",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Jonathan Velasquez",
+      "photographerUrl": "https://unsplash.com/@jonathanvez?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/macro-photography-of-silver-and-black-studio-microphone-condenser-c1ZN57GfDB0?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "blog-tr-wall": {
+    "file": "blog-tr-wall.jpg",
+    "provider": "pexels",
+    "providerId": "6649320",
+    "width": 1400,
+    "height": 788,
+    "alt": "A tall stack of densely printed pages.",
+    "color": "#4D4E4D",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Jonas Thomann",
+      "photographerUrl": "https://www.pexels.com/@jonast",
+      "photoUrl": "https://www.pexels.com/photo/black-and-white-photo-of-a-book-page-6649320/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "blog-tr-structure": {
+    "file": "blog-tr-structure.jpg",
+    "provider": "unsplash",
+    "providerId": "4UGmm3WRUoQ",
+    "width": 1400,
+    "height": 788,
+    "alt": "A structure sketched out as a branching diagram in a notebook.",
+    "color": "#d9d9d9",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Compagnons",
+      "photographerUrl": "https://unsplash.com/@sigmund?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/website-wireframe-sketch-on-paper-4UGmm3WRUoQ?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "blog-tr-claims": {
+    "file": "blog-tr-claims.jpg",
+    "provider": "pexels",
+    "providerId": "36950612",
+    "width": 1400,
+    "height": 788,
+    "alt": "Sticky notes grouped into columns on a wall.",
+    "color": "#687D80",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Jakub Zerdzicki",
+      "photographerUrl": "https://www.pexels.com/@jakubzerdzicki",
+      "photoUrl": "https://www.pexels.com/photo/productivity-notebook-with-task-checklist-36950612/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "blog-tr-tests": {
+    "file": "blog-tr-tests.jpg",
+    "provider": "unsplash",
+    "providerId": "yKnIbJV0RbY",
+    "width": 1400,
+    "height": 788,
+    "alt": "A checklist on a clipboard with boxes being ticked off.",
+    "color": "#d9d9d9",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Jakub Żerdzicki",
+      "photographerUrl": "https://unsplash.com/@jakubzerdzicki?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/a-hand-marks-off-items-on-a-checklist-yKnIbJV0RbY?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  }
+}
