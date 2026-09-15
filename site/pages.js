@@ -699,6 +699,126 @@ export const PAGES = {
     schema: ['article', 'faq']
   },
 
+  'youtube-summarizer-for-content-creators': {
+    path: '/youtube-summarizer-for-content-creators',
+    file: 'youtube-summarizer-for-content-creators.html',
+    section: 'guides',
+    title: 'YouTube Summarizer for Content Creators',
+    description:
+      'How creators use summaries for research, competitive analysis and repurposing their own back catalogue — and the one use that will get you in trouble.',
+    cardKicker: 'For creators',
+    cardImage: 'creators-lead',
+    schema: ['article', 'faq']
+  },
+
+  'repurpose-youtube-video-into-blog-post': {
+    path: '/repurpose-youtube-video-into-blog-post',
+    file: 'repurpose-youtube-video-into-blog-post.html',
+    section: 'guides',
+    title: 'Repurpose a YouTube Video Into a Blog Post',
+    description:
+      'Turning a video into a written piece properly — why transcripts make terrible articles, and what to do with the chapter map instead.',
+    cardKicker: 'Repurposing',
+    cardImage: 'repurpose-lead',
+    schema: ['article', 'faq']
+  },
+
+  'podcast-show-notes-generator': {
+    path: '/podcast-show-notes-generator',
+    file: 'podcast-show-notes-generator.html',
+    section: 'guides',
+    title: 'Podcast Show Notes Generator',
+    description:
+      'Turn an episode into show notes with timestamped chapters — what listeners actually use them for, and the parts that still need writing by hand.',
+    cardKicker: 'Show notes',
+    cardImage: 'show-notes-lead',
+    schema: ['article', 'faq']
+  },
+
+  'competitor-video-research': {
+    path: '/competitor-video-research',
+    file: 'competitor-video-research.html',
+    section: 'guides',
+    title: 'Competitor Video Research With Summaries',
+    description:
+      'How to analyse a competitor\'s video output without watching forty hours of it — what patterns summaries reveal, and what they cannot tell you.',
+    cardKicker: 'Competitors',
+    cardImage: 'competitor-research-lead',
+    schema: ['article', 'faq']
+  },
+
+  'youtube-summarizer-for-seo-research': {
+    path: '/youtube-summarizer-for-seo-research',
+    file: 'youtube-summarizer-for-seo-research.html',
+    section: 'guides',
+    title: 'YouTube Summarizer for SEO Content Research',
+    description:
+      'Using video summaries for content research — finding what ranking pages miss, harvesting real questions, and why video is an underused research source.',
+    cardKicker: 'SEO research',
+    cardImage: 'seo-research-lead',
+    schema: ['article', 'faq']
+  },
+
+  'youtube-summarizer-for-teams': {
+    path: '/youtube-summarizer-for-teams',
+    file: 'youtube-summarizer-for-teams.html',
+    section: 'guides',
+    title: 'YouTube Summarizer for Teams',
+    description:
+      'One person watches, everyone reads. How teams use video summaries for recorded meetings, training and industry talks — and what to agree before you start.',
+    cardKicker: 'For teams',
+    cardImage: 'for-teams-lead',
+    schema: ['article', 'faq']
+  },
+
+  'export-youtube-summary-markdown': {
+    path: '/export-youtube-summary-markdown',
+    file: 'export-youtube-summary-markdown.html',
+    section: 'guides',
+    title: 'Export a YouTube Summary to Markdown',
+    description:
+      'Why export matters more than it sounds, what survives the move into Notion or Obsidian, and the one thing that quietly breaks if you copy by hand.',
+    cardKicker: 'Export',
+    cardImage: 'export-markdown-lead',
+    schema: ['article', 'faq']
+  },
+
+  'summarize-youtube-video-with-chatgpt': {
+    path: '/summarize-youtube-video-with-chatgpt',
+    file: 'summarize-youtube-video-with-chatgpt.html',
+    section: 'guides',
+    title: 'Summarizing YouTube Videos With ChatGPT: The Limits',
+    description:
+      'How to summarize a YouTube video with ChatGPT, what goes wrong with long transcripts, and the thing you lose that nobody mentions.',
+    cardKicker: 'vs ChatGPT',
+    cardImage: 'chatgpt-limits-lead',
+    schema: ['article', 'faq']
+  },
+
+  'summarize-youtube-video-on-mobile': {
+    path: '/summarize-youtube-video-on-mobile',
+    file: 'summarize-youtube-video-on-mobile.html',
+    section: 'guides',
+    title: 'How to Summarize a YouTube Video on Mobile',
+    description:
+      'Summarizing videos on a phone — sharing a link from the YouTube app, why transcripts are awkward on mobile, and what works without installing anything.',
+    cardKicker: 'On mobile',
+    cardImage: 'mobile-lead',
+    schema: ['article', 'faq']
+  },
+
+  'youtube-summarizer-privacy': {
+    path: '/youtube-summarizer-privacy',
+    file: 'youtube-summarizer-privacy.html',
+    section: 'guides',
+    title: 'Is It Safe to Use a YouTube Summarizer?',
+    description:
+      'What a YouTube summarizer can see, what browser extensions ask for, and the questions worth asking before putting work material through any of them.',
+    cardKicker: 'Privacy',
+    cardImage: 'privacy-lead',
+    schema: ['article', 'faq']
+  },
+
 };
 
 /** path → page, built once at import. */

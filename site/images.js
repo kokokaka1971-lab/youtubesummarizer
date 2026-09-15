@@ -2228,6 +2228,498 @@ export const IMAGE_SLOTS = [
     alt: 'A locked metal filing cabinet.',
     width: 1240,
     aspect: '16/9'
+  },
+
+  /* ---- Batch 05 - creators, teams, export, how-to ---- */
+  {
+    id: 'creators-lead',
+    provider: 'unsplash',
+    query: 'creator filming with a camera in a home studio',
+    alt: 'A camera set up for filming in a home studio.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'creators-workflow',
+    provider: 'pexels',
+    query: 'storyboard sketches pinned to a board',
+    alt: 'Storyboard sketches pinned to a board.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'creators-derivative',
+    provider: 'unsplash',
+    query: 'two identical copies of a document',
+    alt: 'Two identical printed documents side by side.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'creators-breadth',
+    provider: 'pexels',
+    query: 'wide view of many books on a table',
+    alt: 'Many open books spread across a large table.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'creators-repurpose',
+    provider: 'unsplash',
+    query: 'single object casting several shadows',
+    alt: 'One object casting several shadows.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'creators-limits',
+    provider: 'pexels',
+    query: 'camera lens cap on a table',
+    alt: 'A lens cap resting beside a camera.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'repurpose-lead',
+    provider: 'unsplash',
+    query: 'typewriter beside a video camera',
+    alt: 'A typewriter next to a video camera.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'repurpose-approaches',
+    provider: 'pexels',
+    query: 'three paths marked on a trail sign',
+    alt: 'A trail sign marking three routes.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'repurpose-cut',
+    provider: 'unsplash',
+    query: 'scissors cutting a strip of paper',
+    alt: 'Scissors cutting through a strip of paper.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'repurpose-scanning',
+    provider: 'pexels',
+    query: 'person skim reading a printed page',
+    alt: 'Someone scanning down a printed page.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'repurpose-reverse',
+    provider: 'unsplash',
+    query: 'arrows pointing in opposite directions',
+    alt: 'Two arrows pointing in opposite directions.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'repurpose-process',
+    provider: 'pexels',
+    query: 'numbered sticky notes in a row',
+    alt: 'Numbered sticky notes arranged in a row.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'show-notes-lead',
+    provider: 'unsplash',
+    query: 'microphone beside an open notebook',
+    alt: 'A microphone beside an open notebook.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'show-notes-elements',
+    provider: 'pexels',
+    query: 'bulleted list on a clipboard',
+    alt: 'A bulleted list held on a clipboard.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'show-notes-manual',
+    provider: 'unsplash',
+    query: 'hand writing notes with a pen',
+    alt: 'A hand writing notes with a pen.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'show-notes-discovery',
+    provider: 'pexels',
+    query: 'magnifying glass over a list',
+    alt: 'A magnifying glass held over a printed list.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'show-notes-checks',
+    provider: 'unsplash',
+    query: 'proofreading marks on printed text',
+    alt: 'Proofreading marks made on printed text.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'show-notes-routine',
+    provider: 'pexels',
+    query: 'timer on a desk beside a laptop',
+    alt: 'A kitchen timer next to a laptop.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'competitor-research-lead',
+    provider: 'unsplash',
+    query: 'binoculars resting on a map',
+    alt: 'Binoculars resting on an open map.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'competitor-patterns',
+    provider: 'pexels',
+    query: 'repeating pattern of tiles',
+    alt: 'A repeating pattern of floor tiles.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'competitor-limits',
+    provider: 'unsplash',
+    query: 'frosted glass window',
+    alt: 'Light through a frosted glass window.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'competitor-ethics',
+    provider: 'pexels',
+    query: 'boundary line painted on ground',
+    alt: 'A painted boundary line on the ground.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'competitor-no-captions',
+    provider: 'unsplash',
+    query: 'television screen with no picture',
+    alt: 'A television screen showing nothing.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'competitor-tracking',
+    provider: 'pexels',
+    query: 'line chart drawn on graph paper',
+    alt: 'A line chart plotted on graph paper.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'seo-research-lead',
+    provider: 'unsplash',
+    query: 'desk with laptop and printed research',
+    alt: 'A laptop surrounded by printed research pages.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'seo-research-sources',
+    provider: 'pexels',
+    query: 'newspaper beside a laptop screen',
+    alt: 'A newspaper lying beside a laptop.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'seo-research-gap',
+    provider: 'unsplash',
+    query: 'single missing tile in a wall',
+    alt: 'A wall with one tile missing.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'seo-research-quality',
+    provider: 'pexels',
+    query: 'hallmark stamped on metal',
+    alt: 'A hallmark stamped into metal.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'seo-research-limits',
+    provider: 'unsplash',
+    query: 'road sign showing a dead end',
+    alt: 'A dead end road sign.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'seo-research-process',
+    provider: 'pexels',
+    query: 'flowchart on a whiteboard',
+    alt: 'A flowchart drawn on a whiteboard.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'for-teams-lead',
+    provider: 'unsplash',
+    query: 'small team working around a table',
+    alt: 'A small team working together around a table.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'for-teams-sharing',
+    provider: 'pexels',
+    query: 'document being handed between two people',
+    alt: 'A document passed from one person to another.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'for-teams-attribution',
+    provider: 'unsplash',
+    query: 'name badges on a table',
+    alt: 'Blank name badges laid out on a table.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'for-teams-archive',
+    provider: 'pexels',
+    query: 'shared filing cabinet drawers',
+    alt: 'Open drawers in a shared filing cabinet.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'for-teams-convention',
+    provider: 'unsplash',
+    query: 'printed process diagram on a wall',
+    alt: 'A process diagram printed and pinned to a wall.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'for-teams-access',
+    provider: 'pexels',
+    query: 'key card on a lanyard',
+    alt: 'An access card hanging on a lanyard.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'export-markdown-lead',
+    provider: 'unsplash',
+    query: 'plain text file open on a screen',
+    alt: 'A plain text file open on a screen.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'export-what-survives',
+    provider: 'pexels',
+    query: 'items packed into a moving box',
+    alt: 'Items packed carefully into a box.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'export-immediately',
+    provider: 'unsplash',
+    query: 'hand pressing a save button',
+    alt: 'A finger pressing a button.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'export-format',
+    provider: 'pexels',
+    query: 'simple paper document beside a sealed envelope',
+    alt: 'A plain document beside a sealed envelope.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'export-annotate',
+    provider: 'unsplash',
+    query: 'margin notes written beside printed text',
+    alt: 'Handwritten notes in the margin of a printed page.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'export-limits',
+    provider: 'pexels',
+    query: 'single file in an empty folder',
+    alt: 'One sheet of paper inside an otherwise empty folder.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'chatgpt-limits-lead',
+    provider: 'unsplash',
+    query: 'chat interface open on a laptop',
+    alt: 'A chat interface open on a laptop screen.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'chatgpt-long-transcripts',
+    provider: 'pexels',
+    query: 'very long paper scroll unrolled',
+    alt: 'A long paper scroll unrolled across a floor.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'chatgpt-comparison',
+    provider: 'unsplash',
+    query: 'two tools laid side by side',
+    alt: 'Two different tools laid side by side.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'chatgpt-better-prompt',
+    provider: 'pexels',
+    query: 'question mark written on paper',
+    alt: 'A question mark written on a sheet of paper.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'chatgpt-division',
+    provider: 'unsplash',
+    query: 'fork in a woodland path',
+    alt: 'A woodland path splitting in two.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'chatgpt-prompting',
+    provider: 'pexels',
+    query: 'keyboard keys close up',
+    alt: 'A close-up of keyboard keys.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'mobile-lead',
+    provider: 'unsplash',
+    query: 'person holding a phone showing a video',
+    alt: 'A phone held up showing a video playing.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'mobile-approaches',
+    provider: 'pexels',
+    query: 'phone and laptop side by side',
+    alt: 'A phone lying beside a laptop.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'mobile-sharing',
+    provider: 'unsplash',
+    query: 'phone share menu on screen',
+    alt: 'A share menu open on a phone screen.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'mobile-reading',
+    provider: 'pexels',
+    query: 'person reading on a phone on a train',
+    alt: 'Someone reading from a phone on a train.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'mobile-limits',
+    provider: 'unsplash',
+    query: 'phone with no signal bars',
+    alt: 'A phone showing no signal.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'mobile-home-screen',
+    provider: 'pexels',
+    query: 'phone home screen with app icons',
+    alt: 'A phone home screen showing app icons.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'privacy-lead',
+    provider: 'unsplash',
+    query: 'padlock resting on a laptop keyboard',
+    alt: 'A padlock resting on a laptop keyboard.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'privacy-access',
+    provider: 'pexels',
+    query: 'keyhole in a wooden door',
+    alt: 'A keyhole in a wooden door.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'privacy-signup',
+    provider: 'unsplash',
+    query: 'blank registration form on a desk',
+    alt: 'A blank registration form on a desk.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'privacy-policy',
+    provider: 'pexels',
+    query: 'dense printed terms document',
+    alt: 'A densely printed terms document.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'privacy-questions',
+    provider: 'unsplash',
+    query: 'checklist with question marks',
+    alt: 'A checklist marked with question marks.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'privacy-ours',
+    provider: 'pexels',
+    query: 'open hands held palm up',
+    alt: 'Open hands held palms upward.',
+    width: 1240,
+    aspect: '16/9'
   }
 ];
 

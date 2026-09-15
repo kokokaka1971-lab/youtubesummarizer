@@ -1,11 +1,11 @@
 number|section|slug|title|focus_keyword|cluster|intent|page_type|links_to
-0501|guides|summarize-youtube-transcript|How to Summarize a YouTube Transcript|summarize youtube transcript|Transcript & Captions|Transactional|Supporting guide|/youtube-transcript-summarizer
-0502|guides|youtube-transcript-to-summary|YouTube Transcript to Summary|youtube transcript to summary|Transcript & Captions|Transactional|Supporting guide|/youtube-transcript-summarizer
-0503|guides|how-to-summarize-a-youtube-video-without-transcript|How to Summarize a YouTube Video Without a Transcript|how to summarize a youtube video without transcript|How-To & Troubleshooting|Informational|How-to guide|/how-it-works
-0504|guides|youtube-transcript-summarizer-with-timestamps|YouTube Transcript Summarizer With Timestamps|youtube transcript summarizer with timestamps|Transcript & Captions|Transactional|Supporting guide|/youtube-summarizer-with-timestamps
-0505|guides|youtube-captions-to-notes|YouTube Captions to Notes|youtube captions to notes|Transcript & Captions|Transactional|Supporting guide|/youtube-notes-generator
-0506|guides|get-youtube-transcript-and-summary|Get a YouTube Transcript and Summary Together|get youtube transcript and summary|Transcript & Captions|Transactional|Supporting guide|/youtube-transcript-summarizer
-0507|guides|youtube-auto-captions-accuracy|How Accurate Are YouTube Auto-Captions?|youtube auto captions accuracy|Transcript & Captions|Informational|Supporting guide|/transcripts-are-not-summaries
-0508|guides|summarize-video-without-captions|How to Summarize a Video With No Captions|summarize video without captions|How-To & Troubleshooting|Informational|How-to guide|/how-it-works
-0509|guides|youtube-summary-not-working|YouTube Summary Not Working - What to Check|youtube summary not working|How-To & Troubleshooting|Informational|Troubleshooting|/faq
-0510|guides|copy-youtube-transcript|How to Copy a YouTube Transcript|copy youtube transcript|Transcript & Captions|Informational|Supporting guide|/youtube-transcript-summarizer
+0501|guides|youtube-summarizer-for-content-creators|YouTube Summarizer for Content Creators|youtube summarizer for content creators|Creators & Marketers|Transactional|Supporting guide|/use-cases/creators
+0502|guides|repurpose-youtube-video-into-blog-post|Repurpose a YouTube Video Into a Blog Post|repurpose youtube video blog post|Creators & Marketers|Informational|Supporting guide|/use-cases/creators
+0503|guides|podcast-show-notes-generator|Podcast Show Notes Generator|podcast show notes generator|Podcasts & Interviews|Transactional|Supporting guide|/youtube-podcast-summarizer
+0504|guides|competitor-video-research|Competitor Video Research With Summaries|competitor video research|Creators & Marketers|Transactional|Supporting guide|/use-cases/creators
+0505|guides|youtube-summarizer-for-seo-research|YouTube Summarizer for SEO Content Research|youtube summarizer for seo research|Creators & Marketers|Transactional|Supporting guide|/use-cases/creators
+0506|guides|youtube-summarizer-for-teams|YouTube Summarizer for Teams|youtube summarizer for teams|Research & Professionals|Transactional|Supporting guide|/use-cases/teams
+0507|guides|export-youtube-summary-markdown|Export a YouTube Summary to Markdown|export youtube summary markdown|Output: Detailed Notes|Transactional|Supporting guide|/features
+0508|guides|summarize-youtube-video-with-chatgpt|Summarizing YouTube Videos With ChatGPT: The Limits|summarize youtube video with chatgpt|How-To & Troubleshooting|Informational|How-to guide|/best-youtube-summarizer
+0509|guides|summarize-youtube-video-on-mobile|How to Summarize a YouTube Video on Mobile|summarize youtube video on mobile|How-To & Troubleshooting|Informational|How-to guide|/how-it-works
+0510|guides|youtube-summarizer-privacy|Is It Safe to Use a YouTube Summarizer?|youtube summarizer privacy|How-To & Troubleshooting|Informational|Troubleshooting|/privacy

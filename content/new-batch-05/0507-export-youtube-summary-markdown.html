@@ -1,0 +1,263 @@
+<!--META
+title: Export a YouTube Summary to Markdown
+description: Why export matters more than it sounds, what survives the move into Notion or Obsidian, and the one thing that quietly breaks if you copy by hand.
+section: guides
+focus_keyword: export youtube summary markdown
+schema: article, faq
+lead_image: export-markdown-lead
+links_to: /features
+-->
+
+<section class="page-head">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="kicker">Guides</p>
+    <h1>How to Export YouTube Summary Markdown Files</h1>
+    <p class="lede">
+      Export sounds like a checkbox feature and is closer to the whole point. A summary
+      that cannot leave the page is a summary you will retype, or more likely lose.
+    </p>
+    <div class="head-actions">
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize and export</a>
+      <a class="btn btn-soft btn-lg" href="/features">See every feature</a>
+    </div>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="wrap wrap-narrow">
+    <!--image:export-markdown-lead-->
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap-narrow">
+    <div class="prose">
+      <p>
+        Every summary you generate is either exported or lost — which makes this a more
+        consequential feature than <a href="/features">the feature list</a> makes it look. Without an account there is
+        no history to return to, so the tab closing is the end of it.
+      </p>
+      <p>
+        That sounds like a limitation and is mostly a forcing function: the summaries worth
+        keeping are the ones you deliberately kept.
+      </p>
+
+      <h2>Why Markdown specifically</h2>
+      <p>
+        The format choice is not arbitrary, and the reasoning applies to anything you
+        intend to keep for longer than a week.
+      </p>
+      <p>
+        Because it is the format that survives. Notion, Obsidian, Bear, Apple Notes, Google
+        Docs and every developer tool accept it directly, and it degrades to readable plain
+        text everywhere else.
+      </p>
+      <p>
+        Headings stay headings. Lists stay lists. And critically, links stay links — which
+        is where the whole value sits.
+      </p>
+      <p>
+        It is also durable in a way a vendor's own storage is not. A tool that keeps your
+        summaries can change, price up or shut down; a Markdown file in your own notes
+        cannot.
+      </p>
+
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <caption>What survives the export</caption>
+          <thead>
+            <tr>
+              <th scope="col">Element</th>
+              <th scope="col">Survives?</th>
+              <th scope="col">Why it matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Section headings</th><td>Yes</td><td>Keeps the chapter structure navigable</td></tr>
+            <tr><th scope="row">Timestamp links</th><td>Yes</td><td>The notes stay checkable</td></tr>
+            <tr><th scope="row">Claim lists</th><td>Yes</td><td>Pastes as bullets everywhere</td></tr>
+            <tr><th scope="row">Video title and link</th><td>Yes</td><td>You can find the source again</td></tr>
+            <tr><th scope="row">Your own annotations</th><td>You add them</td><td>The part that makes notes yours</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!--image:export-what-survives-->
+
+      <h2>The thing that quietly breaks</h2>
+      <p>
+        One failure accounts for most unusable archives, and it is invisible at the moment
+        it happens — which is why it is worth knowing about in advance.
+      </p>
+      <p>
+        Copying the visible text by hand instead of exporting. It looks identical and is
+        not.
+      </p>
+      <p>
+        Selecting a summary on screen and pasting it into a notes app frequently converts
+        the timestamps into plain text. The times are still there, so nothing looks wrong —
+        they simply no longer click.
+      </p>
+      <p>
+        You discover it months later, when you want to verify a claim and find a number in
+        brackets rather than a link. At that point the note is unverifiable and the video
+        is hard to find.
+      </p>
+
+      <h2>Export immediately, not later</h2>
+      <p>
+        The most common way people lose a summary is closing the tab meaning to save it
+        afterwards.
+      </p>
+      <p>
+        Make it part of the same action: generate, read, export. Ten seconds, and it
+        removes the entire class of problem — particularly when working through several
+        videos in a session, where each one is another chance to forget.
+      </p>
+      <p>
+        For a playlist or a research pass this matters more, since you are producing a
+        dozen summaries and the value is the collection rather than any single one. See
+        <a href="/summarize-youtube-playlist">working through a playlist</a>.
+      </p>
+
+      <!--image:export-immediately-->
+
+      <h2>Why this format and not a PDF</h2>
+      <p>
+        Markdown is deliberately boring, which is the property that makes it a good archive
+        format.
+      </p>
+      <p>
+        It is plain text with
+        <a href="https://commonmark.org/" rel="nofollow noopener" target="_blank">a simple,
+        widely implemented specification</a>, so it opens in anything, diffs cleanly in
+        version control, and remains readable even in a tool that does not render it.
+      </p>
+      <p>
+        A PDF looks tidier and is worse in every way that matters here: hard to search
+        across, hard to edit, hard to paste from, and effectively frozen. Notes you will add
+        to later should be editable text.
+      </p>
+
+      <!--image:export-format-->
+
+      <h2>Exporting at the right depth</h2>
+      <p>
+        Worth a moment's thought, since it is easy to export the wrong thing by habit.
+      </p>
+      <p>
+        For a video you triaged and rejected, export nothing — the decision was the output.
+        For one you will return to, export the chapter map, which is the navigable version.
+      </p>
+      <p>
+        Full notes are worth exporting only when you genuinely intend to use them as
+        reference. Exporting everything at maximum depth produces an archive of documents
+        nobody reads, which is the same as having no archive.
+      </p>
+
+      <h2>Where the exports should live</h2>
+      <p>
+        One folder, consistently named, searchable. That is the entire filing system and it
+        is enough.
+      </p>
+      <p>
+        Name by what you will search for later — usually the topic and the source, rather
+        than the date. "Kubernetes scaling — CloudNative talk" beats "Summary 2026-09-14".
+      </p>
+      <p>
+        The compounding value is in searching across them. A year of exported summaries
+        answers "where did I see that claim about cold starts?" in seconds, which is
+        otherwise unanswerable.
+      </p>
+
+      <h2>Naming, which decides whether you find it</h2>
+      <p>
+        The filing convention matters more than the folder structure, because you will
+        search rather than browse.
+      </p>
+      <p>
+        Name by topic and source rather than by date. In six months you will remember what
+        the video was about and roughly who made it; you will not remember which Tuesday
+        you watched it.
+      </p>
+      <p>
+        A useful pattern is topic first, then source, then year — so a search for the topic
+        surfaces everything you have on it, across sources, in one list. That is the thing
+        the archive is for.
+      </p>
+
+      <h2>Annotate before you file</h2>
+      <p>
+        Two minutes that changes what the notes are worth in six months.
+      </p>
+      <p>
+        Add one line in your own words under any section you actually care about. That line
+        is the hook your memory attaches to — generated prose alone reads back as
+        information about a topic rather than something you understood.
+      </p>
+      <p>
+        It also marks which parts you verified. A note that says "checked at 14:22, he
+        qualifies this heavily" is worth ten notes that simply record what a summary said.
+      </p>
+
+      <!--image:export-annotate-->
+
+      <h2>What export does not include</h2>
+      <p>
+        Not the video, obviously, and not the full transcript — the export is the summary
+        at whichever depth you generated, plus the links back.
+      </p>
+      <p>
+        There is no bulk export of a session, since there is no session without an account.
+        Each summary exports individually, which is another argument for doing it as you
+        go.
+      </p>
+
+      <!--image:export-limits-->
+
+      <h2>The habit in one line</h2>
+      <p>
+        Generate, read, export, annotate. Four steps, about two minutes, and it converts a
+        disposable output into something that still means something next year.
+      </p>
+      <p>
+        The step people drop is the last one, and it is the one that makes the difference
+        between an archive you search and a folder you forgot about. One sentence in your
+        own words is enough.
+      </p>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details class="qa">
+          <summary>Does export work into Notion and Obsidian?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Yes — both accept Markdown directly, with headings, lists and links intact. It also pastes cleanly into Docs and most other note tools.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Do the timestamps stay clickable?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Through the export, yes. Copying the visible text by hand often converts them to plain numbers, which leaves you with notes you cannot verify later.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Can I export several summaries at once?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>One at a time. Without an account there is no session to bulk-export from, so export each as you generate it rather than at the end of a run.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Is export available on the free tier?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Yes, at every depth, with no account. Gating export is a common paywall elsewhere and we think it makes the free tier close to pointless.</p></div>
+        </details>
+        <details class="qa">
+          <summary>What happens if I do not export?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>The summary is gone when the tab closes, since there is no history without an account. Regenerating takes about thirty seconds, but only if you can find the video again.</p></div>
+        </details>
+      </div>
+    </div>
+
+    <div class="post-cta">
+      <h2>Export it before you close the tab</h2>
+      <p>Generate, read, export — ten seconds, and the note stays checkable for years.</p>
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize a video — free</a>
+    </div>
+
+    <!--related-->
+  </div>
+</section>
