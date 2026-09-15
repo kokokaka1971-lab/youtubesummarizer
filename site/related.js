@@ -49,15 +49,11 @@ export function relatedHtml(slug, limit = 4) {
   const current = PAGES[slug];
   const section = current && current.section;
 
-  // Cards come from the same section first, so a guide leads with other guides
-  // and only falls back to editorial once it runs out. That is what makes these
-  // read as a cluster rather than as a generic "more posts" strip.
+  // Same section first, then anything else that can be shown as a card. Ranking
+  // rather than filtering matters: restricting to one section left the three
+  // editorial posts with a half-empty row, since only two siblings existed.
   const eligible = Object.entries(PAGES).filter(
-    ([key, p]) =>
-      key !== slug &&
-      key !== 'blog' &&
-      p.cardKicker &&
-      (p.section === 'blog' || p.section === section)
+    ([key, p]) => key !== slug && key !== 'blog' && p.cardKicker
   );
 
   const rank = ([, p]) => (p.section === section ? 0 : 1);

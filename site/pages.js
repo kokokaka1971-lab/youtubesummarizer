@@ -144,7 +144,7 @@ export const PAGES = {
     crumbs: [{ href: '/', label: 'Home' }, { label: 'Blog' }]
   },
   'blog/how-to-study-from-youtube': {
-    path: '/blog/how-to-study-from-youtube',
+    path: '/how-to-study-from-youtube',
     file: 'blog/how-to-study-from-youtube.html',
     section: 'blog',
     title: 'How to actually study from YouTube',
@@ -157,7 +157,7 @@ export const PAGES = {
     crumbs: [...BLOG_CRUMBS, { label: 'Studying from YouTube' }]
   },
   'blog/why-timestamps-matter': {
-    path: '/blog/why-timestamps-matter',
+    path: '/why-timestamps-matter',
     file: 'blog/why-timestamps-matter.html',
     section: 'blog',
     title: 'Why every summary should carry timestamps',
@@ -170,7 +170,7 @@ export const PAGES = {
     crumbs: [...BLOG_CRUMBS, { label: 'Why timestamps matter' }]
   },
   'blog/transcripts-are-not-summaries': {
-    path: '/blog/transcripts-are-not-summaries',
+    path: '/transcripts-are-not-summaries',
     file: 'blog/transcripts-are-not-summaries.html',
     section: 'blog',
     title: 'A transcript is not a summary',

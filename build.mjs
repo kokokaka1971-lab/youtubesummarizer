@@ -75,6 +75,11 @@ RewriteRule ^(.*)$ https://www.youtubesummarizer.com/$1 [R=301,L]
 RewriteCond %{HTTP_HOST} !^www\\. [NC]
 RewriteRule ^(.*)$ https://www.youtubesummarizer.com/$1 [R=301,L]
 
+# --- 2b. Blog posts moved from /blog/<slug> to /<slug> --------------------
+# These URLs were live and indexed, so they redirect rather than 404. Permanent,
+# because the move is permanent — a 302 here would keep the old URL in the index.
+RewriteRule ^blog/(how-to-study-from-youtube|why-timestamps-matter|transcripts-are-not-summaries)/?$ /$1 [R=301,L]
+
 # --- 3. Strip .html if anyone requests it directly ------------------------
 RewriteCond %{THE_REQUEST} \\s/+(.+?)\\.html[\\s?] [NC]
 RewriteRule ^ /%1 [R=301,L]
