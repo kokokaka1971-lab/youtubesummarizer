@@ -101,25 +101,47 @@ Each page's lead photo also becomes its `og:image`.
 
 ## Deploying
 
-There is no CI: `dist/` is uploaded to Hostinger by hand, so a commit changes
-nothing on the live site until someone uploads. Two ways to do it.
+There is no CI: `dist/` is uploaded to the host, so a commit changes nothing on
+the live site until someone deploys.
 
-**hPanel File Manager (recommended).** `npm run build`, zip `dist/`, then upload
-and extract into `public_html`. Runs over HTTPS, so no credential ever crosses
-the network in the clear.
+```
+npm run build
+python tools/deploy.py --dry-run     # what would change
+python tools/deploy.py               # back up the remote, then upload
+```
 
-**`python tools/deploy.py`.** Reads `FTP_HOST`/`FTP_PORT`/`FTP_USER`/`FTP_PASS`/
-`FTP_DIR` from the gitignored `.env` and uploads `dist/` file by file;
-`--dry-run` shows what would change first. Note that the login already lands
-inside `public_html`, so `FTP_DIR=.`.
+Transport is SFTP over SSH. The server's host key is pinned in
+`tools/known_hosts` (public keys, safe to commit) and an unknown key is
+*rejected* rather than auto-trusted, so a substituted server fails the
+connection instead of quietly receiving the password. Credentials come from the
+gitignored `.env`:
 
-The catch is transport. The script asks for explicit FTPS and uses it when the
-certificate verifies, but Hostinger's certificate is issued for its own
-hostnames rather than the bare IP, and that IP has no reverse DNS — so
-verification fails and it falls back to plain FTP, which sends the password in
-the clear. Prefer the File Manager, or enable SSH/SFTP on the account (hPanel →
-Advanced → SSH Access, port 65002 on plans that include it) and deploy over that
-instead. If the password has ever gone over plain FTP, rotate it.
+```
+SSH_HOST, SSH_PORT, SSH_USER, SSH_PASS, SSH_DIR
+```
+
+`SSH_DIR` matters more than it looks. The hosting account carries more than one
+site, and the SSH login lands in the *home* directory, not a web root — so the
+target is `domains/youtubesummarizer.com/public_html` and the script refuses to
+run against anything not ending in `public_html`. A stray value there would
+scatter 53 files across an unrelated site.
+
+Every run tars the current remote into `ytsum-backup-<timestamp>.tar.gz` in the
+home directory first; `--no-backup` skips it.
+
+Avoid plain FTP on port 21. It works, but it sends the password in clear text,
+and the certificate does not verify against the bare IP.
+
+### Asset caching
+
+`.htaccess` caches CSS and JS for seven days and HTML for five minutes, and the
+filenames carry no fingerprint. That combination silently breaks deploys: a
+returning visitor pairs fresh HTML with a week-old stylesheet, so a CSS change
+appears not to have shipped. `site/layout.js` therefore appends a hash of each
+asset's contents to its URL (`/assets/styles.css?v=9960c83f`). A changed file
+gets a new URL and is fetched at once; an unchanged one keeps its URL and stays
+cached. If you ever reference a new asset from the shell, run it through that
+same helper rather than hard-coding the path.
 
 ## Site map
 

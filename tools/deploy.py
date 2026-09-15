@@ -1,27 +1,34 @@
 """
-Upload dist/ to Hostinger over FTP.
+Upload dist/ to the live site.
 
-    python tools/deploy.py --dry-run     list what would change, touch nothing
-    python tools/deploy.py               upload
+    python tools/deploy.py --dry-run     show what would change, touch nothing
+    python tools/deploy.py               back up the remote, then upload
+    python tools/deploy.py --no-backup   skip the backup step
 
-Credentials come from .env (gitignored) and are never written here:
+Transport is SFTP over SSH, which is encrypted end to end. The server's host key
+is pinned in tools/known_hosts and an unknown key is rejected rather than
+auto-trusted, so a substituted server fails the connection instead of silently
+receiving the credentials.
 
-    FTP_HOST, FTP_PORT, FTP_USER, FTP_PASS, FTP_DIR
+Credentials come from the gitignored .env and appear nowhere in this file:
 
-Transport: we ask for explicit FTPS first and use it if the certificate
-verifies. Hostinger's certificate is not issued for the bare IP and the host has
-no reverse DNS, so in practice that check fails and we fall back to plain FTP,
-which sends the password in the clear. The script says which one it got and
-tells you to rotate the password when it wasn't encrypted. If you would rather
-never send it in the clear, upload dist/ through hPanel's File Manager over
-HTTPS instead, or switch the account to SFTP if your plan offers it.
+    SSH_HOST, SSH_PORT, SSH_USER, SSH_PASS, SSH_DIR
+
+SSH_DIR matters. This hosting account carries more than one site, so the upload
+is scoped to one web root and the script refuses to run against a home
+directory — a stray value there would scatter 53 files across unrelated sites.
 """
 
-import argparse, io, os, ssl, sys
-from ftplib import FTP, FTP_TLS, error_perm
+import argparse, io, os, posixpath, sys, time
+
+try:
+    import paramiko
+except ImportError:
+    sys.exit('paramiko is required: python -m pip install paramiko')
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIST = os.path.join(ROOT, 'dist')
+KNOWN_HOSTS = os.path.join(ROOT, 'tools', 'known_hosts')
 
 
 def load_env():
@@ -35,30 +42,27 @@ def load_env():
             continue
         k, v = line.split('=', 1)
         env[k.strip()] = v.split('#')[0].strip()
-    missing = [k for k in ('FTP_HOST', 'FTP_USER', 'FTP_PASS') if not env.get(k)]
+    missing = [k for k in ('SSH_HOST', 'SSH_USER', 'SSH_PASS', 'SSH_DIR') if not env.get(k)]
     if missing:
         sys.exit(f'Missing from .env: {", ".join(missing)}')
+    target = env['SSH_DIR'].strip('/')
+    # Refuse anything that isn't clearly a web root inside this account.
+    if not target.endswith('public_html') or target in ('', '.', '~'):
+        sys.exit(f'SSH_DIR must point at a public_html directory, got "{env["SSH_DIR"]}"')
     return env
 
 
 def connect(env):
-    """Explicit FTPS if the certificate verifies, otherwise plain FTP."""
-    host, port = env['FTP_HOST'], int(env.get('FTP_PORT', 21))
-    user, pw = env['FTP_USER'], env['FTP_PASS']
-    try:
-        f = FTP_TLS(context=ssl.create_default_context())
-        f.connect(host, port, timeout=30)
-        f.login(user, pw)
-        f.prot_p()
-        return f, 'FTPS, certificate verified'
-    except ssl.SSLCertVerificationError as e:
-        print(f'  FTPS certificate did not verify ({e.verify_message}); using plain FTP')
-    except Exception as e:
-        print(f'  FTPS unavailable ({type(e).__name__}); using plain FTP')
-    f = FTP()
-    f.connect(host, port, timeout=30)
-    f.login(user, pw)
-    return f, 'plain FTP — credentials sent in the clear'
+    c = paramiko.SSHClient()
+    if not os.path.exists(KNOWN_HOSTS):
+        sys.exit(f'No pinned host key at {KNOWN_HOSTS} — run:\n'
+                 f'  ssh-keyscan -p {env.get("SSH_PORT", 22)} {env["SSH_HOST"]} > tools/known_hosts')
+    c.load_host_keys(KNOWN_HOSTS)
+    c.set_missing_host_key_policy(paramiko.RejectPolicy())
+    c.connect(env['SSH_HOST'], port=int(env.get('SSH_PORT', 22)),
+              username=env['SSH_USER'], password=env['SSH_PASS'],
+              timeout=30, allow_agent=False, look_for_keys=False)
+    return c
 
 
 def local_files():
@@ -70,31 +74,30 @@ def local_files():
     return sorted(out)
 
 
-def ensure_dir(ftp, path, made):
-    """mkd each missing segment of a remote directory path."""
+def ensure_dir(sftp, path, made):
     if not path or path in made:
         return
-    parent = os.path.dirname(path)
+    parent = posixpath.dirname(path)
     if parent:
-        ensure_dir(ftp, parent, made)
+        ensure_dir(sftp, parent, made)
     try:
-        ftp.mkd(path)
-    except error_perm as e:
-        if not str(e).startswith('550'):   # 550 here means it already exists
-            raise
+        sftp.stat(path)
+    except IOError:
+        sftp.mkdir(path)
     made.add(path)
 
 
-def remote_size(ftp, path):
+def remote_size(sftp, path):
     try:
-        return ftp.size(path)
-    except Exception:
+        return sftp.stat(path).st_size
+    except IOError:
         return None
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--no-backup', action='store_true')
     args = ap.parse_args()
 
     if not os.path.isdir(DIST):
@@ -102,39 +105,52 @@ def main():
 
     env = load_env()
     files = local_files()
-    print(f'{len(files)} files in dist/')
+    target = env['SSH_DIR'].rstrip('/')
+    print(f'{len(files)} files in dist/  ->  {target}')
 
-    ftp, how = connect(env)
-    print(f'connected: {how}')
-    target = env.get('FTP_DIR', '.')
-    if target not in ('.', ''):
-        ftp.cwd(target)
-    print(f'remote cwd: {ftp.pwd()}\n')
+    client = connect(env)
+    print('connected over SFTP, host key verified against tools/known_hosts')
+    sftp = client.open_sftp()
+
+    try:
+        sftp.stat(target)
+    except IOError:
+        sys.exit(f'Remote directory does not exist: {target}')
+
+    if not args.dry_run and not args.no_backup:
+        stamp = time.strftime('%Y%m%d-%H%M%S')
+        parent, leaf = posixpath.split(target)
+        archive = f'ytsum-backup-{stamp}.tar.gz'
+        cmd = f'tar -czf {archive} -C {parent} {leaf}'
+        _, out, err = client.exec_command(cmd)
+        rc = out.channel.recv_exit_status()
+        msg = err.read().decode().strip()
+        print(f'backup: {archive}' + (f' (rc={rc}: {msg})' if rc else ' — created in home directory'))
 
     made, sent, failed = set(), 0, []
     for rel in files:
         local = os.path.join(DIST, rel.replace('/', os.sep))
+        remote = posixpath.join(target, rel)
         size = os.path.getsize(local)
 
         if args.dry_run:
-            was = remote_size(ftp, rel)
-            state = 'NEW' if was is None else ('unchanged size' if was == size else f'{was:,} -> {size:,} B')
+            was = remote_size(sftp, remote)
+            state = 'NEW' if was is None else ('same size' if was == size else f'{was:,} -> {size:,} B')
             print(f'  {rel:<46} {state}')
             continue
 
-        d = os.path.dirname(rel)
-        if d:
-            ensure_dir(ftp, d, made)
+        d = posixpath.dirname(remote)
+        ensure_dir(sftp, d, made)
         try:
-            with open(local, 'rb') as fh:
-                ftp.storbinary(f'STOR {rel}', fh)
+            sftp.put(local, remote)
             sent += 1
             print(f'  {rel:<46} {size:>9,} B')
         except Exception as e:
             failed.append((rel, str(e)))
             print(f'  FAILED {rel}: {e}')
 
-    ftp.quit()
+    sftp.close()
+    client.close()
     print()
     if args.dry_run:
         print('dry run — nothing was written')
@@ -142,8 +158,6 @@ def main():
         print(f'uploaded {sent}/{len(files)} files')
         for rel, e in failed:
             print(f'  failed: {rel}: {e}')
-    if 'clear' in how:
-        print('\nThe password crossed the network unencrypted — rotate it in hPanel.')
 
 
 if __name__ == '__main__':
