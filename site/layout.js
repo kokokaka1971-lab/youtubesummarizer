@@ -6,8 +6,34 @@
  * fragments under site/pages/ and are registered in site/pages.js.
  */
 
+import fs from 'node:fs';
+import { createHash } from 'node:crypto';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { schemaFor } from './schema.js';
 import { expandImages, leadImage } from './image-tag.js';
+
+/**
+ * Cache-busting stamp for an asset, from a hash of its contents.
+ *
+ * .htaccess caches CSS and JS for seven days while HTML lasts five minutes, and
+ * the filenames carry no fingerprint. Without this, a returning visitor pairs
+ * fresh HTML with a week-old stylesheet — a deployed CSS change simply does not
+ * reach them, which is exactly as confusing as it sounds. Appending a content
+ * hash gives each revision its own URL, so a changed file is fetched at once
+ * and an unchanged one stays cached.
+ */
+const ASSET_DIR = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'public', 'assets');
+const stamps = new Map();
+function v(file) {
+  if (!stamps.has(file)) {
+    // Hash the contents, not the mtime: an unchanged file keeps its URL across
+    // rebuilds and stays in the visitor's cache.
+    const bytes = fs.readFileSync(path.join(ASSET_DIR, file));
+    stamps.set(file, createHash('sha1').update(bytes).digest('hex').slice(0, 8));
+  }
+  return `/assets/${file}?v=${stamps.get(file)}`;
+}
 
 const BRAND_DEFS = `
 <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
@@ -243,7 +269,7 @@ ${schemaFor(page, body)}
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/assets/styles.css" />
+<link rel="stylesheet" href="${v('styles.css')}" />
 <script>
   /* Apply the saved theme before first paint to avoid a flash of the wrong palette. */
   try {
@@ -303,7 +329,7 @@ ${body}
 ${footerHtml()}
 
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
-<script src="/assets/site.js"></script>${page.slug === 'home' ? '\n<script src="/assets/app.js"></script>' : ''}
+<script src="${v('site.js')}"></script>${page.slug === 'home' ? `\n<script src="${v('app.js')}"></script>` : ''}
 </body>
 </html>
 `;
