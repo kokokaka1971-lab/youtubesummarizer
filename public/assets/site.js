@@ -243,6 +243,34 @@
         // Static builds post to a form service; the Node server handles
         // /api/contact itself. Both return JSON.
         const endpoint = cForm.dataset.endpoint || '/api/contact';
+
+        // The static build ships with a placeholder form id. Until a real one
+        // is filled in, posting would fail with a generic error and the
+        // message would be lost — so hand it to the user's mail client
+        // instead, with everything they typed already in the draft.
+        if (/FORM_ID/.test(endpoint)) {
+          const to = cForm.dataset.mailto || 'support@youtubesummarizer.com';
+          const subject = 'Website enquiry — ' + (data.topic || 'other');
+          const body = [
+            'Name: ' + data.name,
+            'Email: ' + data.email,
+            'Topic: ' + (data.topic || 'other'),
+            '',
+            data.message
+          ].join(String.fromCharCode(10));
+          window.location.href =
+            'mailto:' + to +
+            '?subject=' + encodeURIComponent(subject) +
+            '&body=' + encodeURIComponent(body);
+          status.textContent =
+            'Opening your email app with the message ready to send. If nothing ' +
+            'happened, email ' + to + ' directly.';
+          status.classList.add('is-ok');
+          submit.classList.remove('is-busy');
+          submit.disabled = false;
+          return;
+        }
+
         const r = await fetch(endpoint, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },

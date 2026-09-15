@@ -17,8 +17,11 @@
       <div class="contact-form-wrap reveal">
         <h2>Send us a message</h2>
         <!-- data-endpoint lets the static build post straight to a form service.
-             Replace FORM_ID with your Formspree form id before going live;
-             with the attribute removed it falls back to the Node /api/contact. -->
+             Replace FORM_ID with your Formspree form id to collect submissions
+             on the server. While it is still the placeholder, site.js does not
+             post at all — it opens the visitor's mail client with the message
+             pre-filled, so nothing is silently dropped. Remove the attribute
+             entirely to fall back to the Node /api/contact route. -->
         <form id="contactForm" class="stack" novalidate
               data-endpoint="https://formspree.io/f/FORM_ID">
           <div class="field-group">
