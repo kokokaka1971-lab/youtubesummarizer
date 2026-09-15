@@ -1,11 +1,11 @@
 number|section|slug|title|focus_keyword|cluster|intent|page_type|links_to
-0801|guides|summarize-2-hour-youtube-video|How to Summarize a 2-Hour YouTube Video|summarize 2 hour youtube video|Long Videos|Transactional|Supporting guide|/long-youtube-video-summarizer
-0802|guides|summarize-3-hour-youtube-video|How to Summarize a 3-Hour Video or Livestream|summarize 3 hour youtube video|Long Videos|Transactional|Supporting guide|/long-youtube-video-summarizer
-0803|guides|youtube-livestream-summarizer|YouTube Livestream Summarizer|youtube livestream summarizer|Long Videos|Transactional|Supporting guide|/long-youtube-video-summarizer
-0804|guides|summarize-youtube-playlist|Summarize a YouTube Playlist|summarize youtube playlist|Long Videos|Transactional|Supporting guide|/long-youtube-video-summarizer
-0805|guides|youtube-summarizer-without-login|YouTube Summarizer Without Login|youtube summarizer without login|No Signup / Free|Transactional|Supporting guide|/free-youtube-summarizer-no-signup
-0806|guides|free-youtube-summarizer-for-students|Free YouTube Summarizer for Students|free youtube summarizer no signup for students|No Signup / Free|Transactional|Supporting guide|/free-youtube-summarizer-no-signup
-0807|guides|free-youtube-summarizer-for-long-videos|Free Summaries for Long Videos|free youtube summarizer no signup for long videos|No Signup / Free|Transactional|Supporting guide|/free-youtube-summarizer-no-signup
-0808|guides|is-youtube-summarizer-free|Is a YouTube Summarizer Free? What Costs What|is youtube summarizer free|No Signup / Free|Informational|Supporting guide|/pricing
-0809|guides|youtube-summarizer-no-credit-card|YouTube Summarizer With No Credit Card|youtube summarizer no credit card|No Signup / Free|Transactional|Supporting guide|/pricing
-0810|guides|youtube-summary-generator-online|Online YouTube Summary Generator|youtube summary generator online|Core YouTube Summarizer|Transactional|Supporting guide|/
+0801|guides|keynote-summarizer|Keynote Summarizer|keynote summarizer|Research & Professionals|Transactional|Use-case landing|/webinar-summarizer
+0802|guides|panel-discussion-summarizer|Panel Discussion Summarizer|panel discussion summarizer|Podcasts & Interviews|Transactional|Use-case landing|/youtube-podcast-summarizer
+0803|guides|product-demo-summarizer|Product Demo Summarizer|product demo summarizer|Tutorials & How-To|Transactional|Use-case landing|/youtube-tutorial-summarizer
+0804|guides|sermon-summarizer|Sermon Summarizer|sermon summarizer|Long Videos|Transactional|Use-case landing|/
+0805|guides|youtube-summarizer-for-journalists|YouTube Summarizer for Journalists|youtube summarizer for journalists|Research & Professionals|Transactional|Use-case landing|/use-cases/researchers
+0806|guides|youtube-summarizer-for-analysts|YouTube Summarizer for Analysts|youtube summarizer for analysts|Research & Professionals|Transactional|Use-case landing|/use-cases/teams
+0807|guides|summarize-youtube-video-for-a-meeting|Summarize a Video Before a Meeting|summarize youtube video for meeting|Research & Professionals|Transactional|Supporting guide|/youtube-summarizer-for-teams
+0808|guides|youtube-summarizer-accuracy-test|How to Test a YouTube Summarizer's Accuracy|youtube summarizer accuracy|Comparisons & Alternatives|Informational|Original research|/best-youtube-summarizer
+0809|guides|how-long-does-it-take-to-summarize-a-video|How Long Does It Take to Summarize a Video?|how long to summarize a youtube video|How-To & Troubleshooting|Informational|Supporting guide|/how-it-works
+0810|guides|youtube-summarizer-without-watching|Can You Summarize a Video Without Watching It?|summarize youtube video without watching|How-To & Troubleshooting|Informational|Supporting guide|/how-to-summarize-a-youtube-video

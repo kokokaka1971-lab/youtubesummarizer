@@ -1,11 +1,11 @@
 number|section|slug|title|focus_keyword|cluster|intent|page_type|links_to
-0601|guides|youtube-podcast-summarizer-with-timestamps|Podcast Summaries With Timestamps|youtube podcast summarizer with timestamps|Podcasts & Interviews|Transactional|Supporting guide|/youtube-podcast-summarizer
-0602|guides|summarize-podcast-episode|How to Summarize a Podcast Episode|summarize podcast episode|Podcasts & Interviews|Transactional|Supporting guide|/youtube-podcast-summarizer
-0603|guides|interview-video-summarizer|Interview Video Summarizer|interview video summarizer|Podcasts & Interviews|Transactional|Supporting guide|/youtube-podcast-summarizer
-0604|guides|podcast-show-notes-generator|Podcast Show Notes Generator|podcast show notes generator|Podcasts & Interviews|Transactional|Supporting guide|/use-cases/creators
-0605|guides|youtube-tutorial-summarizer-with-steps|Turn a Tutorial Into Numbered Steps|youtube tutorial summarizer with steps|Tutorials & How-To|Transactional|Supporting guide|/youtube-tutorial-summarizer
-0606|guides|youtube-tutorial-to-checklist|YouTube Tutorial to Checklist|youtube tutorial summarizer to checklist|Tutorials & How-To|Transactional|Supporting guide|/youtube-tutorial-summarizer
-0607|guides|summarize-youtube-tutorial|How to Summarize a YouTube Tutorial|summarize youtube tutorial|Tutorials & How-To|Transactional|Supporting guide|/youtube-tutorial-summarizer
-0608|guides|youtube-summarizer-for-research|YouTube Summarizer for Research|youtube summarizer for research|Research & Professionals|Transactional|Supporting guide|/use-cases/researchers
-0609|guides|research-video-summarizer-with-citations|Research Video Summaries With Citations|research video summarizer with citations|Research & Professionals|Transactional|Supporting guide|/use-cases/researchers
-0610|guides|webinar-summarizer|Webinar Summarizer|webinar summarizer|Research & Professionals|Transactional|Supporting guide|/use-cases/teams
+0601|guides|youtube-to-notion|YouTube to Notion: Video Notes That Stay Searchable|youtube to notion|Output: Detailed Notes|Transactional|Supporting guide|/export-youtube-summary-markdown
+0602|guides|youtube-to-obsidian|YouTube to Obsidian: Building a Video Vault|youtube to obsidian|Output: Detailed Notes|Transactional|Supporting guide|/export-youtube-summary-markdown
+0603|guides|youtube-summary-to-google-docs|Get a YouTube Summary Into Google Docs|youtube summary google docs|Output: Detailed Notes|Transactional|Supporting guide|/export-youtube-summary-markdown
+0604|guides|youtube-video-notes-workflow|A Workflow for Turning Video Into Notes You Reuse|youtube video notes workflow|Output: Detailed Notes|Informational|Supporting guide|/youtube-notes-generator
+0605|guides|ted-talk-summarizer|TED Talk Summarizer|ted talk summarizer|Lectures & Courses|Transactional|Use-case landing|/
+0606|guides|news-video-summarizer|News Video Summarizer|news video summarizer|Platform Expansion|Transactional|Use-case landing|/
+0607|guides|documentary-summarizer|Documentary Summarizer|documentary summarizer|Long Videos|Transactional|Use-case landing|/long-youtube-video-summarizer
+0608|guides|earnings-call-summarizer|Earnings Call Summarizer|earnings call summarizer|Research & Professionals|Transactional|Use-case landing|/use-cases/teams
+0609|guides|interview-video-summarizer|Interview Video Summarizer|interview video summarizer|Podcasts & Interviews|Transactional|Use-case landing|/youtube-podcast-summarizer
+0610|guides|youtube-summarizer-for-teachers|YouTube Summarizer for Teachers|youtube summarizer for teachers|Students & Study|Transactional|Use-case landing|/use-cases/students
