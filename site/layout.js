@@ -12,6 +12,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { schemaFor } from './schema.js';
 import { expandImages, leadImage } from './image-tag.js';
+import { relatedHtml } from './related.js';
 
 /**
  * Cache-busting stamp for an asset, from a hash of its contents.
@@ -235,6 +236,9 @@ export function renderPage(page, body) {
   // has one shares it instead of the app icon.
   const lead = leadImage(body);
   body = expandImages(body);
+  // <!--related--> becomes the "Keep reading" block, built from pages.js so a
+  // new article shows up in the others without editing them.
+  body = body.replace(/<!--\s*related\s*-->/g, () => relatedHtml(page.slug));
   const ogImage = lead
     ? `https://www.youtubesummarizer.com/assets/img/${lead.file}`
     : 'https://www.youtubesummarizer.com/assets/icon-512.png';

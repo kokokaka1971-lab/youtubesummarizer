@@ -1,0 +1,11 @@
+number|section|slug|title|focus_keyword|cluster|intent|page_type|links_to
+0901|guides|vimeo-video-summarizer|Vimeo Video Summarizer|vimeo video summarizer|Platform Expansion|Transactional|Supporting guide|/video-summarizer
+0902|guides|tiktok-video-summarizer|TikTok Video Summarizer|tiktok video summarizer|Platform Expansion|Transactional|Supporting guide|/video-summarizer
+0903|guides|twitch-vod-summarizer|Twitch VOD Summarizer|twitch vod summarizer|Platform Expansion|Transactional|Supporting guide|/video-summarizer
+0904|guides|mp4-video-summarizer|MP4 and Uploaded Video Summarizer|mp4 video summarizer|Platform Expansion|Transactional|Supporting guide|/video-summarizer
+0905|guides|youtube-shorts-summarizer|YouTube Shorts Summarizer|youtube shorts summarizer|Platform Expansion|Transactional|Supporting guide|/video-summarizer
+0906|guides|ask-questions-about-youtube-video|Ask Questions About a YouTube Video|ask questions about youtube video|Output: Q&A / Chat|Transactional|Supporting guide|/chat-with-youtube-video
+0907|guides|chat-with-youtube-video-with-timestamps|Chat With a Video, Answers With Timestamps|chat with youtube video with timestamps|Output: Q&A / Chat|Transactional|Supporting guide|/chat-with-youtube-video
+0908|guides|youtube-mind-map-generator|YouTube Mind Map Generator|youtube mind map generator|Output: Mind Maps|Informational|Supporting guide|/youtube-to-mind-map
+0909|guides|youtube-flashcard-generator|YouTube Flashcard Generator|youtube flashcard generator|Output: Flashcards|Informational|Supporting guide|/youtube-to-flashcards
+0910|guides|youtube-summary-to-anki|YouTube Summary to Anki Cards|youtube summary to anki|Output: Flashcards|Informational|Supporting guide|/youtube-to-flashcards

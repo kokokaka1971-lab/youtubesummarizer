@@ -1,0 +1,11 @@
+number|section|slug|title|focus_keyword|cluster|intent|page_type|links_to
+0201|guides|chat-with-youtube-video|Chat With a YouTube Video|chat with youtube video|Output: Q&A / Chat|Transactional|Feature landing|/features
+0202|guides|youtube-to-flashcards|YouTube to Flashcards|youtube to flashcards|Output: Flashcards|Informational|Feature landing|/use-cases/students
+0203|guides|youtube-to-mind-map|YouTube to Mind Map|youtube to mind map|Output: Mind Maps|Informational|Feature landing|/features
+0204|guides|youtube-tutorial-summarizer|YouTube Tutorial Summarizer|youtube tutorial summarizer|Tutorials & How-To|Transactional|Use-case landing|/
+0205|guides|multilingual-youtube-summarizer|Multilingual YouTube Summarizer|multilingual youtube summarizer|Languages & Translation|Transactional|Use-case landing|/features
+0206|guides|video-summarizer|Video Summarizer - Beyond YouTube|video summarizer|Platform Expansion|Transactional|Tool landing|/
+0207|guides|summarize-1-hour-youtube-video|How to Summarize a 1-Hour YouTube Video|summarize 1 hour youtube video|Long Videos|Transactional|Supporting guide|/long-youtube-video-summarizer
+0208|guides|extract-key-points-from-youtube-video|Extract Key Points From a YouTube Video|extract key points from youtube video|Output: Key Points|Transactional|Supporting guide|/youtube-key-points-generator
+0209|guides|youtube-video-to-notes|YouTube Video to Notes|youtube video to notes|Output: Detailed Notes|Transactional|Supporting guide|/youtube-notes-generator
+0210|guides|timestamped-youtube-summary|Timestamped YouTube Summary|timestamped youtube summary|Output: Timestamps|Transactional|Supporting guide|/youtube-summarizer-with-timestamps

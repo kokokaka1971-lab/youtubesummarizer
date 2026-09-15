@@ -17,15 +17,37 @@
   <div class="wrap wrap-narrow">
     <div class="prose">
       <p>
-        Search for a YouTube summarizer and most of what you'll find does one thing:
-        fetches the caption track and prints it. Sometimes with paragraph breaks.
-        Occasionally with an AI-generated opening sentence stapled on top.
+        Search for a YouTube summarizer and most of what you'll find does one
+        thing: fetches the caption track and prints it — sometimes with paragraph
+        breaks, occasionally with an AI-generated opening sentence stapled on top.
       </p>
       <p>
-        This is genuinely useful for some things — searching for a phrase, checking a
-        quote. It is not a summary, and the gap between the two is bigger than it
-        looks.
+        That's genuinely useful for searching a phrase or checking a quote. It is
+        not a summary, and the gap is bigger than it looks.
       </p>
+
+      <h2>Transcript vs summary at a glance</h2>
+      <p>
+        The two answer different questions. One preserves every word; the other
+        decides which words mattered.
+      </p>
+
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <caption>YouTube transcript vs AI summary</caption>
+          <thead>
+            <tr><th scope="col"></th><th scope="col">Transcript</th><th scope="col">Summary</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">What it is</th><td>Every word, verbatim</td><td>What the video argued</td></tr>
+            <tr><th scope="row">Length (90-min video)</th><td>~12,000 words</td><td>~400 words</td></tr>
+            <tr><th scope="row">Ordered by</th><td>When it was said</td><td>What matters most</td></tr>
+            <tr><th scope="row">Reading time</th><td>Close to an hour</td><td>A couple of minutes</td></tr>
+            <tr><th scope="row">Best for</th><td>Exact quotes, search, captioning, translation</td><td>Deciding what to watch, and where</td></tr>
+            <tr><th scope="row">Main weakness</th><td>Structure is invisible; you rebuild the argument yourself</td><td>Compression drops caveats unless claims carry timestamps</td></tr>
+          </tbody>
+        </table>
+      </div>
 
       <h2>What a raw transcript is actually like</h2>
       <p>
@@ -47,12 +69,8 @@
         into text you won't finish.
       </p>
       <p>
-        The arithmetic is worth doing once, because it kills the intuition that text
-        is inherently faster than video. Twelve thousand words is a long magazine
-        feature, and it's dense, unstructured, unedited magazine feature. Skimming it
-        doesn't work either: skimming relies on topic sentences and paragraph shape to
-        tell you what to skip, and a transcript has neither. You end up reading most
-        of it or none of it, and in practice it's none.
+        Skimming doesn't rescue it either. Skimming leans on topic sentences and
+        paragraph shape to tell you what to skip, and a transcript has neither.
       </p>
       <p>
         Worse, the structure is invisible. A speaker signals a new section with a
@@ -71,7 +89,11 @@
         question and the answer are the same voice.
       </p>
       <p>
-        Then there are the substitutions. Automatic captioning is at its worst on
+        Then there are the substitutions. Google's own documentation on
+        <a href="https://support.google.com/youtube/answer/6373554" rel="nofollow noopener" target="_blank">automatic
+        captions</a> notes that accuracy depends on audio quality, accent and
+        background noise, and that captions may misrepresent the spoken content.
+        Automatic captioning is at its worst on
         exactly the words carrying the most meaning — technical terms, proper nouns,
         anything the speaker says once. These don't come back flagged as uncertain.
         They come back as confident, plausible, wrong words sitting in otherwise
@@ -79,9 +101,8 @@
         have been.
       </p>
       <p>
-        Any tool printing that back to you is passing along every one of those errors
-        with a layer of formatting on top, and the formatting makes them look more
-        settled than they are.
+        A tool that prints that back to you passes along every one of those errors,
+        and the formatting makes them look more settled than they are.
       </p>
 
       <h2>The four things that have to happen</h2>
@@ -101,7 +122,10 @@
         The sections were real — the speaker had an outline. They're just not marked
         in the text. Recovering them means noticing topic shifts from the content
         itself, which is a genuine inference rather than a formatting pass. This is
-        what a chapter map is: the outline the speaker was working from, reconstructed.
+        what a chapter map is: the outline the speaker was working from,
+        reconstructed — which is why
+        <a href="/features">timestamped chapters you can click</a> are the part of
+        the output worth judging a tool on.
       </p>
 
       <!--image:blog-tr-structure-->
@@ -119,7 +143,9 @@
         After three transformations, each output line has to still know where it came
         from. This is the step most tools skip, because it makes every other step
         harder and its absence isn't visible in the output — you only miss it the
-        first time you want to check something.
+        first time you want to check something. We make the longer case for
+        <a href="/blog/why-timestamps-matter">anchoring every claim to a timestamp</a>
+        separately.
       </p>
 
       <!--image:blog-tr-claims-->
@@ -132,10 +158,10 @@
         impressive. Every incentive points at shipping it.
       </p>
       <p>
-        The four steps above cost real money per video and take a few seconds, and the
-        benefit is visible only to someone who already knows what they were supposed to
-        get. Nobody opens a reformatted transcript and thinks "this tool skipped topic
-        segmentation". They think the video was less interesting than they hoped.
+        The four steps above cost real money per video, and the benefit is visible
+        only to someone who already knows what they were supposed to get. Nobody
+        opens a reformatted transcript and thinks "this tool skipped topic
+        segmentation".
       </p>
 
       <h2>How to tell them apart</h2>
@@ -144,7 +170,7 @@
         <li>
           <strong>The length test.</strong> Feed it a ninety-minute video. If what
           comes back takes more than a few minutes to read, it's reformatting, not
-          summarizing. Real compression is dramatic — 12,000 words to maybe 400.
+          summarizing.
         </li>
         <li>
           <strong>The order test.</strong> Check whether the most important point
@@ -166,12 +192,11 @@
 
       <h2>When you actually do want the transcript</h2>
       <p>
-        None of this makes transcripts bad — they're the right tool for a narrow set
-        of jobs, and worth knowing which. If you need the exact wording of a quote,
-        only the transcript will do; a summary has by definition paraphrased it. If
-        you're searching for whether a term came up at all, ctrl-F over the raw text
-        beats any amount of compression. If you're captioning, translating, or feeding
-        the text to something else, you want the source, not an interpretation of it.
+        None of this makes transcripts bad. If you need the exact wording of a
+        quote, only the transcript will do. If you're checking whether a term came
+        up at all, ctrl-F over the raw text beats any amount of compression. If
+        you're captioning or translating, you want the source, not an
+        interpretation of it.
       </p>
       <p>
         The failure isn't offering a transcript. It's offering one in answer to
@@ -188,18 +213,33 @@
         of what the video argued than before.
       </p>
       <p>
-        The cost isn't just the wasted time. It's that the failure teaches you the
-        wrong lesson. Having read four thousand words that went nowhere, the natural
-        conclusion is that summarizing video doesn't really work, or that this
-        particular video had less in it than you thought. The tool's limitation gets
-        filed as a fact about the material — which is the most expensive kind of bug,
-        because nobody reports it.
+        Worse, the failure teaches the wrong lesson: you conclude the video had
+        less in it than you hoped, rather than that the tool never looked.
       </p>
       <p>
         The question worth asking isn't "did this tool produce text about my video".
         It's "can I now decide whether to watch it, and find the part I need?" If not,
         you got a transcript with better typography.
       </p>
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details class="qa">
+          <summary>Is a YouTube transcript the same as a summary?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>No. A transcript reproduces every word in the order it was spoken. A summary decides which parts mattered and reorders them accordingly. Reformatting a transcript into paragraphs does not make it a summary.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Are YouTube's automatic captions accurate enough to rely on?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>For everyday speech, usually. For the words that carry the meaning — technical terms, names, anything said once — they are least reliable, and errors arrive as confident, plausible substitutions rather than visible gaps.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Which should I use if I need an exact quote?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>The transcript, every time. A summary has paraphrased by definition, so quoting from one risks attributing words to a speaker who never said them.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Can I get both from one tool?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Yes, and you should expect to. <a href="/how-it-works">Running a video through a summarizer</a> gives you the condensed version, with the transcript underneath for when you need exact wording.</p></div>
+        </details>
+      </div>
     </div>
 
     <div class="post-cta">
@@ -208,9 +248,6 @@
       <a class="btn btn-primary btn-lg" href="/#try">Summarize a video — free</a>
     </div>
 
-    <nav class="post-nav" aria-label="More posts">
-      <a href="/blog/how-to-study-from-youtube"><span>Next</span><strong>How to actually study from YouTube</strong></a>
-      <a href="/blog">All posts</a>
-    </nav>
+    <!--related-->
   </div>
 </article>

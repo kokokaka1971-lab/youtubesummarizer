@@ -1,0 +1,11 @@
+number|section|slug|title|focus_keyword|cluster|intent|page_type|links_to
+0401|guides|summarize-youtube-lecture|How to Summarize a YouTube Lecture|summarize youtube lecture|Students & Study|Transactional|Supporting guide|/use-cases/students
+0402|guides|youtube-summarizer-for-college-students|YouTube Summarizer for College Students|youtube summarizer for college students|Students & Study|Transactional|Supporting guide|/use-cases/students
+0403|guides|youtube-notes-generator-for-lectures|YouTube Notes Generator for Lectures|youtube notes generator for lectures|Output: Detailed Notes|Transactional|Supporting guide|/youtube-notes-generator
+0404|guides|youtube-to-flashcards-for-exams|YouTube to Flashcards for Exam Revision|youtube to flashcards for exams|Output: Flashcards|Informational|Supporting guide|/youtube-to-flashcards
+0405|guides|how-to-summarize-a-youtube-video-for-studying|How to Summarize a YouTube Video for Studying|how to summarize a youtube video for studying|How-To & Troubleshooting|Informational|How-to guide|/blog/how-to-study-from-youtube
+0406|guides|youtube-summarizer-for-online-courses|YouTube Summarizer for Online Courses|youtube summarizer for online courses|Lectures & Courses|Transactional|Supporting guide|/lecture-video-summarizer
+0407|guides|online-lecture-summarizer|Online Lecture Summarizer|online lecture summarizer|Lectures & Courses|Transactional|Supporting guide|/lecture-video-summarizer
+0408|guides|youtube-video-to-study-notes|YouTube Video to Study Notes|youtube video to study notes|Students & Study|Transactional|Supporting guide|/use-cases/students
+0409|guides|youtube-summarizer-for-high-school-students|YouTube Summarizer for High School Students|youtube summarizer for high school students|Students & Study|Transactional|Supporting guide|/use-cases/students
+0410|guides|lecture-video-summarizer-with-notes|Lecture Video Summarizer With Notes|lecture video summarizer with notes|Lectures & Courses|Transactional|Supporting guide|/lecture-video-summarizer

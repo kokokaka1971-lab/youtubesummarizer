@@ -1,0 +1,11 @@
+number|section|slug|title|focus_keyword|cluster|intent|page_type|links_to
+0501|guides|summarize-youtube-transcript|How to Summarize a YouTube Transcript|summarize youtube transcript|Transcript & Captions|Transactional|Supporting guide|/youtube-transcript-summarizer
+0502|guides|youtube-transcript-to-summary|YouTube Transcript to Summary|youtube transcript to summary|Transcript & Captions|Transactional|Supporting guide|/youtube-transcript-summarizer
+0503|guides|how-to-summarize-a-youtube-video-without-transcript|How to Summarize a YouTube Video Without a Transcript|how to summarize a youtube video without transcript|How-To & Troubleshooting|Informational|How-to guide|/how-it-works
+0504|guides|youtube-transcript-summarizer-with-timestamps|YouTube Transcript Summarizer With Timestamps|youtube transcript summarizer with timestamps|Transcript & Captions|Transactional|Supporting guide|/youtube-summarizer-with-timestamps
+0505|guides|youtube-captions-to-notes|YouTube Captions to Notes|youtube captions to notes|Transcript & Captions|Transactional|Supporting guide|/youtube-notes-generator
+0506|guides|get-youtube-transcript-and-summary|Get a YouTube Transcript and Summary Together|get youtube transcript and summary|Transcript & Captions|Transactional|Supporting guide|/youtube-transcript-summarizer
+0507|guides|youtube-auto-captions-accuracy|How Accurate Are YouTube Auto-Captions?|youtube auto captions accuracy|Transcript & Captions|Informational|Supporting guide|/blog/transcripts-are-not-summaries
+0508|guides|summarize-video-without-captions|How to Summarize a Video With No Captions|summarize video without captions|How-To & Troubleshooting|Informational|How-to guide|/how-it-works
+0509|guides|youtube-summary-not-working|YouTube Summary Not Working - What to Check|youtube summary not working|How-To & Troubleshooting|Informational|Troubleshooting|/faq
+0510|guides|copy-youtube-transcript|How to Copy a YouTube Transcript|copy youtube transcript|Transcript & Captions|Informational|Supporting guide|/youtube-transcript-summarizer

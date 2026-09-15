@@ -34,40 +34,53 @@
         a confident claim.
       </p>
       <p>
-        Notice that no reviewer catches this. Someone checking the summary against the
-        talk would have to already suspect that clause existed. Someone reading the
-        summary alone has nothing to go on — it is internally consistent, it is
-        specific, it names a real finding. Every signal a careful reader normally uses
-        to detect a shaky claim has been stripped out by the same process that
-        produced the claim.
+        Notice that no reviewer catches this. Reading the summary alone, you have
+        nothing to go on: it is internally consistent, specific, and names a real
+        finding. Every signal a careful reader uses to spot a shaky claim was
+        stripped out by the process that produced it.
       </p>
 
       <!--image:blog-ts-hedge-->
 
       <h2>Three kinds of claim that reliably break</h2>
       <p>
-        Not everything compresses equally badly. In practice the damage concentrates
-        in three places, and they're worth knowing because they're the ones to check.
+        Not everything compresses equally badly. The damage concentrates in a few
+        predictable places — which makes them the ones to check.
       </p>
-      <ul>
-        <li>
-          <strong>Numbers.</strong> A figure is short, quotable and feels like the
-          substance of a finding, so it survives compression almost every time — while
-          the conditions attached to it, which are long and boring, do not. The number
-          arrives intact and unaccompanied.
-        </li>
-        <li>
-          <strong>Attributions.</strong> "One team argues X, though the field mostly
-          disagrees" reduces very naturally to "X". A speaker describing a position is
-          hard to tell from a speaker holding it, and summaries resolve that ambiguity
-          in whichever direction reads more cleanly.
-        </li>
-        <li>
-          <strong>Negations and conditionals.</strong> "This doesn't work unless you
-          already have the infrastructure" carries its entire meaning in two small
-          words that a shorter sentence has every incentive to drop.
-        </li>
-      </ul>
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <caption>Where compression does the most damage</caption>
+          <thead>
+            <tr>
+              <th scope="col">Claim type</th>
+              <th scope="col">What gets lost</th>
+              <th scope="col">What to check at the timestamp</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Numbers</th>
+              <td>The conditions attached to the figure — long, boring, dropped first</td>
+              <td>Which cohort, sample or period the number applies to</td>
+            </tr>
+            <tr>
+              <th scope="row">Attributions</th>
+              <td>Whether the speaker held the position or was describing someone else's</td>
+              <td>Who the claim belongs to, and whether the field agrees</td>
+            </tr>
+            <tr>
+              <th scope="row">Negations and conditionals</th>
+              <td>"Doesn't", "unless", "only if" — whole meaning in two small words</td>
+              <td>The condition the claim depends on</td>
+            </tr>
+            <tr>
+              <th scope="row">Hedges</th>
+              <td>"I think", "roughly", "didn't replicate" — read as noise, cut as filler</td>
+              <td>How confident the speaker actually sounded</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <h2>Compression always loses something</h2>
       <p>
@@ -89,16 +102,22 @@
         the six.
       </p>
       <p>
-        This is the part worth being precise about: timestamps don't make the summary
-        more accurate. The same clause still went missing. What they change is that
-        the loss is now recoverable in one second instead of ninety minutes, and that
-        difference is the whole argument. A tool that cannot be wrong usefully is
-        worse than one that can.
+        Be precise about what this fixes: timestamps don't make the summary more
+        accurate. The same clause still went missing. They make the loss
+        recoverable in a second instead of ninety minutes — which is the whole
+        argument.
       </p>
 
       <!--image:blog-ts-compression-->
 
       <h2>The fluency problem makes it worse</h2>
+      <p>
+        This is not a quirk of one tool. A large human evaluation of
+        <a href="https://arxiv.org/abs/2005.00661" rel="nofollow noopener" target="_blank">faithfulness
+        in abstractive summarization</a> found models "highly prone to hallucinate
+        content that is unfaithful to the input document". Fluency is what makes
+        that hard to spot.
+      </p>
       <p>
         There's a nasty interaction between summarization and how people judge
         reliability. We treat fluent, well-organised prose as more trustworthy than
@@ -114,13 +133,10 @@
         It's what you can do when it isn't.
       </p>
       <p>
-        You can watch this happen in a single sentence. A speaker says "I think — and
-        I could be wrong about this — that the effect is mostly driven by selection."
-        The hedges are doing real work: they mark a live hypothesis, offered for
-        argument. Compress it to "the effect is driven by selection" and you have not
-        shortened the claim, you have promoted it. The speaker's own uncertainty was
-        information, and it was the first thing discarded because it was the least
-        efficient thing to keep.
+        Watch it happen in one sentence. A speaker says "I think — and I could be
+        wrong — that the effect is driven by selection." The hedges mark a live
+        hypothesis. Compress it to "the effect is driven by selection" and you
+        haven't shortened the claim, you've promoted it.
       </p>
 
       <!--image:blog-ts-fluency-->
@@ -139,7 +155,9 @@
           <strong>Hedges are content, not noise.</strong> "We think this might
           generalise" and "this generalises" are different claims. A summarizer that
           treats the first as a verbose way of saying the second isn't compressing,
-          it's editorialising.
+          it's editorialising — the same failure as
+          <a href="/blog/transcripts-are-not-summaries">handing back a reformatted
+          transcript</a>, arriving from the opposite direction.
         </li>
         <li>
           <strong>Failure has to be visible.</strong> When there's no transcript, the
@@ -162,11 +180,10 @@
       </p>
       <p>
         The cheap version is to summarize the text and then guess: search the
-        transcript for words resembling the output and cite whatever matches. It works
-        often enough to look fine in a demo, and it fails precisely on the claims that
-        were most heavily rewritten — which are, inevitably, the ones most worth
-        checking. A timestamp that is right when the summary is right and wrong when
-        the summary is wrong is not a safeguard. It's decoration.
+        transcript for words resembling the output and cite whatever matches. It
+        looks fine in a demo and fails precisely on the claims that were most
+        rewritten — inevitably the ones most worth checking. A timestamp that is
+        right only when the summary is right is not a safeguard. It's decoration.
       </p>
       <p>
         There's a reasonable objection here: if you have to check, what did the
@@ -174,9 +191,11 @@
         you must watch ninety minutes to find the four claims worth having. With one
         you read six bullets, identify the one you're about to rely on, and spend ten
         seconds confirming it. You haven't eliminated the verification, you've
-        narrowed it from the whole video to the single sentence that matters — which
-        is the only form of the problem anyone actually solves.
+        narrowed it from the whole video to the one sentence that matters. That is
+        what <a href="/features">clickable timestamped chapters</a> are for.
       </p>
+
+      <!--image:blog-ts-test-->
 
       <h2>The test to apply</h2>
       <p>
@@ -190,14 +209,31 @@
         rely on. You have one you can only believe.
       </p>
       <p>
-        The same test applies to the timestamps themselves, and it's worth running
-        once. Click three of them. If they land within a few seconds of the claim
-        they're attached to, the mapping is real. If they land vaguely in the right
-        region — the right topic, a minute early — they were reconstructed after the
-        fact, and they'll be furthest off exactly where you need them most.
+        The same test applies to the timestamps themselves. Click three of them.
+        If they land within a few seconds of the claim they're attached to, the
+        mapping is real. If they land vaguely in the right region, they were
+        reconstructed after the fact — and they'll be furthest off exactly where
+        you need them most.
       </p>
-
-      <!--image:blog-ts-test-->
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details class="qa">
+          <summary>Are AI summaries of YouTube videos accurate?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Usually accurate in what they include, and unreliable in what they leave out. The common failure isn't an invented fact — it's a real claim stripped of the condition that made it true.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Why do summaries drop caveats and hedges?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Because hedges are the least efficient words to keep. "I think this might generalise" compresses to "this generalises", which is shorter, reads better, and quietly promotes a hypothesis into a finding.</p></div>
+        </details>
+        <details class="qa">
+          <summary>How do I check a summary without rewatching the video?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Check only the claims you intend to act on, usually one or two. With a timestamp on each claim that costs a click; without one it costs the whole video, which is why nobody does it.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Do all YouTube summarizers give timestamps?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>No, and some that appear to have reconstructed them after the fact by matching words back to the transcript. Click three and see whether they land on the claim or merely near it.</p></div>
+        </details>
+      </div>
     </div>
 
     <div class="post-cta">
@@ -206,9 +242,6 @@
       <a class="btn btn-primary btn-lg" href="/#try">Summarize a video — free</a>
     </div>
 
-    <nav class="post-nav" aria-label="More posts">
-      <a href="/blog/transcripts-are-not-summaries"><span>Next</span><strong>A transcript is not a summary</strong></a>
-      <a href="/blog">All posts</a>
-    </nav>
+    <!--related-->
   </div>
 </article>

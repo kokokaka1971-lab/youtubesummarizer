@@ -150,7 +150,9 @@ export const PAGES = {
     title: 'How to actually study from YouTube',
     description:
       'Watching a lecture twice is not studying. A method for turning video into recall practice that holds up at exam time.',
-    schema: ['article'],
+    cardKicker: 'Study method',
+    cardImage: 'blog-how-to-study',
+    schema: ['article', 'faq'],
     datePublished: '2026-08-19',
     crumbs: [...BLOG_CRUMBS, { label: 'Studying from YouTube' }]
   },
@@ -161,7 +163,9 @@ export const PAGES = {
     title: 'Why every summary should carry timestamps',
     description:
       'A summary you cannot check is a rumour. Timestamps turn verification from a rewatch into a single click.',
-    schema: ['article'],
+    cardKicker: 'Checking the output',
+    cardImage: 'blog-timestamps',
+    schema: ['article', 'faq'],
     datePublished: '2026-07-02',
     crumbs: [...BLOG_CRUMBS, { label: 'Why timestamps matter' }]
   },
@@ -172,7 +176,9 @@ export const PAGES = {
     title: 'A transcript is not a summary',
     description:
       'Most tools hand you the same words in a different box. What has to happen between transcript and useful notes.',
-    schema: ['article'],
+    cardKicker: 'Transcript vs summary',
+    cardImage: 'blog-transcripts',
+    schema: ['article', 'faq'],
     datePublished: '2026-05-28',
     crumbs: [...BLOG_CRUMBS, { label: 'Transcripts are not summaries' }]
   },

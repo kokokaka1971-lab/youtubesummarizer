@@ -25,7 +25,7 @@ export const IMAGE_SLOTS = [
     provider: 'unsplash',
     query: 'student studying notes laptop desk',
     alt: 'A student working through handwritten notes beside an open laptop.',
-    width: 1200,
+    width: 1600,
     eager: true,
     aspect: '1.91/1'
   },
@@ -34,7 +34,7 @@ export const IMAGE_SLOTS = [
     provider: 'unsplash',
     query: 'researcher reading academic papers library',
     alt: 'Stacked journal papers and a laptop on a library desk.',
-    width: 1200,
+    width: 1600,
     eager: true,
     aspect: '1.91/1'
   },
@@ -43,7 +43,7 @@ export const IMAGE_SLOTS = [
     provider: 'pexels',
     query: 'video creator editing desk microphone',
     alt: 'A creator’s desk set up for recording, with a microphone and editing timeline on screen.',
-    width: 1200,
+    width: 1600,
     eager: true,
     aspect: '1.91/1'
   },
@@ -52,7 +52,7 @@ export const IMAGE_SLOTS = [
     provider: 'pexels',
     query: 'small team meeting laptops discussion office',
     alt: 'A small team around a table, laptops open, mid-discussion.',
-    width: 1200,
+    width: 1600,
     eager: true,
     aspect: '1.91/1'
   },
@@ -63,7 +63,7 @@ export const IMAGE_SLOTS = [
     provider: 'unsplash',
     query: 'studying revision notebook flashcards',
     alt: 'Revision notes and flashcards spread across a desk.',
-    width: 1200,
+    width: 1600,
     eager: true,
     aspect: '1.91/1'
   },
@@ -72,7 +72,7 @@ export const IMAGE_SLOTS = [
     provider: 'pexels',
     query: 'stopwatch clock time close up',
     alt: 'A stopwatch held against a plain background.',
-    width: 1200,
+    width: 1600,
     eager: true,
     aspect: '1.91/1'
   },
@@ -81,7 +81,7 @@ export const IMAGE_SLOTS = [
     provider: 'unsplash',
     query: 'printed text pages close up typography',
     alt: 'Close-up of dense printed text running down a page.',
-    width: 1200,
+    width: 1600,
     eager: true,
     aspect: '1.91/1'
   },
@@ -92,7 +92,7 @@ export const IMAGE_SLOTS = [
     provider: 'pexels',
     query: 'person watching lecture video laptop headphones',
     alt: 'Someone watching a recorded talk on a laptop, wearing headphones.',
-    width: 1200,
+    width: 1600,
     eager: true,
     aspect: '1.91/1'
   },
@@ -106,7 +106,7 @@ export const IMAGE_SLOTS = [
     provider: 'unsplash',
     query: 'student watching video tutorial screen evening',
     alt: 'A student watching a recorded tutorial, lit only by the screen.',
-    width: 920,
+    width: 1240,
     aspect: '16/9'
   },
   {
@@ -114,7 +114,7 @@ export const IMAGE_SLOTS = [
     provider: 'pexels',
     query: 'alarm clock desk lamp late night study',
     alt: 'A clock on a desk beside a lamp, late in the evening.',
-    width: 920,
+    width: 1240,
     aspect: '16/9'
   },
   {
@@ -122,7 +122,7 @@ export const IMAGE_SLOTS = [
     provider: 'unsplash',
     query: 'handwriting in an open blank notebook pen',
     alt: 'A hand writing on the first blank page of a notebook.',
-    width: 920,
+    width: 1240,
     aspect: '16/9'
   },
   {
@@ -130,7 +130,7 @@ export const IMAGE_SLOTS = [
     provider: 'pexels',
     query: 'weekly planner calendar desk schedule',
     alt: 'A weekly planner open on a desk, days blocked out.',
-    width: 920,
+    width: 1240,
     aspect: '16/9'
   },
   {
@@ -138,7 +138,7 @@ export const IMAGE_SLOTS = [
     provider: 'unsplash',
     query: 'highlighted textbook margin notes annotation',
     alt: 'A textbook page marked up with highlighter and margin notes.',
-    width: 920,
+    width: 1240,
     aspect: '16/9'
   },
 
@@ -148,7 +148,7 @@ export const IMAGE_SLOTS = [
     provider: 'pexels',
     query: 'conference speaker presenting to audience microphone',
     alt: 'A speaker mid-sentence in front of a conference audience.',
-    width: 920,
+    width: 1240,
     aspect: '16/9'
   },
   {
@@ -156,7 +156,7 @@ export const IMAGE_SLOTS = [
     provider: 'unsplash',
     query: 'stacked archive boxes documents storage',
     alt: 'Archive boxes stacked in storage.',
-    width: 920,
+    width: 1240,
     aspect: '16/9'
   },
   {
@@ -164,7 +164,7 @@ export const IMAGE_SLOTS = [
     provider: 'pexels',
     query: 'open book clean typography page spread',
     alt: 'An open book showing two pages of clean, even typesetting.',
-    width: 920,
+    width: 1240,
     aspect: '16/9'
   },
   {
@@ -172,7 +172,7 @@ export const IMAGE_SLOTS = [
     provider: 'unsplash',
     query: 'audio editing software waveform timeline screen',
     alt: 'An audio waveform laid out along an editing timeline.',
-    width: 920,
+    width: 1240,
     aspect: '16/9'
   },
   {
@@ -180,7 +180,7 @@ export const IMAGE_SLOTS = [
     provider: 'pexels',
     query: 'magnifying glass over printed document detail',
     alt: 'A magnifying glass held over a line of printed text.',
-    width: 920,
+    width: 1240,
     aspect: '16/9'
   },
 
@@ -190,7 +190,7 @@ export const IMAGE_SLOTS = [
     provider: 'unsplash',
     query: 'podcast microphone recording studio speaking',
     alt: 'A studio microphone set up for recording speech.',
-    width: 920,
+    width: 1240,
     aspect: '16/9'
   },
   {
@@ -198,7 +198,7 @@ export const IMAGE_SLOTS = [
     provider: 'pexels',
     query: 'stack of printed paper documents dense text',
     alt: 'A tall stack of densely printed pages.',
-    width: 920,
+    width: 1240,
     aspect: '16/9'
   },
   {
@@ -206,7 +206,7 @@ export const IMAGE_SLOTS = [
     provider: 'unsplash',
     query: 'outline diagram sketched in notebook planning',
     alt: 'A structure sketched out as a branching diagram in a notebook.',
-    width: 920,
+    width: 1240,
     aspect: '16/9'
   },
   {
@@ -214,7 +214,7 @@ export const IMAGE_SLOTS = [
     provider: 'pexels',
     query: 'sticky notes organised on a wall sorting',
     alt: 'Sticky notes grouped into columns on a wall.',
-    width: 920,
+    width: 1240,
     aspect: '16/9'
   },
   {
@@ -222,7 +222,7 @@ export const IMAGE_SLOTS = [
     provider: 'unsplash',
     query: 'checklist clipboard pen ticking boxes',
     alt: 'A checklist on a clipboard with boxes being ticked off.',
-    width: 920,
+    width: 1240,
     aspect: '16/9'
   }
 ];

@@ -1,0 +1,11 @@
+number|section|slug|title|focus_keyword|cluster|intent|page_type|links_to
+0601|guides|youtube-podcast-summarizer-with-timestamps|Podcast Summaries With Timestamps|youtube podcast summarizer with timestamps|Podcasts & Interviews|Transactional|Supporting guide|/youtube-podcast-summarizer
+0602|guides|summarize-podcast-episode|How to Summarize a Podcast Episode|summarize podcast episode|Podcasts & Interviews|Transactional|Supporting guide|/youtube-podcast-summarizer
+0603|guides|interview-video-summarizer|Interview Video Summarizer|interview video summarizer|Podcasts & Interviews|Transactional|Supporting guide|/youtube-podcast-summarizer
+0604|guides|podcast-show-notes-generator|Podcast Show Notes Generator|podcast show notes generator|Podcasts & Interviews|Transactional|Supporting guide|/use-cases/creators
+0605|guides|youtube-tutorial-summarizer-with-steps|Turn a Tutorial Into Numbered Steps|youtube tutorial summarizer with steps|Tutorials & How-To|Transactional|Supporting guide|/youtube-tutorial-summarizer
+0606|guides|youtube-tutorial-to-checklist|YouTube Tutorial to Checklist|youtube tutorial summarizer to checklist|Tutorials & How-To|Transactional|Supporting guide|/youtube-tutorial-summarizer
+0607|guides|summarize-youtube-tutorial|How to Summarize a YouTube Tutorial|summarize youtube tutorial|Tutorials & How-To|Transactional|Supporting guide|/youtube-tutorial-summarizer
+0608|guides|youtube-summarizer-for-research|YouTube Summarizer for Research|youtube summarizer for research|Research & Professionals|Transactional|Supporting guide|/use-cases/researchers
+0609|guides|research-video-summarizer-with-citations|Research Video Summaries With Citations|research video summarizer with citations|Research & Professionals|Transactional|Supporting guide|/use-cases/researchers
+0610|guides|webinar-summarizer|Webinar Summarizer|webinar summarizer|Research & Professionals|Transactional|Supporting guide|/use-cases/teams

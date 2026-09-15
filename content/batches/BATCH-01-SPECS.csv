@@ -1,0 +1,11 @@
+number|section|slug|title|focus_keyword|cluster|intent|page_type|links_to
+0101|guides|free-youtube-summarizer-no-signup|Free YouTube Summarizer - No Sign-Up, No Login|free youtube summarizer no signup|No Signup / Free|Transactional|Tool landing|/
+0102|guides|youtube-summarizer-with-timestamps|YouTube Summarizer With Timestamps|youtube summarizer with timestamps|Output: Timestamps|Transactional|Feature landing|/features
+0103|guides|youtube-transcript-summarizer|YouTube Transcript Summarizer|youtube transcript summarizer|Transcript & Captions|Transactional|Use-case landing|/
+0104|guides|long-youtube-video-summarizer|Long YouTube Video Summarizer|long youtube video summarizer|Long Videos|Transactional|Tool landing|/
+0105|guides|youtube-key-points-generator|YouTube Key Points Generator|youtube key points generator|Output: Key Points|Transactional|Feature landing|/features
+0106|guides|youtube-notes-generator|YouTube Notes Generator|youtube notes generator|Output: Detailed Notes|Transactional|Feature landing|/features
+0107|guides|best-youtube-summarizer|Best YouTube Summarizer Tools|best youtube summarizer|Comparisons & Alternatives|Commercial|Comparison article|/
+0108|guides|how-to-summarize-a-youtube-video|How to Summarize a YouTube Video|how to summarize a youtube video|How-To & Troubleshooting|Informational|How-to guide|/how-it-works
+0109|guides|youtube-podcast-summarizer|YouTube Podcast Summarizer|youtube podcast summarizer|Podcasts & Interviews|Transactional|Use-case landing|/
+0110|guides|lecture-video-summarizer|Lecture Video Summarizer|lecture video summarizer|Lectures & Courses|Transactional|Use-case landing|/use-cases/students

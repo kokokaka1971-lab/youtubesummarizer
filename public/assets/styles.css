@@ -3369,12 +3369,12 @@ kbd {
    own dominant colour, which fills that box in the meantime instead of a flash
    of white. */
 .ph {
-  /* Capped and centred rather than filling the column. A lead photo at full
-     820px width stood 461px tall, which read as the page rather than as an
-     illustration of it. The file is 1200x628 — the standard featured/social
-     size — shown at 600px, which lands at 314px tall. */
+  /* Fills the content column. Capping it narrower than the body text made the
+     photo look inset and undersized whatever its pixel width — the eye reads it
+     against the text measure, not in absolute pixels. Height is controlled by
+     the 1.91:1 ratio instead: ~404px in a 772px column, against the 461px that
+     16:9 used to give. */
   margin: 0 auto 8px;
-  max-width: 600px;
 }
 
 .ph img {
@@ -3417,11 +3417,156 @@ kbd {
    clear gap above, a tighter one below so the credit stays attached. A figure
    landing directly before a heading would otherwise double up on space. */
 .prose .ph {
-  /* In-article photos sit below the lead in the hierarchy, so they are capped
-     tighter again — 460px, inside the 68ch measure rather than filling it. */
+  /* In-article photos fill the prose measure for the same reason. They stay
+     clearly secondary to the lead because the measure is narrower than the
+     column the lead spans, not because of an arbitrary cap. */
   margin: 34px auto 10px;
-  max-width: 460px;
 }
 .prose .ph + h2 { margin-top: 30px; }
 .prose .ph + h3 { margin-top: 24px; }
 .prose .ph img { border-radius: var(--r-md); }
+
+/* ---------- Comparison tables ----------
+   Used in articles wherever two things need holding side by side. The wrapper
+   scrolls horizontally rather than letting the table force the page wider than
+   the viewport — on a phone the first column stays put and the rest slides. */
+.tbl-wrap {
+  overflow-x: auto;
+  margin: 26px 0 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  -webkit-overflow-scrolling: touch;
+}
+
+.tbl {
+  width: 100%;
+  min-width: 460px;          /* below this, scroll rather than crush the columns */
+  border-collapse: collapse;
+  font-size: 15.2px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.tbl caption {
+  caption-side: top;
+  padding: 14px 16px 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  text-align: left;
+}
+
+.tbl th,
+.tbl td {
+  padding: 11px 16px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.tbl thead th {
+  background: var(--surface-2);
+  color: var(--text);
+  font-weight: 650;
+  font-size: 14.2px;
+  white-space: nowrap;
+}
+
+/* First column is the row label — it carries the comparison, so weight it. */
+.tbl tbody th {
+  font-weight: 600;
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+.tbl tbody td { color: var(--text-2); }
+.tbl tbody tr:last-child th,
+.tbl tbody tr:last-child td { border-bottom: 0; }
+
+@media (max-width: 560px) {
+  .tbl { font-size: 14.4px; }
+  .tbl th, .tbl td { padding: 10px 13px; }
+}
+
+/* In-article FAQ — reuses the .qa disclosure from /faq so there is one
+   accordion on the site, not two. */
+.prose .faq { margin: 18px 0 6px; }
+
+/* ---------- Keep reading ----------
+   A row of thumbnail cards at the foot of an article: picture, kicker, title.
+   No excerpt and no card chrome — at this width the title carries it, and a
+   border would turn four quiet cards into four boxes. */
+.keep-reading {
+  margin: 44px 0 8px;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+}
+
+.keep-reading h2 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin: 0 0 20px;
+}
+
+.kr-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  /* auto-fill, so two cards keep a card's width instead of stretching to fill
+     the row. Four fit across the article column. */
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 26px 22px;
+}
+
+.kr-link { display: block; }
+
+.kr-shot {
+  display: block;
+  margin-bottom: 11px;
+  border-radius: var(--r-sm);
+  overflow: hidden;
+  background: var(--surface-2);
+}
+
+.kr-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform .4s var(--ease), filter .25s var(--ease);
+}
+.kr-link:hover .kr-shot img { transform: scale(1.04); }
+
+.kr-kicker {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 5px;
+}
+
+.kr-title {
+  display: block;
+  font-size: 15.5px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  color: var(--text);
+  text-wrap: pretty;
+}
+.kr-link:hover .kr-title { color: var(--accent); }
+
+:root[data-theme="dark"] .kr-shot img { filter: brightness(.92); }
+
+@media (max-width: 520px) {
+  .kr-list { grid-template-columns: 1fr 1fr; gap: 22px 16px; }
+  .kr-title { font-size: 14.6px; }
+}
