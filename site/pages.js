@@ -339,6 +339,126 @@ export const PAGES = {
     schema: ['article', 'faq']
   },
 
+  'youtube-tutorial-summarizer': {
+    path: '/youtube-tutorial-summarizer',
+    file: 'youtube-tutorial-summarizer.html',
+    section: 'guides',
+    title: 'YouTube Tutorial Summarizer',
+    description:
+      'Turn a YouTube tutorial into numbered steps with timestamps, so you can follow along without scrubbing back every thirty seconds.',
+    cardKicker: 'Tutorials',
+    cardImage: 'youtube-tutorial-summarizer-lead',
+    schema: ['article', 'faq']
+  },
+
+  'multilingual-youtube-summarizer': {
+    path: '/multilingual-youtube-summarizer',
+    file: 'multilingual-youtube-summarizer.html',
+    section: 'guides',
+    title: 'Multilingual YouTube Summarizer',
+    description:
+      'Summarize YouTube videos across 38 languages, including summarizing a foreign-language video into English. What translates well and what does not.',
+    cardKicker: 'Languages',
+    cardImage: 'multilingual-youtube-summarizer-lead',
+    schema: ['article', 'faq']
+  },
+
+  'summarize-1-hour-youtube-video': {
+    path: '/summarize-1-hour-youtube-video',
+    file: 'summarize-1-hour-youtube-video.html',
+    section: 'guides',
+    title: 'How to Summarize a 1-Hour YouTube Video',
+    description:
+      'Summarize a 1-hour YouTube video without losing the middle. Why the hour mark is where tools start failing quietly, and how to check yours did not.',
+    cardKicker: 'One hour',
+    cardImage: 'summarize-1-hour-youtube-video-lead',
+    schema: ['article', 'faq']
+  },
+
+  'extract-key-points-from-youtube-video': {
+    path: '/extract-key-points-from-youtube-video',
+    file: 'extract-key-points-from-youtube-video.html',
+    section: 'guides',
+    title: 'Extract Key Points From a YouTube Video',
+    description:
+      'Extract the key points from any YouTube video, each anchored to a timestamp. How to tell a real takeaway from a topic label, and how to check one.',
+    cardKicker: 'Key points',
+    cardImage: 'extract-key-points-lead',
+    schema: ['article', 'faq']
+  },
+
+  'youtube-video-to-notes': {
+    path: '/youtube-video-to-notes',
+    file: 'youtube-video-to-notes.html',
+    section: 'guides',
+    title: 'YouTube Video to Notes',
+    description:
+      'Turn a YouTube video into structured notes with clickable timestamps, exportable to Markdown. Where generated notes help, and where they do not.',
+    cardKicker: 'Video to notes',
+    cardImage: 'youtube-video-to-notes-lead',
+    schema: ['article', 'faq']
+  },
+
+  'timestamped-youtube-summary': {
+    path: '/timestamped-youtube-summary',
+    file: 'timestamped-youtube-summary.html',
+    section: 'guides',
+    title: 'Timestamped YouTube Summary',
+    description:
+      'Get a timestamped YouTube summary where every claim links to the second it came from, and learn how to tell real timestamps from reconstructed ones.',
+    cardKicker: 'Timestamps',
+    cardImage: 'timestamped-youtube-summary-lead',
+    schema: ['article', 'faq']
+  },
+
+  'youtube-shorts-summarizer': {
+    path: '/youtube-shorts-summarizer',
+    file: 'youtube-shorts-summarizer.html',
+    section: 'guides',
+    title: 'YouTube Shorts Summarizer',
+    description:
+      'Summarize YouTube Shorts and short clips. Shorts URLs work the same as any video here, though the honest answer is that most Shorts do not need summarizing.',
+    cardKicker: 'Shorts',
+    cardImage: 'youtube-shorts-summarizer-lead',
+    schema: ['article', 'faq']
+  },
+
+  'youtube-livestream-summarizer': {
+    path: '/youtube-livestream-summarizer',
+    file: 'youtube-livestream-summarizer.html',
+    section: 'guides',
+    title: 'YouTube Livestream Summarizer',
+    description:
+      'Summarize a YouTube livestream replay without watching four hours of it. What streams do to captions, and how to check the whole replay was read.',
+    cardKicker: 'Livestreams',
+    cardImage: 'youtube-livestream-summarizer-lead',
+    schema: ['article', 'faq']
+  },
+
+  'summarize-youtube-transcript': {
+    path: '/summarize-youtube-transcript',
+    file: 'summarize-youtube-transcript.html',
+    section: 'guides',
+    title: 'How to Summarize a YouTube Transcript',
+    description:
+      'How to summarize a YouTube transcript properly, whether by hand or automatically, and why pasting one into a chatbot loses the thing that made it useful.',
+    cardKicker: 'Transcripts',
+    cardImage: 'summarize-youtube-transcript-lead',
+    schema: ['article', 'faq']
+  },
+
+  'summarize-youtube-video-without-transcript': {
+    path: '/summarize-youtube-video-without-transcript',
+    file: 'summarize-youtube-video-without-transcript.html',
+    section: 'guides',
+    title: 'How to Summarize a Video With No Transcript',
+    description:
+      'What to do when a YouTube video has no captions, why tools that summarize it anyway are guessing, and the workarounds that actually exist.',
+    cardKicker: 'No captions',
+    cardImage: 'summarize-without-transcript-lead',
+    schema: ['article', 'faq']
+  },
+
 };
 
 /** path → page, built once at import. */

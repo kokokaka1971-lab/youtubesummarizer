@@ -734,6 +734,516 @@ export const IMAGE_SLOTS = [
     alt: 'A whiteboard covered in handwritten equations.',
     width: 1240,
     aspect: '16/9'
+  },
+
+  /* ---- Batch 02 - tutorials ---- */
+  {
+    id: 'youtube-tutorial-summarizer-lead',
+    provider: 'pexels',
+    query: 'person following a tutorial at a desk with laptop',
+    alt: 'Someone working through a tutorial at a laptop.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'tutorial-numbered-steps',
+    provider: 'unsplash',
+    query: 'numbered list written on a notepad',
+    alt: 'A numbered list written out on a notepad.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'tutorial-screen-content',
+    provider: 'pexels',
+    query: 'computer screen showing an application interface',
+    alt: 'A computer screen showing an application interface.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'tutorial-follow-along',
+    provider: 'unsplash',
+    query: 'hands working on a laptop beside written notes',
+    alt: 'Hands working at a laptop with notes alongside.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'tutorial-step-check',
+    provider: 'pexels',
+    query: 'hand ticking items off a checklist',
+    alt: 'A hand ticking items off a printed checklist.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'tutorial-export-checklist',
+    provider: 'unsplash',
+    query: 'checklist on a clipboard on a desk',
+    alt: 'A checklist on a clipboard resting on a desk.',
+    width: 1240,
+    aspect: '16/9'
+  },
+
+  /* ---- Batch 02 - languages ---- */
+  {
+    id: 'multilingual-youtube-summarizer-lead',
+    provider: 'pexels',
+    query: 'world map with pins on a wall',
+    alt: 'A world map with pins marking locations.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'multilingual-language-picker',
+    provider: 'unsplash',
+    query: 'dictionary open on a desk',
+    alt: 'An open dictionary lying on a desk.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'multilingual-what-survives',
+    provider: 'pexels',
+    query: 'two books in different languages side by side',
+    alt: 'Two books in different languages side by side.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'multilingual-double-translation',
+    provider: 'unsplash',
+    query: 'photocopy of a photocopy of text',
+    alt: 'A degraded photocopy of a page of text.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'multilingual-timestamp-check',
+    provider: 'pexels',
+    query: 'finger pointing at a line of foreign text',
+    alt: 'A finger resting on a line of printed text.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'multilingual-global-desk',
+    provider: 'unsplash',
+    query: 'desk with laptop and international newspapers',
+    alt: 'A desk with a laptop and newspapers in several languages.',
+    width: 1240,
+    aspect: '16/9'
+  },
+
+  /* ---- Batch 02 - one hour ---- */
+  {
+    id: 'summarize-1-hour-youtube-video-lead',
+    provider: 'pexels',
+    query: 'clock face showing an hour passing',
+    alt: 'A clock face on a plain wall.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'one-hour-transcript-scale',
+    provider: 'unsplash',
+    query: 'thick stack of printed paper on a desk',
+    alt: 'A thick stack of printed pages on a desk.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'one-hour-timestamp-shape',
+    provider: 'pexels',
+    query: 'ruler and measuring marks on paper',
+    alt: 'A ruler laid across marked paper.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'one-hour-output-length',
+    provider: 'unsplash',
+    query: 'small note beside a large document',
+    alt: 'A small note card beside a thick document.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'one-hour-eight-minutes',
+    provider: 'pexels',
+    query: 'hourglass beside a laptop',
+    alt: 'An hourglass standing beside a laptop.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'one-hour-conference-room',
+    provider: 'unsplash',
+    query: 'empty conference room with projector screen',
+    alt: 'An empty conference room with a projector screen.',
+    width: 1240,
+    aspect: '16/9'
+  },
+
+  /* ---- Batch 02 - key points ---- */
+  {
+    id: 'extract-key-points-lead',
+    provider: 'pexels',
+    query: 'highlighted lines in a printed document',
+    alt: 'Highlighted lines running down a printed document.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'extract-key-points-bullets',
+    provider: 'unsplash',
+    query: 'bullet point list on a whiteboard',
+    alt: 'A short bullet list written on a whiteboard.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'extract-key-points-priority',
+    provider: 'pexels',
+    query: 'stones stacked in order of size',
+    alt: 'Stones stacked in descending order of size.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'extract-key-points-lost-detail',
+    provider: 'unsplash',
+    query: 'torn paper with missing pieces',
+    alt: 'A torn sheet of paper with pieces missing.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'extract-key-points-shared',
+    provider: 'pexels',
+    query: 'phone showing a message being shared',
+    alt: 'A phone screen showing a message thread.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'extract-key-points-count',
+    provider: 'unsplash',
+    query: 'counting on an abacus',
+    alt: 'Beads counted along an abacus.',
+    width: 1240,
+    aspect: '16/9'
+  },
+
+  /* ---- Batch 02 - notes ---- */
+  {
+    id: 'youtube-video-to-notes-lead',
+    provider: 'pexels',
+    query: 'open notebook with structured notes and pen',
+    alt: 'An open notebook of structured notes with a pen.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'video-to-notes-two-kinds',
+    provider: 'unsplash',
+    query: 'typed page beside a handwritten page',
+    alt: 'A typed page lying beside a handwritten one.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'video-to-notes-export',
+    provider: 'pexels',
+    query: 'laptop screen showing plain text notes',
+    alt: 'Plain text notes open on a laptop screen.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'video-to-notes-workflow',
+    provider: 'unsplash',
+    query: 'two notebooks open side by side',
+    alt: 'Two notebooks open side by side on a desk.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'video-to-notes-months-later',
+    provider: 'pexels',
+    query: 'old notebook reopened on a desk',
+    alt: 'A worn notebook reopened on a desk.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'video-to-notes-archive',
+    provider: 'unsplash',
+    query: 'shelf of labelled notebooks',
+    alt: 'A shelf holding rows of labelled notebooks.',
+    width: 1240,
+    aspect: '16/9'
+  },
+
+  /* ---- Batch 02 - timestamped summaries ---- */
+  {
+    id: 'timestamped-youtube-summary-lead',
+    provider: 'pexels',
+    query: 'stopwatch resting on printed notes',
+    alt: 'A stopwatch resting on a page of notes.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'timestamped-summary-jobs',
+    provider: 'unsplash',
+    query: 'signpost with three directions',
+    alt: 'A signpost pointing in three directions.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'timestamped-summary-check',
+    provider: 'pexels',
+    query: 'magnifying glass over a line of text',
+    alt: 'A magnifying glass over a line of printed text.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'timestamped-summary-chapters',
+    provider: 'unsplash',
+    query: 'tabbed dividers in a ring binder',
+    alt: 'Tabbed dividers separating sections in a binder.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'timestamped-summary-limits',
+    provider: 'pexels',
+    query: 'single link in a metal chain',
+    alt: 'A close-up of one link in a metal chain.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'timestamped-summary-export',
+    provider: 'unsplash',
+    query: 'text document open on a tablet',
+    alt: 'A text document open on a tablet screen.',
+    width: 1240,
+    aspect: '16/9'
+  },
+
+  /* ---- Batch 02 - shorts ---- */
+  {
+    id: 'youtube-shorts-summarizer-lead',
+    provider: 'pexels',
+    query: 'phone held vertically showing a video',
+    alt: 'A phone held upright playing a video.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'shorts-phone-scrolling',
+    provider: 'unsplash',
+    query: 'thumb scrolling on a phone screen',
+    alt: 'A thumb scrolling on a phone screen.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'shorts-captions',
+    provider: 'pexels',
+    query: 'phone screen with subtitles over video',
+    alt: 'Subtitles overlaid on a phone video.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'shorts-clip-length',
+    provider: 'unsplash',
+    query: 'short film strip on a white surface',
+    alt: 'A short strip of film on a white surface.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'shorts-batch-record',
+    provider: 'pexels',
+    query: 'grid of small photo prints on a table',
+    alt: 'A grid of small photo prints laid on a table.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'shorts-what-you-get',
+    provider: 'unsplash',
+    query: 'phone and notepad side by side on a desk',
+    alt: 'A phone and a notepad side by side on a desk.',
+    width: 1240,
+    aspect: '16/9'
+  },
+
+  /* ---- Batch 02 - livestreams ---- */
+  {
+    id: 'youtube-livestream-summarizer-lead',
+    provider: 'pexels',
+    query: 'live broadcast studio with camera',
+    alt: 'A broadcast camera in a studio.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'livestream-length',
+    provider: 'unsplash',
+    query: 'long audio waveform on a monitor',
+    alt: 'A long audio waveform across a monitor.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'livestream-coverage-check',
+    provider: 'pexels',
+    query: 'progress bar on a video player screen',
+    alt: 'A video player progress bar on screen.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'livestream-segments',
+    provider: 'unsplash',
+    query: 'sectioned timeline drawn on paper',
+    alt: 'A timeline divided into sections on paper.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'livestream-archive',
+    provider: 'pexels',
+    query: 'archive shelves of recorded media',
+    alt: 'Shelves of archived recorded media.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'livestream-event',
+    provider: 'unsplash',
+    query: 'conference stage with large screen',
+    alt: 'A conference stage with a large display screen.',
+    width: 1240,
+    aspect: '16/9'
+  },
+
+  /* ---- Batch 02 - transcripts ---- */
+  {
+    id: 'summarize-youtube-transcript-lead',
+    provider: 'pexels',
+    query: 'printed transcript with handwritten marks',
+    alt: 'A printed transcript marked up by hand.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'summarize-transcript-methods',
+    provider: 'unsplash',
+    query: 'three paths diverging in a field',
+    alt: 'Three paths diverging across open ground.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'summarize-transcript-raw',
+    provider: 'pexels',
+    query: 'unbroken block of printed text',
+    alt: 'An unbroken block of printed text.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'summarize-transcript-compression',
+    provider: 'unsplash',
+    query: 'large book beside a small card',
+    alt: 'A large book next to a single small card.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'summarize-transcript-why-stop',
+    provider: 'pexels',
+    query: 'conveyor belt with boxes in a warehouse',
+    alt: 'Boxes moving along a warehouse conveyor.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'summarize-transcript-quote',
+    provider: 'unsplash',
+    query: 'quotation marked in a printed page',
+    alt: 'A quotation marked out on a printed page.',
+    width: 1240,
+    aspect: '16/9'
+  },
+
+  /* ---- Batch 02 - no transcript ---- */
+  {
+    id: 'summarize-without-transcript-lead',
+    provider: 'pexels',
+    query: 'muted speaker icon on a dark screen',
+    alt: 'A dark screen showing a muted speaker symbol.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'no-transcript-causes',
+    provider: 'unsplash',
+    query: 'blank sheet of paper on a desk',
+    alt: 'A blank sheet of paper on a desk.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'no-transcript-honest-failure',
+    provider: 'pexels',
+    query: 'closed sign in a shop window',
+    alt: 'A closed sign hanging in a shop window.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'no-transcript-bad-captions',
+    provider: 'unsplash',
+    query: 'distorted text on a glitching screen',
+    alt: 'Distorted text on a glitching display.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'no-transcript-visual-content',
+    provider: 'pexels',
+    query: 'silent film projector in a dark room',
+    alt: 'A film projector running in a dark room.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'no-transcript-tool-test',
+    provider: 'unsplash',
+    query: 'laboratory test tubes in a rack',
+    alt: 'Test tubes lined up in a rack.',
+    width: 1240,
+    aspect: '16/9'
   }
 ];
 

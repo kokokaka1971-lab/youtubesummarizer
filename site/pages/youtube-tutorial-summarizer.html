@@ -1,0 +1,241 @@
+<section class="page-head">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="kicker">Guides</p>
+    <h1>YouTube Tutorial Summarizer</h1>
+    <p class="lede">
+      Tutorials are the videos people rewind most. You miss one step, scrub back, overshoot,
+      scrub forward, and lose the thread entirely. A numbered list with timestamps fixes the
+      scrubbing, not the tutorial.
+    </p>
+    <div class="head-actions">
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize a tutorial</a>
+      <a class="btn btn-soft btn-lg" href="/features">See every feature</a>
+    </div>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="wrap wrap-narrow">
+    <!--image:youtube-tutorial-summarizer-lead-->
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap-narrow">
+    <div class="prose">
+      <p>
+        A tutorial has a shape no other video has: it is a sequence, and the order is the
+        content. Lose step four and steps five onward stop making sense.
+      </p>
+      <p>
+        That makes tutorials both the easiest videos to summarize usefully and the easiest
+        to summarize badly, depending on whether the tool understands it is looking at a
+        procedure rather than an argument.
+      </p>
+
+      <h2>Why tutorials are the worst videos to scrub through</h2>
+      <p>
+        Scrubbing is a guessing game. The progress bar gives you no information about what
+        happens where, so finding "the bit where they configure the thing" means dragging
+        back and forth until you recognise a frame.
+      </p>
+      <p>
+        Every overshoot costs twice: you lose your place, and you lose the state you were
+        holding in your head about what you had already done. That is why a five-minute
+        tutorial routinely takes twenty minutes to follow.
+      </p>
+      <p>
+        Chapters would solve it, and most tutorial uploads do not have them, which is why
+        <a href="/">generating the map yourself</a> beats hoping the creator made one. A generated
+        step list is the same idea produced from the content rather than from whether the
+        creator remembered.
+      </p>
+
+      <h2>Steps, not takeaways</h2>
+      <p>
+        This is the distinction that separates a useful tutorial summary from a useless one.
+        A takeaway list says what the video was about. A step list says what to do.
+      </p>
+      <p>
+        "The video covers installing dependencies and configuring the environment" is a
+        description. "1. Install the CLI. 2. Run init. 3. Set the API key in .env" is a
+        procedure you can follow with the video closed.
+      </p>
+
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <caption>Summary styles, and which video wants which</caption>
+          <thead>
+            <tr>
+              <th scope="col">Output</th>
+              <th scope="col">Answers</th>
+              <th scope="col">Right for</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Numbered steps</th><td>What do I do, in what order?</td><td>Tutorials, walkthroughs, recipes</td></tr>
+            <tr><th scope="row">Key takeaways</th><td>What did it argue?</td><td>Talks, essays, interviews</td></tr>
+            <tr><th scope="row">Chapter map</th><td>Where is the part I need?</td><td>Long videos of any kind</td></tr>
+            <tr><th scope="row">Full notes</th><td>What did it say, in detail?</td><td>Lectures, reference material</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        The GOV.UK Design System's
+        <a href="https://design-system.service.gov.uk/patterns/step-by-step-navigation/" rel="nofollow noopener" target="_blank">step-by-step
+        navigation pattern</a> exists for the same reason: it presents an end-to-end
+        journey in logical steps, listed in the order someone needs to complete them.
+        Order is the structure, not decoration on top of it.
+      </p>
+
+      <!--image:tutorial-numbered-steps-->
+
+      <h2>The prerequisite problem</h2>
+      <p>
+        Tutorials bury their assumptions. Somewhere around minute two, a creator says "assuming
+        you've already got X set up" — and if you haven't, the remaining eighteen minutes are
+        unusable.
+      </p>
+      <p>
+        You normally discover this at step six, after investing enough time to feel committed.
+        A step list surfaces it in the first twenty seconds, because the assumption sits in the
+        list alongside the actions.
+      </p>
+      <p>
+        That alone justifies reading the summary first. Not to avoid the video, but to find out
+        whether this is the right video before you spend twenty minutes on the wrong one.
+      </p>
+
+      <h2>Where tutorial summaries genuinely fail</h2>
+      <p>
+        Be realistic about this before you rely on one. Tutorials are the video type where
+        transcript-based summarising has the clearest ceiling.
+      </p>
+      <p>
+        <strong>When the content is on screen.</strong> A creator who says "and then we just
+        do this" while clicking has put the instruction in the pixels, not the audio. The
+        transcript contains "and then we just do this", which summarises to nothing.
+      </p>
+      <p>
+        <strong>When values are shown but not spoken.</strong> Settings, file paths, commands
+        typed on screen and never read aloud simply are not in the transcript. A summary
+        cannot recover them, and a tool that invents plausible ones is worse than a tool that
+        omits them.
+      </p>
+      <p>
+        There is a quick predictor. If you could follow the tutorial with your eyes closed,
+        it will summarize well. If you could follow it with the sound off, it will not.
+      </p>
+      <p>
+        Good creators narrate what they are doing, which is why some channels summarize far
+        better than others. That is a property of the teaching, not of the tool, and it tends
+        to correlate with how good the tutorial was to begin with.
+      </p>
+
+      <!--image:tutorial-screen-content-->
+
+      <h2>How to use a step list properly</h2>
+      <p>
+        The workflow that saves the most time is not "read instead of watching". It is read
+        first, then watch selectively.
+      </p>
+      <ol>
+        <li>
+          <strong>Read the steps before starting.</strong> Two minutes tells you whether the
+          tutorial actually covers your case, and whether you have the prerequisites.
+        </li>
+        <li>
+          <strong>Do the steps you already understand</strong> without playing the video at
+          all. For most tutorials that is the majority of them.
+        </li>
+        <li>
+          <strong>Open the timestamp for the one you don't.</strong> Watch that step at
+          normal speed, where the on-screen detail actually lives.
+        </li>
+        <li>
+          <strong>Keep the list.</strong> Export it, because the second time you do this
+          task you will want the steps and not the video.
+        </li>
+      </ol>
+      <p>
+        That last point is where most of the value accumulates. A tutorial you followed six
+        months ago is unfindable; a step list in your notes is not.
+      </p>
+
+      <!--image:tutorial-follow-along-->
+
+      <h2>Checking a tutorial summary before you trust it</h2>
+      <p>
+        Tutorials have a specific failure worth checking for: a step that was demonstrated
+        but never described, silently dropped.
+      </p>
+      <p>
+        Count the steps against the video's length. A twenty-minute tutorial that produced
+        four steps has almost certainly lost something, because twenty minutes of
+        instruction is rarely four actions.
+      </p>
+      <p>
+        Then open the timestamp for the last step and check it is near the end of the video.
+        If the final step lands at the eight-minute mark of a twenty-minute tutorial, the
+        summary stopped early and the ending is missing.
+      </p>
+
+      <!--image:tutorial-step-check-->
+
+      <h2>What you get here</h2>
+      <p>
+        <a href="/">Running a tutorial through the summarizer</a> gives you four depths from
+        one pass, so you can take the step list or the full notes without re-running
+        anything.
+      </p>
+      <ul>
+        <li>Steps in the order the video performs them, each with a clickable timestamp.</li>
+        <li>A chapter map for tutorials long enough to have sections.</li>
+        <li>Markdown export, so the steps go into your notes as a checklist.</li>
+        <li>An explicit message when no caption track exists, rather than an invented list.</li>
+      </ul>
+      <p>
+        For tutorials that are mostly on-screen work, treat the output as an index into the
+        video rather than a replacement for it — the same argument as
+        <a href="/transcripts-are-not-summaries">a transcript is not a summary</a>,
+        applied to procedures.
+      </p>
+
+      <!--image:tutorial-export-checklist-->
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details class="qa">
+          <summary>Will it give me the exact commands from the video?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Only if they were spoken aloud. Commands typed on screen and never read out are not in the transcript, so they cannot appear in the summary. Open the timestamp and read them off the video.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Does it work on very short tutorials?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Yes, though the value is smaller. Under about three minutes there is little to navigate, and watching it is usually faster than reading a summary of it.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Can I get the steps as a checklist?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Export is Markdown, so the numbered steps paste straight into any notes app as a list you can tick off. The timestamp links survive the export.</p></div>
+        </details>
+        <details class="qa">
+          <summary>What if the tutorial is in another language?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Summaries work across 38 languages, and you can summarize into a different language than the video. A German tutorial can produce English steps in one pass.</p></div>
+        </details>
+        <details class="qa">
+          <summary>How do I know a step wasn't missed?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Check the last step's timestamp against the runtime, and sanity-check the count against the length. Four steps from twenty minutes of instruction usually means something was demonstrated rather than described.</p></div>
+        </details>
+      </div>
+    </div>
+
+    <div class="post-cta">
+      <h2>Stop scrubbing backwards</h2>
+      <p>Turn the tutorial you are about to follow into a step list you can work from.</p>
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize a tutorial — free</a>
+    </div>
+
+    <!--related-->
+  </div>
+</section>
