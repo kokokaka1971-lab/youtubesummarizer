@@ -1,7 +1,7 @@
 <article class="post">
   <header class="post-head">
     <div class="wrap wrap-narrow">
-      <p class="post-meta"><time datetime="2026-07-02">2 July 2026</time> · 4 min read</p>
+      <p class="post-meta"><time datetime="2026-07-02">2 July 2026</time> · 6 min read</p>
       <h1>Why every summary should carry timestamps</h1>
       <p class="lede">
         A summary you can't check is a rumour with good formatting. The link back to
@@ -10,6 +10,10 @@
       </p>
     </div>
   </header>
+
+  <div class="wrap wrap-narrow">
+    <!--image:blog-timestamps-->
+  </div>
 
   <div class="wrap wrap-narrow">
     <div class="prose">
@@ -29,6 +33,41 @@
         confident summary of a hedged claim looks exactly like a confident summary of
         a confident claim.
       </p>
+      <p>
+        Notice that no reviewer catches this. Someone checking the summary against the
+        talk would have to already suspect that clause existed. Someone reading the
+        summary alone has nothing to go on — it is internally consistent, it is
+        specific, it names a real finding. Every signal a careful reader normally uses
+        to detect a shaky claim has been stripped out by the same process that
+        produced the claim.
+      </p>
+
+      <!--image:blog-ts-hedge-->
+
+      <h2>Three kinds of claim that reliably break</h2>
+      <p>
+        Not everything compresses equally badly. In practice the damage concentrates
+        in three places, and they're worth knowing because they're the ones to check.
+      </p>
+      <ul>
+        <li>
+          <strong>Numbers.</strong> A figure is short, quotable and feels like the
+          substance of a finding, so it survives compression almost every time — while
+          the conditions attached to it, which are long and boring, do not. The number
+          arrives intact and unaccompanied.
+        </li>
+        <li>
+          <strong>Attributions.</strong> "One team argues X, though the field mostly
+          disagrees" reduces very naturally to "X". A speaker describing a position is
+          hard to tell from a speaker holding it, and summaries resolve that ambiguity
+          in whichever direction reads more cleanly.
+        </li>
+        <li>
+          <strong>Negations and conditionals.</strong> "This doesn't work unless you
+          already have the infrastructure" carries its entire meaning in two small
+          words that a shorter sentence has every incentive to drop.
+        </li>
+      </ul>
 
       <h2>Compression always loses something</h2>
       <p>
@@ -49,6 +88,15 @@
         the claims you're about to <em>act</em> on, which is usually one or two out of
         the six.
       </p>
+      <p>
+        This is the part worth being precise about: timestamps don't make the summary
+        more accurate. The same clause still went missing. What they change is that
+        the loss is now recoverable in one second instead of ninety minutes, and that
+        difference is the whole argument. A tool that cannot be wrong usefully is
+        worse than one that can.
+      </p>
+
+      <!--image:blog-ts-compression-->
 
       <h2>The fluency problem makes it worse</h2>
       <p>
@@ -65,6 +113,17 @@
         sufficient answer. The question isn't whether the summary is usually right.
         It's what you can do when it isn't.
       </p>
+      <p>
+        You can watch this happen in a single sentence. A speaker says "I think — and
+        I could be wrong about this — that the effect is mostly driven by selection."
+        The hedges are doing real work: they mark a live hypothesis, offered for
+        argument. Compress it to "the effect is driven by selection" and you have not
+        shortened the claim, you have promoted it. The speaker's own uncertainty was
+        information, and it was the first thing discarded because it was the least
+        efficient thing to keep.
+      </p>
+
+      <!--image:blog-ts-fluency-->
 
       <h2>What this looks like in practice</h2>
       <p>Three things follow from taking this seriously:</p>
@@ -90,6 +149,26 @@
         </li>
       </ul>
 
+      <!--image:blog-ts-pipeline-->
+
+      <h2>What it costs to keep them</h2>
+      <p>
+        It is worth being honest that carrying timings through is not free, which is
+        why so many tools quietly drop them. The transcript arrives as thousands of
+        short fragments with times attached. Every useful transformation — merging
+        fragments into sentences, sentences into topics, topics into a claim — is a
+        step where a piece of output stops corresponding to exactly one piece of
+        input, and the mapping has to be maintained by hand at each one.
+      </p>
+      <p>
+        The cheap version is to summarize the text and then guess: search the
+        transcript for words resembling the output and cite whatever matches. It works
+        often enough to look fine in a demo, and it fails precisely on the claims that
+        were most heavily rewritten — which are, inevitably, the ones most worth
+        checking. A timestamp that is right when the summary is right and wrong when
+        the summary is wrong is not a safeguard. It's decoration.
+      </p>
+
       <h2>The test to apply</h2>
       <p>
         Whatever summarization tool you use, try this: find a video you already know
@@ -101,6 +180,15 @@
         if the answer is "rewatch the video", then you don't have a summary you can
         rely on. You have one you can only believe.
       </p>
+      <p>
+        The same test applies to the timestamps themselves, and it's worth running
+        once. Click three of them. If they land within a few seconds of the claim
+        they're attached to, the mapping is real. If they land vaguely in the right
+        region — the right topic, a minute early — they were reconstructed after the
+        fact, and they'll be furthest off exactly where you need them most.
+      </p>
+
+      <!--image:blog-ts-test-->
     </div>
 
     <div class="post-cta">

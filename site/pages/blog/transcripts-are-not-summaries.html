@@ -1,7 +1,7 @@
 <article class="post">
   <header class="post-head">
     <div class="wrap wrap-narrow">
-      <p class="post-meta"><time datetime="2026-05-28">28 May 2026</time> · 5 min read</p>
+      <p class="post-meta"><time datetime="2026-05-28">28 May 2026</time> · 6 min read</p>
       <h1>A transcript is not a summary</h1>
       <p class="lede">
         A lot of tools hand you the same words in a different box and call it
@@ -9,6 +9,10 @@
       </p>
     </div>
   </header>
+
+  <div class="wrap wrap-narrow">
+    <!--image:blog-transcripts-->
+  </div>
 
   <div class="wrap wrap-narrow">
     <div class="prose">
@@ -43,9 +47,41 @@
         into text you won't finish.
       </p>
       <p>
+        The arithmetic is worth doing once, because it kills the intuition that text
+        is inherently faster than video. Twelve thousand words is a long magazine
+        feature, and it's dense, unstructured, unedited magazine feature. Skimming it
+        doesn't work either: skimming relies on topic sentences and paragraph shape to
+        tell you what to skip, and a transcript has neither. You end up reading most
+        of it or none of it, and in practice it's none.
+      </p>
+      <p>
         Worse, the structure is invisible. A speaker signals a new section with a
         pause, a slide change, a shift in tone. None of that survives into text. The
         transcript is a flat wall where the original had shape.
+      </p>
+
+      <!--image:blog-tr-speech-->
+
+      <h2>And that's the good case</h2>
+      <p>
+        The example above assumes a clean caption track. Most of what you'll actually
+        get is YouTube's automatic transcription, which adds its own layer of damage:
+        no punctuation worth the name, no paragraph breaks, no speaker labels. A
+        two-person interview arrives as a single undifferentiated stream in which the
+        question and the answer are the same voice.
+      </p>
+      <p>
+        Then there are the substitutions. Automatic captioning is at its worst on
+        exactly the words carrying the most meaning — technical terms, proper nouns,
+        anything the speaker says once. These don't come back flagged as uncertain.
+        They come back as confident, plausible, wrong words sitting in otherwise
+        reasonable sentences, which is a good deal harder to notice than a gap would
+        have been.
+      </p>
+      <p>
+        Any tool printing that back to you is passing along every one of those errors
+        with a layer of formatting on top, and the formatting makes them look more
+        settled than they are.
       </p>
 
       <h2>The four things that have to happen</h2>
@@ -58,6 +94,8 @@
         removed the thing the speaker most wanted you to notice.
       </p>
 
+      <!--image:blog-tr-wall-->
+
       <h3>2. Structure has to be recovered</h3>
       <p>
         The sections were real — the speaker had an outline. They're just not marked
@@ -65,6 +103,8 @@
         itself, which is a genuine inference rather than a formatting pass. This is
         what a chapter map is: the outline the speaker was working from, reconstructed.
       </p>
+
+      <!--image:blog-tr-structure-->
 
       <h3>3. Claims have to be separated from scaffolding</h3>
       <p>
@@ -80,6 +120,22 @@
         from. This is the step most tools skip, because it makes every other step
         harder and its absence isn't visible in the output — you only miss it the
         first time you want to check something.
+      </p>
+
+      <!--image:blog-tr-claims-->
+
+      <h2>Why so many tools stop at step zero</h2>
+      <p>
+        Not because it's hard. Because fetching a caption track costs nothing, returns
+        instantly, and produces something that looks unmistakably like output. It is
+        long, it is clearly derived from your video, and it arrives fast enough to feel
+        impressive. Every incentive points at shipping it.
+      </p>
+      <p>
+        The four steps above cost real money per video and take a few seconds, and the
+        benefit is visible only to someone who already knows what they were supposed to
+        get. Nobody opens a reformatted transcript and thinks "this tool skipped topic
+        segmentation". They think the video was less interesting than they hoped.
       </p>
 
       <h2>How to tell them apart</h2>
@@ -98,12 +154,38 @@
         </li>
       </ul>
 
+      <!--image:blog-tr-tests-->
+
+      <h2>When you actually do want the transcript</h2>
+      <p>
+        None of this makes transcripts bad — they're the right tool for a narrow set
+        of jobs, and worth knowing which. If you need the exact wording of a quote,
+        only the transcript will do; a summary has by definition paraphrased it. If
+        you're searching for whether a term came up at all, ctrl-F over the raw text
+        beats any amount of compression. If you're captioning, translating, or feeding
+        the text to something else, you want the source, not an interpretation of it.
+      </p>
+      <p>
+        The failure isn't offering a transcript. It's offering one in answer to
+        "what's in this video?" — a question it structurally cannot address, since
+        answering it means deciding what matters, and a transcript is the artefact
+        produced by declining to decide.
+      </p>
+
       <h2>Why this is worth caring about</h2>
       <p>
         Because the failure is invisible. A reformatted transcript looks like output.
         It's long, it's relevant, it's clearly derived from your video. You only
         discover it didn't help when you're staring at 12,000 words with no more idea
         of what the video argued than before.
+      </p>
+      <p>
+        The cost isn't just the wasted time. It's that the failure teaches you the
+        wrong lesson. Having read four thousand words that went nowhere, the natural
+        conclusion is that summarizing video doesn't really work, or that this
+        particular video had less in it than you thought. The tool's limitation gets
+        filed as a fact about the material — which is the most expensive kind of bug,
+        because nobody reports it.
       </p>
       <p>
         The question worth asking isn't "did this tool produce text about my video".
