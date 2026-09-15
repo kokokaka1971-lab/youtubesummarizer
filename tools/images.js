@@ -104,6 +104,28 @@ class Unsplash {
     }));
   }
 
+  /** Re-fetch one photo we already chose, so a re-crop can't change the pick. */
+  async getById(id) {
+    const p = await this.#get(`https://api.unsplash.com/photos/${encodeURIComponent(id)}`);
+    return {
+      provider: 'unsplash',
+      id: p.id,
+      width: p.width,
+      height: p.height,
+      color: p.color,
+      description: p.description || p.alt_description || '',
+      src: `${p.urls.raw}&fm=jpg&q=80&fit=max`,
+      downloadLocation: p.links.download_location,
+      credit: {
+        provider: 'Unsplash',
+        providerUrl: utm('https://unsplash.com/'),
+        photographer: p.user.name,
+        photographerUrl: utm(p.user.links.html),
+        photoUrl: utm(p.links.html)
+      }
+    };
+  }
+
   /**
    * Unsplash's API guidelines require pinging download_location whenever a
    * photo is actually used — it is how photographers get credited with a
@@ -156,6 +178,33 @@ class Pexels {
         photoUrl: p.url
       }
     }));
+  }
+
+  /** Re-fetch one photo we already chose, so a re-crop can't change the pick. */
+  async getById(id) {
+    const res = await this.ring.run((key) =>
+      fetch(`https://api.pexels.com/v1/photos/${encodeURIComponent(id)}`, {
+        headers: { Authorization: key }
+      })
+    );
+    if (!res.ok) throw new Error(`Pexels ${res.status} for photo ${id}`);
+    const p = await res.json();
+    return {
+      provider: 'pexels',
+      id: String(p.id),
+      width: p.width,
+      height: p.height,
+      color: p.avg_color,
+      description: p.alt || '',
+      src: `${p.src.original}?auto=compress&cs=tinysrgb&fm=jpg&q=80`,
+      credit: {
+        provider: 'Pexels',
+        providerUrl: 'https://www.pexels.com/',
+        photographer: p.photographer,
+        photographerUrl: p.photographer_url,
+        photoUrl: p.url
+      }
+    };
   }
 
   async trackDownload() {

@@ -3369,7 +3369,12 @@ kbd {
    own dominant colour, which fills that box in the meantime instead of a flash
    of white. */
 .ph {
-  margin: 0 0 8px;
+  /* Capped and centred rather than filling the column. A lead photo at full
+     820px width stood 461px tall, which read as the page rather than as an
+     illustration of it. The file is 1200x628 — the standard featured/social
+     size — shown at 600px, which lands at 314px tall. */
+  margin: 0 auto 8px;
+  max-width: 600px;
 }
 
 .ph img {
@@ -3412,7 +3417,10 @@ kbd {
    clear gap above, a tighter one below so the credit stays attached. A figure
    landing directly before a heading would otherwise double up on space. */
 .prose .ph {
-  margin: 34px 0 10px;
+  /* In-article photos sit below the lead in the hierarchy, so they are capped
+     tighter again — 460px, inside the 68ch measure rather than filling it. */
+  margin: 34px auto 10px;
+  max-width: 460px;
 }
 .prose .ph + h2 { margin-top: 30px; }
 .prose .ph + h3 { margin-top: 24px; }

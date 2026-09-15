@@ -5,6 +5,7 @@
  *   npm run images -- --refresh <id>  re-pick one slot
  *   npm run images -- --refresh all   re-pick everything
  *   npm run images -- --dry-run       search only, download nothing
+ *   npm run images -- --recrop        re-download the same photos at new sizes
  *
  * Runs on your machine, never on the host. Already-resolved slots are skipped,
  * so re-running costs no quota — which is what keeps this safe to call from the
@@ -27,6 +28,10 @@ const args = process.argv.slice(2);
 const dryRun = args.includes('--dry-run');
 const refreshArg = args.includes('--refresh') ? args[args.indexOf('--refresh') + 1] : null;
 const refreshAll = refreshArg === 'all';
+// --recrop re-downloads the photos already chosen at whatever size the slots
+// now ask for. It looks each one up by id rather than searching again, so
+// changing a dimension can never quietly swap the picture.
+const recrop = args.includes('--recrop');
 
 async function readManifest() {
   try {
@@ -106,6 +111,41 @@ async function main() {
   let fetched = 0;
   let skipped = 0;
 
+  if (recrop) {
+    for (const slot of IMAGE_SLOTS) {
+      const entry = manifest[slot.id];
+      if (!entry) {
+        console.warn(`  ${slot.id} has no manifest entry yet — run without --recrop first.`);
+        continue;
+      }
+      const provider = providers[entry.provider];
+      if (!provider) {
+        console.warn(`  ${slot.id}: no keys for ${entry.provider} — skipping.`);
+        continue;
+      }
+      const [aw, ah] = (slot.aspect || '16/9').split('/').map(Number);
+      const height = Math.round((slot.width * ah) / aw);
+      if (entry.width === slot.width && entry.height === height) {
+        skipped++;
+        continue;
+      }
+
+      const pick = await provider.getById(entry.providerId);
+      const src = new URL(pick.src);
+      src.searchParams.set('w', String(slot.width));
+      src.searchParams.set('h', String(height));
+      src.searchParams.set('fit', 'crop');
+      src.searchParams.set('crop', 'faces,entropy');
+      const bytes = await download(src.toString(), path.join(IMG_DIR, entry.file));
+      await provider.trackDownload(pick);
+      console.log(
+        `  ${slot.id}: ${entry.width}x${entry.height} -> ${slot.width}x${height}` +
+          `  (${Math.round(bytes / 1024)} KB)`
+      );
+      manifest[slot.id] = { ...entry, width: slot.width, height, credit: pick.credit };
+      fetched++;
+    }
+  } else
   for (const slot of IMAGE_SLOTS) {
     const entry = manifest[slot.id];
     const wanted = refreshAll || refreshArg === slot.id;
