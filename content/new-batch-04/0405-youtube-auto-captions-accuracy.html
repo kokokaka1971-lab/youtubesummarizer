@@ -1,0 +1,263 @@
+<!--META
+title: How Accurate Are YouTube Auto-Captions?
+description: What YouTube's automatic captions get wrong, why the errors are hard to spot, and what that means for anything built on top of them.
+section: guides
+focus_keyword: youtube auto captions accuracy
+schema: article, faq
+lead_image: auto-captions-lead
+links_to: /transcripts-are-not-summaries
+-->
+
+<section class="page-head">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="kicker">Guides</p>
+    <h1>YouTube Auto Captions Accuracy: What They Get Wrong</h1>
+    <p class="lede">
+      Good enough to follow along, and least reliable on exactly the words carrying the
+      most meaning. The errors do not arrive marked as uncertain — they arrive as
+      confident, plausible, wrong words.
+    </p>
+    <div class="head-actions">
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize a video</a>
+      <a class="btn btn-soft btn-lg" href="/youtube-transcript-summarizer">Transcript guide</a>
+    </div>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="wrap wrap-narrow">
+    <!--image:auto-captions-lead-->
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap-narrow">
+    <div class="prose">
+      <p>
+        This matters more than it sounds, because almost everything you might do with a
+        video's text — including <a href="/youtube-transcript-summarizer">summarizing
+        it</a> — — summarize it, search it, translate it, quote it — starts from the
+        caption track.
+      </p>
+      <p>
+        Whatever the captions got wrong flows downstream unchanged, and nothing further
+        along the chain can recover it.
+      </p>
+
+      <h2>What Google says</h2>
+      <p>
+        Worth starting with the vendor's own position rather than a third-party benchmark,
+        because it is unusually frank.
+      </p>
+      <p>
+        YouTube's own documentation on
+        <a href="https://support.google.com/youtube/answer/6373554" rel="nofollow noopener" target="_blank">automatic
+        captions</a> is unusually candid: accuracy depends on audio quality, accent,
+        background noise and how clearly people speak, and automatic captions may
+        misrepresent the spoken content.
+      </p>
+      <p>
+        That is a vendor telling you not to rely on the output, which is worth taking at
+        face value rather than as boilerplate.
+      </p>
+
+      <h2>Where the errors concentrate</h2>
+      <p>
+        Not evenly. Automatic transcription is strongest on common words in clear speech
+        and weakest on precisely the words you were listening for.
+      </p>
+
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <caption>What automatic captioning handles well and badly</caption>
+          <thead>
+            <tr>
+              <th scope="col">Content</th>
+              <th scope="col">Reliability</th>
+              <th scope="col">Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Everyday conversation</th><td>Good</td><td>Common words, heavily represented</td></tr>
+            <tr><th scope="row">Technical terms</th><td>Poor</td><td>Rare, and often said once</td></tr>
+            <tr><th scope="row">Proper nouns and names</th><td>Poor</td><td>No context to disambiguate</td></tr>
+            <tr><th scope="row">Numbers and units</th><td>Mixed</td><td>Often transcribed, rarely formatted</td></tr>
+            <tr><th scope="row">Crosstalk and interviews</th><td>Poor</td><td>No speaker labels; overlapping audio</td></tr>
+            <tr><th scope="row">Heavy accents or noise</th><td>Variable</td><td>Documented by Google as a factor</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        The pattern is consistent: the rarer and more meaningful a word is, the less likely
+        it is to survive intact.
+      </p>
+
+      <!--image:auto-captions-errors-->
+
+      <h2>Why the errors are hard to catch</h2>
+      <p>
+        A gap would be obvious. What you get instead is substitution — a real word, in
+        grammatical position, that happens to be the wrong one.
+      </p>
+      <p>
+        So a sentence about a specialist concept arrives reading perfectly well, with one
+        term quietly replaced by something that sounds similar. Nothing flags it, and if
+        you do not already know the subject you have no way to notice.
+      </p>
+      <p>
+        That is the asymmetry worth internalising: captions are least reliable exactly when
+        you are least equipped to spot the failure, because both conditions are "this is
+        unfamiliar material".
+      </p>
+
+      <h2>The missing structure</h2>
+      <p>
+        Wrong words are only half the problem. Automatic captions also omit several things
+        a human captioner would supply as a matter of course, and their absence causes
+        distinct downstream trouble.
+      </p>
+      <p>
+        Beyond wrong words, automatic captions omit things human captions include.
+      </p>
+      <p>
+        There is no reliable punctuation, so sentence boundaries are guesswork. There are
+        no paragraph breaks. And there are no speaker labels, which means a two-person
+        interview arrives as a single undifferentiated stream where question and answer
+        read identically.
+      </p>
+      <p>
+        That last one causes real damage downstream: anything summarising the transcript
+        has to infer who said what, and getting it wrong puts a guest's claim in the host's
+        mouth.
+      </p>
+
+      <!--image:auto-captions-structure-->
+
+      <h2>What this means for summaries</h2>
+      <p>
+        A summary cannot be more accurate than its input. If the caption track mangled a
+        term, the summary will repeat the mangling confidently — and having been through a
+        compression step, it will look more authoritative than the transcript did.
+      </p>
+      <p>
+        This is the practical argument for timestamps. When a term in a summary looks
+        wrong for the subject, you open the timestamp and listen to what was actually
+        said. Ten seconds, and it is the only reliable correction available.
+      </p>
+      <p>
+        We make the longer version of this argument in
+        <a href="/transcripts-are-not-summaries">a transcript is not a summary</a>.
+      </p>
+
+      <h2>Why this is getting better slowly</h2>
+      <p>
+        Automatic transcription has improved a great deal and the improvement is uneven in
+        a predictable way.
+      </p>
+      <p>
+        General speech recognition gains quickly, because there is enormous training data
+        for ordinary conversation. Specialist vocabulary does not, because a term used by
+        four thousand people worldwide will never be well represented however large the
+        model gets.
+      </p>
+      <p>
+        So the gap between "good enough to follow" and "reliable on the words that matter"
+        is likely to persist. That is an argument for building the checking habit rather
+        than waiting for the problem to be solved.
+      </p>
+
+      <!--image:auto-captions-improving-->
+
+      <h2>How to check a caption track quickly</h2>
+      <ol>
+        <li><strong>Open the transcript panel</strong> under the video and read thirty seconds of it.</li>
+        <li><strong>Look at the technical terms.</strong> If the subject-specific vocabulary is right, the rest probably is.</li>
+        <li><strong>Check whether they are human-written.</strong> Punctuation and speaker labels indicate a real caption file rather than an automatic one.</li>
+        <li><strong>Listen to one uncertain passage</strong> rather than guessing from context.</li>
+      </ol>
+      <p>
+        Step three is the most useful signal. A video with human captions is a different
+        proposition, and creators who bother with them tend to be worth watching anyway.
+      </p>
+
+      <!--image:auto-captions-check-->
+
+      <h2>Human captions are a quality signal</h2>
+      <p>
+        Worth noticing beyond the accuracy question: whether a channel provides written
+        captions tells you something about the channel.
+      </p>
+      <p>
+        Captioning properly is work. A creator who has done it has thought about people
+        watching without sound, viewers who are deaf or hard of hearing, and non-native
+        speakers — which usually correlates with having thought about the content too.
+      </p>
+      <p>
+        So when you have a choice between two videos on the same topic, the one with real
+        captions is a reasonable default. You get a more reliable transcript and, more
+        often than not, a better-made video.
+      </p>
+
+      <h2>When there are no captions at all</h2>
+      <p>
+        Also common, and worth distinguishing from bad captions. Uploads under about 72
+        hours old may not have generated them yet, videos without speech never will, and
+        some creators disable them.
+      </p>
+      <p>
+        In that case nothing built on the transcript works, and the honest response from
+        any tool is to say so rather than produce something assembled from the title. More
+        in <a href="/summarize-youtube-video-without-transcript">what to do with no
+        transcript</a>.
+      </p>
+
+      <!--image:auto-captions-none-->
+
+      <h2>What to do with all this</h2>
+      <p>
+        Not distrust captions generally — they are good enough for most purposes and have
+        made an enormous amount of video searchable that was not before.
+      </p>
+      <p>
+        Distrust them specifically: on names, on technical terms, on numbers, and on
+        anything said once. Those are the places to check, they take ten seconds each at a
+        timestamp, and they are exactly the words you were listening for in the first
+        place.
+      </p>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details class="qa">
+          <summary>How accurate are YouTube's automatic captions?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Generally good on clear everyday speech and unreliable on technical terms, names and anything said once. Google documents that accuracy varies with audio quality, accent and background noise.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Can I tell whether captions are automatic or human-written?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Usually from punctuation and speaker labels. Automatic captions have little reliable punctuation and no speaker labels, so an interview reading as one continuous stream is a strong signal.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Do caption errors affect the summary?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Directly. A summary is built from the transcript, so a mis-transcribed term flows straight through and comes out sounding more confident. Check odd terms at their timestamp.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Why do some videos have no captions?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Recent uploads may not have generated them yet, videos without speech cannot have them, some languages are unsupported, and some creators turn them off. Only the first resolves itself with time.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Can I fix bad captions myself?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Not on someone else's video. You can run your own speech-to-text over the audio, which is a separate step and usually loses the timings that make the result checkable.</p></div>
+        </details>
+      </div>
+    </div>
+
+    <div class="post-cta">
+      <h2>Check before you trust it</h2>
+      <p>Summarize a video, then open a timestamp on any term that looks wrong for the subject.</p>
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize a video — free</a>
+    </div>
+
+    <!--related-->
+  </div>
+</section>

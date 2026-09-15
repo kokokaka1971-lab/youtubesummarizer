@@ -3449,5 +3449,1025 @@
       "photoUrl": "https://www.pexels.com/photo/close-up-of-puzzle-elements-10977908/"
     },
     "fetchedAt": "2026-09-15"
+  },
+  "college-students-lead": {
+    "file": "college-students-lead.jpg",
+    "provider": "pexels",
+    "providerId": "19554793",
+    "width": 1600,
+    "height": 838,
+    "alt": "A university building seen from the campus lawn.",
+    "color": "#BBA897",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "An Vuong",
+      "photographerUrl": "https://www.pexels.com/@an-vuong-462540819",
+      "photoUrl": "https://www.pexels.com/photo/the-university-of-oklahoma-in-autumn-19554793/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "college-students-week": {
+    "file": "college-students-week.jpg",
+    "provider": "unsplash",
+    "providerId": "eaeKesI3TJQ",
+    "width": 1240,
+    "height": 698,
+    "alt": "A weekly timetable pinned to a wall.",
+    "color": "#d9d9d9",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Paico Oficial",
+      "photographerUrl": "https://unsplash.com/@paicooficial?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/text-eaeKesI3TJQ?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "college-students-vocabulary": {
+    "file": "college-students-vocabulary.jpg",
+    "provider": "pexels",
+    "providerId": "135129",
+    "width": 1240,
+    "height": 698,
+    "alt": "An academic textbook open at a page of definitions.",
+    "color": "#C9CCD3",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "freestocks.org",
+      "photographerUrl": "https://www.pexels.com/@freestocks",
+      "photoUrl": "https://www.pexels.com/photo/opened-book-135129/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "college-students-reading": {
+    "file": "college-students-reading.jpg",
+    "provider": "unsplash",
+    "providerId": "snNHKZ-mGfE",
+    "width": 1240,
+    "height": 698,
+    "alt": "A stack of printed academic papers.",
+    "color": "#c0c0c0",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Wesley Tingey",
+      "photographerUrl": "https://unsplash.com/@wesleyphotography?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/stacks-of-paper-documents-and-file-folders-snNHKZ-mGfE?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "college-students-routine": {
+    "file": "college-students-routine.jpg",
+    "provider": "pexels",
+    "providerId": "9159037",
+    "width": 1240,
+    "height": 698,
+    "alt": "A student working alone at a library desk.",
+    "color": "#A29990",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Mikhail Nilov",
+      "photographerUrl": "https://www.pexels.com/@mikhail-nilov",
+      "photoUrl": "https://www.pexels.com/photo/a-woman-sitting-at-the-table-with-desktop-computer-9159037/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "college-students-cost": {
+    "file": "college-students-cost.jpg",
+    "provider": "unsplash",
+    "providerId": "fyCRSorj79c",
+    "width": 1240,
+    "height": 698,
+    "alt": "Loose coins and notes on a table.",
+    "color": "#402626",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Sarbasri Bhaumik",
+      "photographerUrl": "https://unsplash.com/@sri_clicks?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/silver-and-gold-coins-on-brown-wooden-table-fyCRSorj79c?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "summarize-for-studying-lead": {
+    "file": "summarize-for-studying-lead.jpg",
+    "provider": "pexels",
+    "providerId": "5861189",
+    "width": 1600,
+    "height": 838,
+    "alt": "An open notebook at a blank page with a pen resting on it.",
+    "color": "#C2C2C2",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Rahul Shah",
+      "photographerUrl": "https://www.pexels.com/@-rahulshah-",
+      "photoUrl": "https://www.pexels.com/photo/black-pen-on-spiral-notebook-5861189/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "studying-order": {
+    "file": "studying-order.jpg",
+    "provider": "unsplash",
+    "providerId": "bSYRdpiaxto",
+    "width": 1240,
+    "height": 698,
+    "alt": "Numbers painted on a flight of steps.",
+    "color": "#262626",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Michael Pointner",
+      "photographerUrl": "https://unsplash.com/@pino_rumbero?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/a-stairwell-with-a-sign-that-reads-10-on-it-bSYRdpiaxto?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "studying-gap-list": {
+    "file": "studying-gap-list.jpg",
+    "provider": "pexels",
+    "providerId": "131979",
+    "width": 1240,
+    "height": 698,
+    "alt": "A handwritten list with several items crossed out.",
+    "color": "#CFC3C9",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "freestocks.org",
+      "photographerUrl": "https://www.pexels.com/@freestocks",
+      "photoUrl": "https://www.pexels.com/photo/orange-and-green-pen-on-graphing-notepad-131979/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "studying-spacing": {
+    "file": "studying-spacing.jpg",
+    "provider": "unsplash",
+    "providerId": "bwOAixLG0uc",
+    "width": 1240,
+    "height": 698,
+    "alt": "A wall calendar with dates circled in pen.",
+    "color": "#f3f3f3",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Towfiqu barbhuiya",
+      "photographerUrl": "https://unsplash.com/@towfiqu999999?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/a-calendar-with-red-push-buttons-pinned-to-it-bwOAixLG0uc?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "studying-retrieval": {
+    "file": "studying-retrieval.jpg",
+    "provider": "pexels",
+    "providerId": "2128806",
+    "width": 1240,
+    "height": 698,
+    "alt": "Someone pausing to think, eyes closed.",
+    "color": "#42403C",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "David Garrison",
+      "photographerUrl": "https://www.pexels.com/@david-garrison-1128051",
+      "photoUrl": "https://www.pexels.com/photo/man-in-black-shirt-2128806/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "studying-limits": {
+    "file": "studying-limits.jpg",
+    "provider": "unsplash",
+    "providerId": "OPpCbAAKWv8",
+    "width": 1240,
+    "height": 698,
+    "alt": "A chalkboard filled with handwritten equations.",
+    "color": "#595959",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Thomas T",
+      "photographerUrl": "https://unsplash.com/@pyssling240?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/a-blackboard-with-a-lot-of-writing-on-it-OPpCbAAKWv8?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "online-courses-lead": {
+    "file": "online-courses-lead.jpg",
+    "provider": "pexels",
+    "providerId": "20432872",
+    "width": 1600,
+    "height": 838,
+    "alt": "A laptop open at an online learning interface.",
+    "color": "#8C8C8A",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Adam Sondel",
+      "photographerUrl": "https://www.pexels.com/@adam-sondel-381265",
+      "photoUrl": "https://www.pexels.com/photo/laptops-in-a-classroom-20432872/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "online-courses-mapping": {
+    "file": "online-courses-mapping.jpg",
+    "provider": "unsplash",
+    "providerId": "yg8Cz-i5U30",
+    "width": 1240,
+    "height": 698,
+    "alt": "A route sketched out on paper.",
+    "color": "#c0c0c0",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Stephen Monroe",
+      "photographerUrl": "https://unsplash.com/@stevep4?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/close-up-photography-of-map-yg8Cz-i5U30?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "online-courses-index": {
+    "file": "online-courses-index.jpg",
+    "provider": "pexels",
+    "providerId": "6550462",
+    "width": 1240,
+    "height": 698,
+    "alt": "An open card index drawer.",
+    "color": "#7E786D",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "photoUrl": "https://www.pexels.com/photo/brown-wooden-wall-mounted-rack-6550462/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "online-courses-routine": {
+    "file": "online-courses-routine.jpg",
+    "provider": "unsplash",
+    "providerId": "9l_326FISzk",
+    "width": 1240,
+    "height": 698,
+    "alt": "A laptop and notebook side by side on a desk.",
+    "color": "#262626",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Luca Bravo",
+      "photographerUrl": "https://unsplash.com/@lucabravo?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/apple-macbook-beside-computer-mouse-on-table-9l_326FISzk?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "online-courses-completion": {
+    "file": "online-courses-completion.jpg",
+    "provider": "pexels",
+    "providerId": "27837160",
+    "width": 1240,
+    "height": 698,
+    "alt": "A jigsaw puzzle left half finished.",
+    "color": "#837D7D",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "wr heustis",
+      "photographerUrl": "https://www.pexels.com/@wr-heustis-310270240",
+      "photoUrl": "https://www.pexels.com/photo/a-puzzle-piece-is-placed-on-a-table-27837160/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "online-courses-playlist": {
+    "file": "online-courses-playlist.jpg",
+    "provider": "unsplash",
+    "providerId": "vT7r4YYbX0w",
+    "width": 1240,
+    "height": 698,
+    "alt": "Numbered folders lined up on a shelf.",
+    "color": "#a68c73",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Richard Heinen",
+      "photographerUrl": "https://unsplash.com/@richard_he?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/shelves-filled-with-colorful-binders-and-folders-vT7r4YYbX0w?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "high-school-lead": {
+    "file": "high-school-lead.jpg",
+    "provider": "pexels",
+    "providerId": "8617956",
+    "width": 1600,
+    "height": 838,
+    "alt": "A school desk with exercise books stacked on it.",
+    "color": "#9C938E",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Yan Krukau",
+      "photographerUrl": "https://www.pexels.com/@yankrukov",
+      "photoUrl": "https://www.pexels.com/photo/students-sitting-in-the-classroom-8617956/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "high-school-uses": {
+    "file": "high-school-uses.jpg",
+    "provider": "unsplash",
+    "providerId": "BoAbPMRKLS0",
+    "width": 1240,
+    "height": 698,
+    "alt": "Highlighter pens lying beside handwritten notes.",
+    "color": "#c0c0c0",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Kelly Sikkema",
+      "photographerUrl": "https://unsplash.com/@kellysikkema?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/blue-sharpie-beside-yellow-sticky-notes-BoAbPMRKLS0?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "high-school-revision": {
+    "file": "high-school-revision.jpg",
+    "provider": "pexels",
+    "providerId": "7428866",
+    "width": 1240,
+    "height": 698,
+    "alt": "A revision timetable stuck to a wall.",
+    "color": "#D5D5CD",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "photoUrl": "https://www.pexels.com/photo/planner-on-a-table-7428866/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "high-school-own-words": {
+    "file": "high-school-own-words.jpg",
+    "provider": "pexels",
+    "providerId": "5905472",
+    "width": 1240,
+    "height": 698,
+    "alt": "A hand writing in a school exercise book.",
+    "color": "#899192",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Katerina Holmes",
+      "photographerUrl": "https://www.pexels.com/@katerina-holmes",
+      "photoUrl": "https://www.pexels.com/photo/crop-faceless-ethnic-pupils-taking-notes-in-copybooks-5905472/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "high-school-limits": {
+    "file": "high-school-limits.jpg",
+    "provider": "pexels",
+    "providerId": "6325962",
+    "width": 1240,
+    "height": 698,
+    "alt": "Mathematical working written on a whiteboard.",
+    "color": "#A5A5A6",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Vanessa Garcia",
+      "photographerUrl": "https://www.pexels.com/@vanessa-garcia",
+      "photoUrl": "https://www.pexels.com/photo/photo-of-man-holding-paperworks-6325962/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "high-school-free": {
+    "file": "high-school-free.jpg",
+    "provider": "unsplash",
+    "providerId": "K05Udh2LhFA",
+    "width": 1240,
+    "height": 698,
+    "alt": "An open, empty wallet on a table.",
+    "color": "#a6a6a6",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Emil Kalibradov",
+      "photographerUrl": "https://unsplash.com/@emkal?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/hands-holding-empty-wallet-and-phone-K05Udh2LhFA?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "auto-captions-lead": {
+    "file": "auto-captions-lead.jpg",
+    "provider": "pexels",
+    "providerId": "5429027",
+    "width": 1600,
+    "height": 838,
+    "alt": "A closed-captions symbol displayed on a screen.",
+    "color": "#414F50",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Ivan S",
+      "photographerUrl": "https://www.pexels.com/@ivan-s",
+      "photoUrl": "https://www.pexels.com/photo/close-up-photo-of-letters-written-on-a-wooden-surface-5429027/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "auto-captions-errors": {
+    "file": "auto-captions-errors.jpg",
+    "provider": "unsplash",
+    "providerId": "9HQgHBdu_II",
+    "width": 1240,
+    "height": 698,
+    "alt": "A page of text with a visible printing error.",
+    "color": "#d9d9d9",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Stefan Fluck",
+      "photographerUrl": "https://unsplash.com/@sfluck?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/white-printer-paper-with-black-text-9HQgHBdu_II?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "auto-captions-structure": {
+    "file": "auto-captions-structure.jpg",
+    "provider": "pexels",
+    "providerId": "5428829",
+    "width": 1240,
+    "height": 698,
+    "alt": "Large printed punctuation marks.",
+    "color": "#B1957A",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Leeloo The First",
+      "photographerUrl": "https://www.pexels.com/@leeloothefirst",
+      "photoUrl": "https://www.pexels.com/photo/question-marks-on-paper-crafts-5428829/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "auto-captions-improving": {
+    "file": "auto-captions-improving.jpg",
+    "provider": "unsplash",
+    "providerId": "a950smHhDeQ",
+    "width": 1240,
+    "height": 698,
+    "alt": "A sound waveform displayed on a monitor.",
+    "color": "#404026",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Techivation",
+      "photographerUrl": "https://unsplash.com/@techivation?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/a-laptop-computer-sitting-on-top-of-a-wooden-desk-a950smHhDeQ?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "auto-captions-check": {
+    "file": "auto-captions-check.jpg",
+    "provider": "pexels",
+    "providerId": "8296049",
+    "width": 1240,
+    "height": 698,
+    "alt": "A magnifying glass over a line of printed text.",
+    "color": "#918881",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Nothing Ahead",
+      "photographerUrl": "https://www.pexels.com/@ian-panelo",
+      "photoUrl": "https://www.pexels.com/photo/a-hand-holding-a-magnifying-glass-8296049/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "auto-captions-none": {
+    "file": "auto-captions-none.jpg",
+    "provider": "unsplash",
+    "providerId": "ulftbH1sA0k",
+    "width": 1240,
+    "height": 698,
+    "alt": "A blank screen glowing in a dark room.",
+    "color": "#262626",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Clint Patterson",
+      "photographerUrl": "https://unsplash.com/@cbpsc1?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/a-desk-with-a-lamp-and-a-laptop-on-it-ulftbH1sA0k?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "summary-not-working-lead": {
+    "file": "summary-not-working-lead.jpg",
+    "provider": "pexels",
+    "providerId": "270557",
+    "width": 1600,
+    "height": 838,
+    "alt": "An error message displayed on a screen.",
+    "color": "#2D343D",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Pixabay",
+      "photographerUrl": "https://www.pexels.com/@pixabay",
+      "photoUrl": "https://www.pexels.com/photo/monitor-displaying-error-text-270557/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "not-working-causes": {
+    "file": "not-working-causes.jpg",
+    "provider": "unsplash",
+    "providerId": "lFtttcsx5Vk",
+    "width": 1240,
+    "height": 698,
+    "alt": "A flowchart sketched out on paper.",
+    "color": "#c0c0c0",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Kelly Sikkema",
+      "photographerUrl": "https://unsplash.com/@kellysikkema?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/a-person-drawing-a-diagram-on-a-piece-of-paper-lFtttcsx5Vk?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "not-working-restricted": {
+    "file": "not-working-restricted.jpg",
+    "provider": "pexels",
+    "providerId": "12785130",
+    "width": 1240,
+    "height": 698,
+    "alt": "A padlock fastened to a chain link fence.",
+    "color": "#454142",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "David McElwee",
+      "photographerUrl": "https://www.pexels.com/@davidmcelwee",
+      "photoUrl": "https://www.pexels.com/photo/padlocks-on-chain-link-fence-12785130/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "not-working-thin": {
+    "file": "not-working-thin.jpg",
+    "provider": "unsplash",
+    "providerId": "-rF4kuvgHhU",
+    "width": 1240,
+    "height": 698,
+    "alt": "An almost empty glass jar on a shelf.",
+    "color": "#f3f3f3",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Sam Dan Truong",
+      "photographerUrl": "https://unsplash.com/@sam_truong?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/clear-glass-jar--rF4kuvgHhU?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "not-working-changed": {
+    "file": "not-working-changed.jpg",
+    "provider": "pexels",
+    "providerId": "26801089",
+    "width": 1240,
+    "height": 698,
+    "alt": "A road closed sign standing in a street.",
+    "color": "#607A95",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Russ H",
+      "photographerUrl": "https://www.pexels.com/@russ-h-1462747469",
+      "photoUrl": "https://www.pexels.com/photo/old-signs-on-a-closed-road-26801089/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "not-working-checklist": {
+    "file": "not-working-checklist.jpg",
+    "provider": "pexels",
+    "providerId": "8850706",
+    "width": 1240,
+    "height": 698,
+    "alt": "A checklist on a clipboard with ticks against it.",
+    "color": "#AEBBC1",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Tara Winstead",
+      "photographerUrl": "https://www.pexels.com/@tara-winstead",
+      "photoUrl": "https://www.pexels.com/photo/red-check-mark-over-black-box-8850706/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "copy-transcript-lead": {
+    "file": "copy-transcript-lead.jpg",
+    "provider": "pexels",
+    "providerId": "4976712",
+    "width": 1600,
+    "height": 838,
+    "alt": "A block of text highlighted on a screen.",
+    "color": "#202F36",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Godfrey  Atima",
+      "photographerUrl": "https://www.pexels.com/@godiatima",
+      "photoUrl": "https://www.pexels.com/photo/close-up-of-codes-on-a-computer-screen-4976712/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "copy-transcript-steps": {
+    "file": "copy-transcript-steps.jpg",
+    "provider": "unsplash",
+    "providerId": "5nWgzq7srvo",
+    "width": 1240,
+    "height": 698,
+    "alt": "A hand resting on a computer mouse.",
+    "color": "#735926",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Jeswin Thomas",
+      "photographerUrl": "https://unsplash.com/@jeswinthomas?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/person-holding-black-cordless-computer-mouse-5nWgzq7srvo?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "copy-transcript-scale": {
+    "file": "copy-transcript-scale.jpg",
+    "provider": "pexels",
+    "providerId": "3570235",
+    "width": 1240,
+    "height": 698,
+    "alt": "A long printed receipt unrolled across a table.",
+    "color": "#94846B",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Hook Tell",
+      "photographerUrl": "https://www.pexels.com/@hook-tell-1947041",
+      "photoUrl": "https://www.pexels.com/photo/person-printing-a-receipt-3570235/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "copy-transcript-paste": {
+    "file": "copy-transcript-paste.jpg",
+    "provider": "unsplash",
+    "providerId": "Gh60UXpcNcs",
+    "width": 1240,
+    "height": 698,
+    "alt": "Hands typing quickly on a keyboard.",
+    "color": "#0cc040",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Luis Villafranca",
+      "photographerUrl": "https://unsplash.com/@lvillafranca?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/person-typing-on-black-keyboard-Gh60UXpcNcs?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "copy-transcript-reuse": {
+    "file": "copy-transcript-reuse.jpg",
+    "provider": "pexels",
+    "providerId": "210804",
+    "width": 1240,
+    "height": 698,
+    "alt": "A copyright notice printed on a page.",
+    "color": "#766657",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Pixabay",
+      "photographerUrl": "https://www.pexels.com/@pixabay",
+      "photoUrl": "https://www.pexels.com/photo/music-sheet-page-210804/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "copy-transcript-missing": {
+    "file": "copy-transcript-missing.jpg",
+    "provider": "unsplash",
+    "providerId": "pGpD7As01rQ",
+    "width": 1240,
+    "height": 698,
+    "alt": "An empty picture frame hanging on a wall.",
+    "color": "#737373",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Marija Zaric",
+      "photographerUrl": "https://unsplash.com/@simplicity?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/empty-wooden-frame-on-a-textured-brick-wall-pGpD7As01rQ?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "summarize-playlist-lead": {
+    "file": "summarize-playlist-lead.jpg",
+    "provider": "pexels",
+    "providerId": "29505140",
+    "width": 1600,
+    "height": 838,
+    "alt": "A grid of video thumbnails on a screen.",
+    "color": "#25262A",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Abdulkadir Emiroğlu",
+      "photographerUrl": "https://www.pexels.com/@kadiremir",
+      "photoUrl": "https://www.pexels.com/photo/video-editing-software-interface-close-up-29505140/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "playlist-two-kinds": {
+    "file": "playlist-two-kinds.jpg",
+    "provider": "unsplash",
+    "providerId": "lUaaKCUANVI",
+    "width": 1240,
+    "height": 698,
+    "alt": "Two separate stacks of books on a table.",
+    "color": "#737373",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Kimberly Farmer",
+      "photographerUrl": "https://unsplash.com/@kimberlyfarmer?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/shallow-focus-photography-of-books-lUaaKCUANVI?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "playlist-course": {
+    "file": "playlist-course.jpg",
+    "provider": "pexels",
+    "providerId": "17065813",
+    "width": 1240,
+    "height": 698,
+    "alt": "Numbered dividers inside a ring binder.",
+    "color": "#6D6C6A",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Jakub Zerdzicki",
+      "photographerUrl": "https://www.pexels.com/@jakubzerdzicki",
+      "photoUrl": "https://www.pexels.com/photo/documents-17065813/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "playlist-export": {
+    "file": "playlist-export.jpg",
+    "provider": "unsplash",
+    "providerId": "mis7syjThUU",
+    "width": 1240,
+    "height": 698,
+    "alt": "Paper files organised inside a folder.",
+    "color": "#408ca6",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Kajetan Sumila",
+      "photographerUrl": "https://unsplash.com/@kajtek?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/a-close-up-of-a-cell-phone-screen-with-numbers-on-it-mis7syjThUU?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "playlist-mixed-quality": {
+    "file": "playlist-mixed-quality.jpg",
+    "provider": "pexels",
+    "providerId": "1908066",
+    "width": 1240,
+    "height": 698,
+    "alt": "A mixed pile of old photographs.",
+    "color": "#616365",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Suzy Hazelwood",
+      "photographerUrl": "https://www.pexels.com/@suzyhazelwood",
+      "photoUrl": "https://www.pexels.com/photo/bunch-of-photo-print-1908066/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "playlist-limits": {
+    "file": "playlist-limits.jpg",
+    "provider": "unsplash",
+    "providerId": "omWXELm5Kn0",
+    "width": 1240,
+    "height": 698,
+    "alt": "An overflowing paper inbox tray.",
+    "color": "#26260c",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "vuk burgic",
+      "photographerUrl": "https://unsplash.com/@vukburga?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/a-cardboard-box-filled-with-newspapers-next-to-a-radiator-omWXELm5Kn0?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "webinar-summarizer-lead": {
+    "file": "webinar-summarizer-lead.jpg",
+    "provider": "pexels",
+    "providerId": "7621274",
+    "width": 1600,
+    "height": 838,
+    "alt": "A laptop displaying a grid of video call participants.",
+    "color": "#797A75",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Ivan S",
+      "photographerUrl": "https://www.pexels.com/@ivan-s",
+      "photoUrl": "https://www.pexels.com/photo/man-showing-clothes-to-a-video-call-7621274/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "webinar-segments": {
+    "file": "webinar-segments.jpg",
+    "provider": "unsplash",
+    "providerId": "AT77Q0Njnt0",
+    "width": 1240,
+    "height": 698,
+    "alt": "A pie chart sketched on paper.",
+    "color": "#c0c0c0",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Isaac Smith",
+      "photographerUrl": "https://unsplash.com/@isaacmsmith?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/pen-om-paper-AT77Q0Njnt0?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "webinar-sharing": {
+    "file": "webinar-sharing.jpg",
+    "provider": "pexels",
+    "providerId": "6914022",
+    "width": 1240,
+    "height": 698,
+    "alt": "Two colleagues looking at a laptop together.",
+    "color": "#B2A8A2",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "photoUrl": "https://www.pexels.com/photo/women-looking-at-the-documents-6914022/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "webinar-coverage": {
+    "file": "webinar-coverage.jpg",
+    "provider": "unsplash",
+    "providerId": "Xi5srUvYzUs",
+    "width": 1240,
+    "height": 698,
+    "alt": "A measuring jug showing marked levels.",
+    "color": "#262626",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Mark Owen Wilkinson Hughes",
+      "photographerUrl": "https://unsplash.com/@markowihu?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/a-plastic-measuring-cup-sitting-on-top-of-a-wooden-table-Xi5srUvYzUs?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "webinar-panel": {
+    "file": "webinar-panel.jpg",
+    "provider": "pexels",
+    "providerId": "8348468",
+    "width": 1240,
+    "height": 698,
+    "alt": "Several speakers seated for a panel discussion.",
+    "color": "#4E3D36",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Henri Mathieu-Saint-Laurent",
+      "photographerUrl": "https://www.pexels.com/@henri-mathieu",
+      "photoUrl": "https://www.pexels.com/photo/a-man-in-gray-sweater-talking-in-front-8348468/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "webinar-slides": {
+    "file": "webinar-slides.jpg",
+    "provider": "unsplash",
+    "providerId": "bzdhc5b3Bxs",
+    "width": 1240,
+    "height": 698,
+    "alt": "A slide projected onto a screen.",
+    "color": "#0c2626",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Teemu Paananen",
+      "photographerUrl": "https://unsplash.com/@xteemu?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/person-discussing-while-standing-in-front-of-a-large-screen-in-front-of-people-inside-dim-lighted-room-bzdhc5b3Bxs?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "for-research-lead": {
+    "file": "for-research-lead.jpg",
+    "provider": "pexels",
+    "providerId": "35138560",
+    "width": 1600,
+    "height": 838,
+    "alt": "A hall set up for a conference poster session.",
+    "color": "#A3A09B",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "Tahir Xəlfəquliyev",
+      "photographerUrl": "https://www.pexels.com/@tahir",
+      "photoUrl": "https://www.pexels.com/photo/modern-trade-show-exhibition-with-busy-attendees-35138560/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "for-research-triage": {
+    "file": "for-research-triage.jpg",
+    "provider": "unsplash",
+    "providerId": "6jA6eVsRJ6Q",
+    "width": 1240,
+    "height": 698,
+    "alt": "Academic papers sorted into piles.",
+    "color": "#260c0c",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Wonderlane",
+      "photographerUrl": "https://unsplash.com/@wonderlane?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/office-table-with-pile-of-papers-6jA6eVsRJ6Q?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "for-research-compression": {
+    "file": "for-research-compression.jpg",
+    "provider": "pexels",
+    "providerId": "7947757",
+    "width": 1240,
+    "height": 698,
+    "alt": "A scientific chart showing error bars.",
+    "color": "#8F7F80",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "RDNE Stock project",
+      "photographerUrl": "https://www.pexels.com/@rdne",
+      "photoUrl": "https://www.pexels.com/photo/photo-of-paper-with-graphs-7947757/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "for-research-long-talks": {
+    "file": "for-research-long-talks.jpg",
+    "provider": "unsplash",
+    "providerId": "RfiBK6Y_upQ",
+    "width": 1240,
+    "height": 698,
+    "alt": "A speaker addressing a large seated audience.",
+    "color": "#262626",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Miguel Henriques",
+      "photographerUrl": "https://unsplash.com/@miguel_photo?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/man-speaking-in-front-of-crowd-RfiBK6Y_upQ?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "for-research-archive": {
+    "file": "for-research-archive.jpg",
+    "provider": "pexels",
+    "providerId": "6333742",
+    "width": 1240,
+    "height": 698,
+    "alt": "Rows of shelving in a library archive.",
+    "color": "#918474",
+    "credit": {
+      "provider": "Pexels",
+      "providerUrl": "https://www.pexels.com/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "photoUrl": "https://www.pexels.com/photo/brown-wooden-table-and-chairs-6333742/"
+    },
+    "fetchedAt": "2026-09-15"
+  },
+  "for-research-limits": {
+    "file": "for-research-limits.jpg",
+    "provider": "unsplash",
+    "providerId": "Q9y3LRuuxmg",
+    "width": 1240,
+    "height": 698,
+    "alt": "A locked metal filing cabinet.",
+    "color": "#c0c0c0",
+    "credit": {
+      "provider": "Unsplash",
+      "providerUrl": "https://unsplash.com/?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photographer": "Maksym Kaharlytskyi",
+      "photographerUrl": "https://unsplash.com/@qwitka?utm_source=YouTubeSummarizer&utm_medium=referral",
+      "photoUrl": "https://unsplash.com/photos/file-cabinet-Q9y3LRuuxmg?utm_source=YouTubeSummarizer&utm_medium=referral"
+    },
+    "fetchedAt": "2026-09-15"
   }
 }

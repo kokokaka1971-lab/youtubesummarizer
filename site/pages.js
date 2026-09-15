@@ -579,6 +579,126 @@ export const PAGES = {
     schema: ['article', 'faq']
   },
 
+  'youtube-summarizer-for-college-students': {
+    path: '/youtube-summarizer-for-college-students',
+    file: 'youtube-summarizer-for-college-students.html',
+    section: 'guides',
+    title: 'YouTube Summarizer for College Students',
+    description:
+      'How to use a YouTube summarizer for university work — recorded lectures, seminar prep, reading around a topic — and where it stops being useful.',
+    cardKicker: 'College',
+    cardImage: 'college-students-lead',
+    schema: ['article', 'faq']
+  },
+
+  'how-to-summarize-a-youtube-video-for-studying': {
+    path: '/how-to-summarize-a-youtube-video-for-studying',
+    file: 'how-to-summarize-a-youtube-video-for-studying.html',
+    section: 'guides',
+    title: 'How to Summarize a YouTube Video for Studying',
+    description:
+      'The order matters more than the tool. How to summarize a video for studying without replacing the work that makes the material stick.',
+    cardKicker: 'Studying',
+    cardImage: 'summarize-for-studying-lead',
+    schema: ['article', 'faq']
+  },
+
+  'youtube-summarizer-for-online-courses': {
+    path: '/youtube-summarizer-for-online-courses',
+    file: 'youtube-summarizer-for-online-courses.html',
+    section: 'guides',
+    title: 'YouTube Summarizer for Online Courses',
+    description:
+      'How to use a summarizer on MOOCs and course playlists — triaging modules, skipping what you know, and keeping a searchable record of a whole course.',
+    cardKicker: 'Online courses',
+    cardImage: 'online-courses-lead',
+    schema: ['article', 'faq']
+  },
+
+  'youtube-summarizer-for-high-school-students': {
+    path: '/youtube-summarizer-for-high-school-students',
+    file: 'youtube-summarizer-for-high-school-students.html',
+    section: 'guides',
+    title: 'YouTube Summarizer for High School Students',
+    description:
+      'How a YouTube summarizer helps with homework and exam revision, where it becomes cheating, and why the summary is the wrong thing to revise from.',
+    cardKicker: 'High school',
+    cardImage: 'high-school-lead',
+    schema: ['article', 'faq']
+  },
+
+  'youtube-auto-captions-accuracy': {
+    path: '/youtube-auto-captions-accuracy',
+    file: 'youtube-auto-captions-accuracy.html',
+    section: 'guides',
+    title: 'How Accurate Are YouTube Auto-Captions?',
+    description:
+      'What YouTube\'s automatic captions get wrong, why the errors are hard to spot, and what that means for anything built on top of them.',
+    cardKicker: 'Captions',
+    cardImage: 'auto-captions-lead',
+    schema: ['article', 'faq']
+  },
+
+  'youtube-summary-not-working': {
+    path: '/youtube-summary-not-working',
+    file: 'youtube-summary-not-working.html',
+    section: 'guides',
+    title: 'YouTube Summary Not Working: What to Check',
+    description:
+      'Why a YouTube summary failed and what to do about it — missing captions, recent uploads, private videos, long runtimes and silent truncation.',
+    cardKicker: 'Troubleshooting',
+    cardImage: 'summary-not-working-lead',
+    schema: ['article', 'faq']
+  },
+
+  'copy-youtube-transcript': {
+    path: '/copy-youtube-transcript',
+    file: 'copy-youtube-transcript.html',
+    section: 'guides',
+    title: 'How to Copy a YouTube Transcript',
+    description:
+      'How to copy a YouTube transcript in a few clicks, what you lose when you do, and when the raw text is genuinely the right thing to want.',
+    cardKicker: 'Transcripts',
+    cardImage: 'copy-transcript-lead',
+    schema: ['article', 'faq']
+  },
+
+  'summarize-youtube-playlist': {
+    path: '/summarize-youtube-playlist',
+    file: 'summarize-youtube-playlist.html',
+    section: 'guides',
+    title: 'How to Summarize a YouTube Playlist',
+    description:
+      'Working through a playlist with a summarizer — triaging which videos to watch, building a searchable record, and what a daily limit means in practice.',
+    cardKicker: 'Playlists',
+    cardImage: 'summarize-playlist-lead',
+    schema: ['article', 'faq']
+  },
+
+  'webinar-summarizer': {
+    path: '/webinar-summarizer',
+    file: 'webinar-summarizer.html',
+    section: 'guides',
+    title: 'Webinar Summarizer',
+    description:
+      'Turn a recorded webinar into the ten minutes that mattered — skipping the introductions and the pitch, and sharing the substance with people who missed it.',
+    cardKicker: 'Webinars',
+    cardImage: 'webinar-summarizer-lead',
+    schema: ['article', 'faq']
+  },
+
+  'youtube-summarizer-for-research': {
+    path: '/youtube-summarizer-for-research',
+    file: 'youtube-summarizer-for-research.html',
+    section: 'guides',
+    title: 'YouTube Summarizer for Research',
+    description:
+      'Using a summarizer for conference talks and research video — triaging a playlist, citing the exact moment of a claim, and where it must not be trusted.',
+    cardKicker: 'Research',
+    cardImage: 'for-research-lead',
+    schema: ['article', 'faq']
+  },
+
 };
 
 /** path → page, built once at import. */

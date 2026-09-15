@@ -1736,6 +1736,498 @@ export const IMAGE_SLOTS = [
     alt: 'Two puzzle pieces that do not fit together.',
     width: 1240,
     aspect: '16/9'
+  },
+
+  /* ---- Batch 04 - students, courses, troubleshooting ---- */
+  {
+    id: 'college-students-lead',
+    provider: 'pexels',
+    query: 'university campus building exterior',
+    alt: 'A university building seen from the campus lawn.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'college-students-week',
+    provider: 'unsplash',
+    query: 'weekly timetable on a wall planner',
+    alt: 'A weekly timetable pinned to a wall.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'college-students-vocabulary',
+    provider: 'pexels',
+    query: 'academic textbook open at a glossary',
+    alt: 'An academic textbook open at a page of definitions.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'college-students-reading',
+    provider: 'unsplash',
+    query: 'stack of academic papers on a desk',
+    alt: 'A stack of printed academic papers.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'college-students-routine',
+    provider: 'pexels',
+    query: 'student working at a library desk',
+    alt: 'A student working alone at a library desk.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'college-students-cost',
+    provider: 'unsplash',
+    query: 'coins and notes on a plain surface',
+    alt: 'Loose coins and notes on a table.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'summarize-for-studying-lead',
+    provider: 'pexels',
+    query: 'blank notebook page with a pen',
+    alt: 'An open notebook at a blank page with a pen resting on it.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'studying-order',
+    provider: 'unsplash',
+    query: 'numbered steps painted on stairs',
+    alt: 'Numbers painted on a flight of steps.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'studying-gap-list',
+    provider: 'pexels',
+    query: 'list with items crossed out',
+    alt: 'A handwritten list with several items crossed out.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'studying-spacing',
+    provider: 'unsplash',
+    query: 'calendar with dates circled',
+    alt: 'A wall calendar with dates circled in pen.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'studying-retrieval',
+    provider: 'pexels',
+    query: 'person thinking with eyes closed',
+    alt: 'Someone pausing to think, eyes closed.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'studying-limits',
+    provider: 'unsplash',
+    query: 'chalkboard covered in equations',
+    alt: 'A chalkboard filled with handwritten equations.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'online-courses-lead',
+    provider: 'pexels',
+    query: 'laptop showing an online course interface',
+    alt: 'A laptop open at an online learning interface.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'online-courses-mapping',
+    provider: 'unsplash',
+    query: 'route map drawn on paper',
+    alt: 'A route sketched out on paper.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'online-courses-index',
+    provider: 'pexels',
+    query: 'card index drawer open',
+    alt: 'An open card index drawer.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'online-courses-routine',
+    provider: 'unsplash',
+    query: 'desk with laptop and notebook side by side',
+    alt: 'A laptop and notebook side by side on a desk.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'online-courses-completion',
+    provider: 'pexels',
+    query: 'half finished jigsaw puzzle',
+    alt: 'A jigsaw puzzle left half finished.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'online-courses-playlist',
+    provider: 'unsplash',
+    query: 'row of numbered folders on a shelf',
+    alt: 'Numbered folders lined up on a shelf.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'high-school-lead',
+    provider: 'pexels',
+    query: 'school desk with exercise books',
+    alt: 'A school desk with exercise books stacked on it.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'high-school-uses',
+    provider: 'unsplash',
+    query: 'highlighter pens beside notes',
+    alt: 'Highlighter pens lying beside handwritten notes.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'high-school-revision',
+    provider: 'pexels',
+    query: 'revision timetable on a wall',
+    alt: 'A revision timetable stuck to a wall.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'high-school-own-words',
+    provider: 'unsplash',
+    query: 'handwriting in a school exercise book',
+    alt: 'A hand writing in a school exercise book.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'high-school-limits',
+    provider: 'pexels',
+    query: 'maths working on a whiteboard',
+    alt: 'Mathematical working written on a whiteboard.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'high-school-free',
+    provider: 'unsplash',
+    query: 'empty wallet on a table',
+    alt: 'An open, empty wallet on a table.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'auto-captions-lead',
+    provider: 'pexels',
+    query: 'closed captions symbol on a screen',
+    alt: 'A closed-captions symbol displayed on a screen.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'auto-captions-errors',
+    provider: 'unsplash',
+    query: 'misprinted text on a page',
+    alt: 'A page of text with a visible printing error.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'auto-captions-structure',
+    provider: 'pexels',
+    query: 'punctuation marks printed large',
+    alt: 'Large printed punctuation marks.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'auto-captions-improving',
+    provider: 'unsplash',
+    query: 'sound waveform on a monitor',
+    alt: 'A sound waveform displayed on a monitor.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'auto-captions-check',
+    provider: 'pexels',
+    query: 'magnifying glass over printed text',
+    alt: 'A magnifying glass over a line of printed text.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'auto-captions-none',
+    provider: 'unsplash',
+    query: 'blank screen in a dark room',
+    alt: 'A blank screen glowing in a dark room.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'summary-not-working-lead',
+    provider: 'pexels',
+    query: 'error message on a computer screen',
+    alt: 'An error message displayed on a screen.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'not-working-causes',
+    provider: 'unsplash',
+    query: 'flowchart drawn on paper',
+    alt: 'A flowchart sketched out on paper.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'not-working-restricted',
+    provider: 'pexels',
+    query: 'padlock on a chain link fence',
+    alt: 'A padlock fastened to a chain link fence.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'not-working-thin',
+    provider: 'unsplash',
+    query: 'almost empty glass jar',
+    alt: 'An almost empty glass jar on a shelf.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'not-working-changed',
+    provider: 'pexels',
+    query: 'road closed sign',
+    alt: 'A road closed sign standing in a street.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'not-working-checklist',
+    provider: 'unsplash',
+    query: 'clipboard checklist with ticks',
+    alt: 'A checklist on a clipboard with ticks against it.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'copy-transcript-lead',
+    provider: 'pexels',
+    query: 'text selected on a computer screen',
+    alt: 'A block of text highlighted on a screen.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'copy-transcript-steps',
+    provider: 'unsplash',
+    query: 'hand using a computer mouse',
+    alt: 'A hand resting on a computer mouse.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'copy-transcript-scale',
+    provider: 'pexels',
+    query: 'very long printed receipt',
+    alt: 'A long printed receipt unrolled across a table.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'copy-transcript-paste',
+    provider: 'unsplash',
+    query: 'keyboard with hands typing quickly',
+    alt: 'Hands typing quickly on a keyboard.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'copy-transcript-reuse',
+    provider: 'pexels',
+    query: 'copyright symbol on printed page',
+    alt: 'A copyright notice printed on a page.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'copy-transcript-missing',
+    provider: 'unsplash',
+    query: 'empty picture frame on a wall',
+    alt: 'An empty picture frame hanging on a wall.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'summarize-playlist-lead',
+    provider: 'pexels',
+    query: 'row of video thumbnails on a screen',
+    alt: 'A grid of video thumbnails on a screen.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'playlist-two-kinds',
+    provider: 'unsplash',
+    query: 'two separate stacks of books',
+    alt: 'Two separate stacks of books on a table.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'playlist-course',
+    provider: 'pexels',
+    query: 'numbered tabs in a binder',
+    alt: 'Numbered dividers inside a ring binder.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'playlist-export',
+    provider: 'unsplash',
+    query: 'files organised in a folder',
+    alt: 'Paper files organised inside a folder.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'playlist-mixed-quality',
+    provider: 'pexels',
+    query: 'mixed pile of old photographs',
+    alt: 'A mixed pile of old photographs.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'playlist-limits',
+    provider: 'unsplash',
+    query: 'overflowing inbox tray',
+    alt: 'An overflowing paper inbox tray.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'webinar-summarizer-lead',
+    provider: 'pexels',
+    query: 'laptop showing a video call grid',
+    alt: 'A laptop displaying a grid of video call participants.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'webinar-segments',
+    provider: 'unsplash',
+    query: 'pie chart drawn on paper',
+    alt: 'A pie chart sketched on paper.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'webinar-sharing',
+    provider: 'pexels',
+    query: 'colleagues looking at a laptop together',
+    alt: 'Two colleagues looking at a laptop together.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'webinar-coverage',
+    provider: 'unsplash',
+    query: 'measuring jug with marked levels',
+    alt: 'A measuring jug showing marked levels.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'webinar-panel',
+    provider: 'pexels',
+    query: 'panel discussion on a stage',
+    alt: 'Several speakers seated for a panel discussion.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'webinar-slides',
+    provider: 'unsplash',
+    query: 'presentation slide on a projector screen',
+    alt: 'A slide projected onto a screen.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'for-research-lead',
+    provider: 'pexels',
+    query: 'conference poster session hall',
+    alt: 'A hall set up for a conference poster session.',
+    width: 1600,
+    eager: true,
+    aspect: '1.91/1'
+  },
+  {
+    id: 'for-research-triage',
+    provider: 'unsplash',
+    query: 'papers sorted into piles on a desk',
+    alt: 'Academic papers sorted into piles.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'for-research-compression',
+    provider: 'pexels',
+    query: 'scientific chart with error bars',
+    alt: 'A scientific chart showing error bars.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'for-research-long-talks',
+    provider: 'unsplash',
+    query: 'speaker presenting to a large audience',
+    alt: 'A speaker addressing a large seated audience.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'for-research-archive',
+    provider: 'pexels',
+    query: 'library archive shelving',
+    alt: 'Rows of shelving in a library archive.',
+    width: 1240,
+    aspect: '16/9'
+  },
+  {
+    id: 'for-research-limits',
+    provider: 'unsplash',
+    query: 'locked filing cabinet',
+    alt: 'A locked metal filing cabinet.',
+    width: 1240,
+    aspect: '16/9'
   }
 ];
 

@@ -177,12 +177,16 @@ def main():
         print('WARNING: %d files, expected %d\n' % (len(files), args.expected))
 
     live = set(re.findall(r"path:\s*'([^']+)'", io.open(PAGES_JS, encoding='utf-8').read()))
+    # Pages in a batch ship together, so a link from one to another is valid even
+    # though neither is registered yet. Without this, cross-linking inside a
+    # batch — which is exactly the topical clustering we want — reads as broken.
+    live |= {'/' + re.sub(r'^\d+-', '', f[:-5]) for f in files}
     seen_slots, ok, failed = {}, [], []
 
     for fn in files:
         path = os.path.join(src_dir, fn)
         slug = re.sub(r'^\d+-', '', fn[:-5])
-        meta, words, problems = validate(path, live | {'/' + slug}, seen_slots)
+        meta, words, problems = validate(path, live, seen_slots)
         if problems:
             failed.append((fn, problems))
             print('FAIL  %s' % fn)

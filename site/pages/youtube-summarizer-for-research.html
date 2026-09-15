@@ -1,0 +1,245 @@
+<section class="page-head">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="kicker">Guides</p>
+    <h1>YouTube Summarizer for Research</h1>
+    <p class="lede">
+      Conference video is an enormous, badly indexed literature. A summarizer is a finding
+      aid for it — and specifically not a source, which is the distinction that matters
+      most in this context.
+    </p>
+    <div class="head-actions">
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize a talk</a>
+      <a class="btn btn-soft btn-lg" href="/use-cases/researchers">For researchers</a>
+    </div>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="wrap wrap-narrow">
+    <!--image:for-research-lead-->
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap-narrow">
+    <div class="prose">
+      <p>
+        <a href="/use-cases/researchers">Research workflows</a> have a specific shape
+        here. A conference posts forty talks. Three matter to you, and there is no abstract, no
+        index, and no way to tell which three without watching twenty hours.
+      </p>
+      <p>
+        That is a search problem rather than a comprehension problem, and it is the one a
+        summarizer genuinely solves.
+      </p>
+
+      <h2>Triage is the main use</h2>
+      <p>
+        Run the plausible candidates through at the shortest depth. One line each rules
+        most of them out immediately — wrong subfield, wrong level, a talk you have
+        effectively already seen.
+      </p>
+      <p>
+        Take the survivors to a chapter map, which tells you whether the interesting part
+        is the method, the results or the fifteen minutes of caveats at the end.
+      </p>
+      <p>
+        Then watch the two that earned it, properly, at normal speed. The saving is not in
+        avoiding the watching — it is in not watching the other eighteen.
+      </p>
+
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <caption>What to use it for, and what not to</caption>
+          <thead>
+            <tr>
+              <th scope="col">Task</th>
+              <th scope="col">Appropriate?</th>
+              <th scope="col">Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Triaging a conference playlist</th><td>Yes</td><td>Rules out most talks cheaply</td></tr>
+            <tr><th scope="row">Locating a claim you half-remember</th><td>Yes</td><td>Timestamped, searchable record</td></tr>
+            <tr><th scope="row">Deciding whether to cite a talk</th><td>Yes</td><td>Tells you where to look</td></tr>
+            <tr><th scope="row">Quoting a speaker</th><td>No</td><td>A summary is a paraphrase</td></tr>
+            <tr><th scope="row">Characterising someone's position</th><td>No</td><td>Hedges are what compression drops first</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!--image:for-research-triage-->
+
+      <h2>The citation rule</h2>
+      <p>
+        Everything else on this page is a matter of efficiency. This section is not, and it
+        is the one worth reading twice.
+      </p>
+      <p>
+        This is the part worth being rigid about, because the failure mode is
+        professionally damaging rather than merely inconvenient.
+      </p>
+      <p>
+        Never cite from a summary. A summary has paraphrased by definition, so quoting one
+        attributes words to a researcher who did not say them. Citing a talk you have not
+        watched, on the strength of a summary, is the video equivalent of citing an
+        abstract you skimmed.
+      </p>
+      <p>
+        The defensible workflow is: summarize to locate, open the timestamp, watch that
+        section, and cite what you actually heard — with the timestamp in your note so the
+        claim stays checkable a year later.
+      </p>
+
+      <h2>What compression damages in research talks</h2>
+      <p>
+        The damage is not random. It concentrates in exactly the places a researcher
+        cares about.
+      </p>
+      <p>
+        <strong>Conditions on results.</strong> A figure is short and quotable, so it
+        survives; the cohort, the sample size and the caveat are long and boring, so they
+        do not. The number arrives unaccompanied, sounding like a general finding.
+      </p>
+      <p>
+        <strong>Attribution of positions.</strong> "One group argues X, though the field
+        mostly disagrees" reduces very naturally to "X", because the shorter version reads
+        better.
+      </p>
+      <p>
+        <strong>Hedges.</strong> "We think this might generalise" and "this generalises"
+        are different claims, and the first is exactly the phrasing a compressor treats as
+        filler. We go into this at length in
+        <a href="/why-timestamps-matter">why every summary should carry timestamps</a>.
+      </p>
+
+      <!--image:for-research-compression-->
+
+      <h2>Talks that never became papers</h2>
+      <p>
+        A specific reason this matters in research: a great deal of work is presented and
+        never published, or published years later in substantially altered form.
+      </p>
+      <p>
+        The talk is sometimes the only public record of a result, a negative finding, or an
+        approach someone abandoned. None of that is in the literature, and none of it is
+        searchable by conventional means.
+      </p>
+      <p>
+        Building a summarised, timestamped record of talks you attend or watch turns that
+        invisible layer into something you can search later — which is a genuinely
+        different capability from anything a citation database provides.
+      </p>
+
+      <h2>Technical vocabulary and captions</h2>
+      <p>
+        Automatic captioning is weakest on specialist terminology, researcher names and
+        anything said once — which describes most of the content of a research talk.
+      </p>
+      <p>
+        Errors arrive as confident, plausible substitutions inside sensible sentences, and
+        if you do not already know the term you have no way to notice. Any unfamiliar
+        term that matters should be checked at its timestamp before it reaches your notes.
+      </p>
+      <p>
+        Talks with human-written captions are meaningfully more reliable, and conference
+        channels that invest in them are worth preferring where you have a choice.
+      </p>
+
+      <h2>Long talks and the missing middle</h2>
+      <p>
+        Keynotes and tutorial sessions run long, and long inputs have a documented failure
+        mode worth knowing about in a research context.
+      </p>
+      <p>
+        Work on long-context models published as
+        <a href="https://aclanthology.org/2024.tacl-1.9/" rel="nofollow noopener" target="_blank">Lost
+        in the Middle</a> found that performance degrades when relevant information sits in
+        the middle of a long input rather than near either end.
+      </p>
+      <p>
+        For a ninety-minute keynote that matters: the framing and the conclusions come
+        through, and the methods section in the middle — frequently the part a researcher
+        cares about — comes back thin. Check the middle third specifically rather than
+        assuming a thin summary reflects a thin talk.
+      </p>
+
+      <!--image:for-research-long-talks-->
+
+      <h2>Building a searchable record</h2>
+      <p>
+        The compounding benefit is not any single summary. It is that a year of exported
+        maps becomes a searchable index of talks you have seen.
+      </p>
+      <p>
+        "Someone presented something about this at a workshop eighteen months ago" is
+        normally an unanswerable question. With exported, timestamped notes in one folder,
+        it becomes a text search.
+      </p>
+      <p>
+        Export to Markdown as you go, filed by venue and year. Without an account there is
+        no history, so an unexported summary is gone when the tab closes.
+      </p>
+
+      <!--image:for-research-archive-->
+
+      <h2>What it will not do</h2>
+      <p>
+        It will not read a paper — this works from video captions only. It will not reach
+        talks behind a conference paywall or hosted outside YouTube. And it will not help
+        with a talk whose content is dense slides narrated as "as you can see here".
+      </p>
+      <p>
+        It also does not label speakers, so on a panel discussion attribution is inferred
+        from context. Verify before attaching a claim to a named person.
+      </p>
+
+      <!--image:for-research-limits-->
+
+      <h2>The rule that matters</h2>
+      <p>
+        Everything on this page reduces to one distinction: a summarizer is a finding aid,
+        never a source.
+      </p>
+      <p>
+        Used as a finding aid it is genuinely valuable — it turns an unindexed archive of
+        conference video into something searchable. Used as a source it will eventually put
+        a paraphrase in your work attributed to a named researcher, and that is not a
+        mistake you want to make in print.
+      </p>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details class="qa">
+          <summary>Can I cite a video based on its summary?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>No. Use the summary to locate the relevant section, watch it, and cite what you heard. A paraphrase attributed to a researcher is the one mistake here that is genuinely hard to walk back.</p></div>
+        </details>
+        <details class="qa">
+          <summary>How reliable is it on technical terminology?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>As reliable as the captions, which are weakest exactly there. Check any specialist term or name at its timestamp before it enters your notes.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Does it work on conference talks behind a paywall?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>No. It reads publicly accessible YouTube videos, including unlisted ones. Talks hosted on a conference platform or behind registration are out of reach.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Will it capture the caveats on a result?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Sometimes, and that is not good enough for research use. Conditions attached to findings are what compression drops first — open the timestamp for any result you intend to rely on.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Can it summarize a whole conference playlist?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>One talk at a time. For triage that is the right shape anyway — see <a href="/summarize-youtube-playlist">summarizing a playlist</a> for working through one efficiently.</p></div>
+        </details>
+      </div>
+    </div>
+
+    <div class="post-cta">
+      <h2>Triage the conference playlist</h2>
+      <p>Summarize the plausible talks, then watch the two that earned your afternoon.</p>
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize a talk — free</a>
+    </div>
+
+    <!--related-->
+  </div>
+</section>

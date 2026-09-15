@@ -1,0 +1,241 @@
+<section class="page-head">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="kicker">Guides</p>
+    <h1>YouTube Summary Not Working: What to Check</h1>
+    <p class="lede">
+      Almost every failure in this category comes from the same place, and it is not the
+      summarizer. Six causes, in the order they are worth checking.
+    </p>
+    <div class="head-actions">
+      <a class="btn btn-primary btn-lg" href="/#try">Try a video</a>
+      <a class="btn btn-soft btn-lg" href="/faq">Full FAQ</a>
+    </div>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="wrap wrap-narrow">
+    <!--image:summary-not-working-lead-->
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap-narrow">
+    <div class="prose">
+      <p>
+        <a href="/faq">The FAQ</a> covers the common questions; this page is for when
+        something specifically did not work. There are two kinds of failure, and they need
+        separating before you can fix anything. Loud failures tell you something went wrong. Quiet ones hand you a
+        summary that looks fine and is not.
+      </p>
+      <p>
+        The quiet kind is more common than people realise, which is why the last section
+        matters most.
+      </p>
+
+      <h2>Start here: does the video have captions?</h2>
+      <p>
+        This accounts for the large majority of outright failures. Every mainstream
+        summarizer reads the caption track, so no captions means no input.
+      </p>
+      <p>
+        Check it in ten seconds: open the video's description, expand it, and look for
+        "Show transcript". If it is not there, no caption track exists yet.
+      </p>
+
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <caption>Why a summary failed, and what fixes it</caption>
+          <thead>
+            <tr>
+              <th scope="col">Cause</th>
+              <th scope="col">How it looks</th>
+              <th scope="col">Fix</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">No captions yet</th><td>"No transcript" on a recent upload</td><td>Wait a few hours and retry</td></tr>
+            <tr><th scope="row">Captions disabled</th><td>"No transcript", older video</td><td>Nothing — transcribe it yourself</td></tr>
+            <tr><th scope="row">No speech in the video</th><td>"No transcript"</td><td>Nothing to summarize; watch it</td></tr>
+            <tr><th scope="row">Private or unlisted-restricted</th><td>Cannot access the video</td><td>Needs a public or unlisted URL</td></tr>
+            <tr><th scope="row">Age-restricted</th><td>Access refused</td><td>Generally not retrievable</td></tr>
+            <tr><th scope="row">Silent truncation</th><td>Summary looks complete</td><td>Check the last timestamp</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!--image:not-working-causes-->
+
+      <h2>Recent uploads: usually just wait</h2>
+      <p>
+        Captions take a while to generate, and longer for long videos. A talk posted this
+        morning may not be summarisable until this afternoon, and a four-hour stream
+        replay can take longer still.
+      </p>
+      <p>
+        Google documents a related constraint for NotebookLM — videos uploaded within the
+        previous 72 hours may not be importable — which reflects the same underlying
+        pipeline rather than a quirk of one tool.
+      </p>
+      <p>
+        So if the upload is fresh, the answer is almost always patience rather than a
+        different tool.
+      </p>
+
+      <h2>When the video is private or restricted</h2>
+      <p>
+        If a tool cannot reach the video, it cannot read it. Private videos, members-only
+        content and most age-restricted material are outside what a summarizer can
+        retrieve.
+      </p>
+      <p>
+        Unlisted videos usually work, because the URL is the access. That covers a lot of
+        lecture recordings and internal training material shared as unlisted links.
+      </p>
+
+      <!--image:not-working-restricted-->
+
+      <h2>The failure that does not announce itself</h2>
+      <p>
+        This is the important one. On a long video, some tools return a confident summary
+        of the first portion and give no indication the rest was never read.
+      </p>
+      <p>
+        Every sentence in it is accurate about the part that was processed, so nothing
+        reads as wrong. You simply end up with a summary of the opening third, filed in
+        your head as a summary of the whole thing.
+      </p>
+      <p>
+        The check takes two seconds: compare the final timestamp with the video's runtime.
+        If a 2:40:00 video's last citation is at 0:48:00, you have your answer. More detail
+        in <a href="/long-youtube-video-summarizer">summarizing long videos</a>.
+      </p>
+
+      <h2>Browser and connection problems</h2>
+      <p>
+        Worth ruling out early, because they look identical to a tool failure and are
+        trivially fixable.
+      </p>
+      <p>
+        An aggressive content blocker can prevent the page from reaching the service at
+        all. A corporate network may block the request. And a stale cached copy of the page
+        can behave oddly after an update — a hard refresh resolves that one.
+      </p>
+      <p>
+        The quick test is another browser, or the same browser in a private window with
+        extensions disabled. If it works there, the problem is local and the tool is fine.
+      </p>
+
+      <h2>When the summary is thin rather than absent</h2>
+      <p>
+        A short, vague summary of a long video is usually the video's fault rather than
+        the tool's, and it is worth telling the two apart.
+      </p>
+      <p>
+        If the content is visual — a screen recording, a whiteboard derivation, a
+        performance — the transcript contains narration around work you cannot see. There
+        is nothing to summarize because the meaning was never in the words.
+      </p>
+      <p>
+        The quick predictor: if you could follow the video with your eyes closed it will
+        summarize well; if you could follow it with the sound off it will not.
+      </p>
+
+      <!--image:not-working-thin-->
+
+      <h2>When terms come out wrong</h2>
+      <p>
+        This one is worth separating from the failures above, because nothing actually
+        broke — the pipeline worked exactly as designed on input that was already wrong.
+      </p>
+      <p>
+        Not a failure of the summary so much as of the captions underneath it. Automatic
+        transcription is weakest on technical vocabulary and proper nouns, and those
+        errors flow through unchanged.
+      </p>
+      <p>
+        If a term looks wrong for the subject, open its timestamp and listen. That is the
+        only reliable correction, and it takes ten seconds — see
+        <a href="/youtube-auto-captions-accuracy">how accurate auto-captions are</a> for
+        why this clusters where it does.
+      </p>
+
+      <h2>When it worked yesterday and not today</h2>
+      <p>
+        Occasionally a video that summarised fine last week fails now, which feels like a
+        tool problem and usually is not.
+      </p>
+      <p>
+        Uploaders can change a video's visibility, disable captions, or replace a
+        recording. A talk that was public during a conference sometimes becomes unlisted or
+        private afterwards, and members-only conversions are common on channels that
+        monetise back catalogues.
+      </p>
+      <p>
+        Google's documentation on
+        <a href="https://support.google.com/gemininotebook/answer/16215270" rel="nofollow noopener" target="_blank">adding
+        video sources</a> notes a related consequence: if a video is deleted or made
+        private, material derived from it gets removed downstream too. The video is the
+        dependency, and it can change under you.
+      </p>
+
+      <!--image:not-working-changed-->
+
+      <h2>A checklist</h2>
+      <ol>
+        <li>Does "Show transcript" appear under the video? If not, that is your answer.</li>
+        <li>Was it uploaded in the last few hours? Wait and retry.</li>
+        <li>Is it private, members-only or age-restricted? Not retrievable.</li>
+        <li>Does the video have speech at all? Music and silent recordings cannot be summarised.</li>
+        <li>Did you get output? Check the last timestamp against the runtime before reading it.</li>
+        <li>Do the technical terms look right? Verify odd ones at their timestamps.</li>
+      </ol>
+
+      <!--image:not-working-checklist-->
+
+      <h2>When it is genuinely the tool</h2>
+      <p>
+        Occasionally it is. If a video has a visible transcript, is public, is not brand
+        new, and still fails repeatedly, that is worth reporting rather than working around.
+      </p>
+      <p>
+        <a href="/contact">Send us the link</a> — a URL that reproducibly fails is far more
+        useful than a description of the failure, and it is usually something specific
+        about how that video's captions are structured.
+      </p>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details class="qa">
+          <summary>Why does it say there's no transcript?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Because no caption track exists — usually a recent upload where captions have not generated, a video with no speech, or captions disabled by the uploader. Only the first fixes itself with time.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Does a failed video use up my daily allowance?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>No. If there was no transcript to read, nothing was summarised and your count is untouched.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Can you summarize private or age-restricted videos?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Private and age-restricted, generally no — the video cannot be retrieved. Unlisted videos usually work, since the URL itself is the access.</p></div>
+        </details>
+        <details class="qa">
+          <summary>The summary seems to miss the end of the video. Why?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Check the final timestamp against the runtime. If it stops well short, the transcript was truncated or the tail was skimmed — a common and silent failure on long videos.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Why is the summary so short for a long video?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Often correct behaviour — a summary answers a fixed question and should not grow with runtime. If it is short and vague rather than short and specific, the video may be visual rather than spoken.</p></div>
+        </details>
+      </div>
+    </div>
+
+    <div class="post-cta">
+      <h2>Check the transcript first</h2>
+      <p>Most failures are a missing caption track. Look for "Show transcript" before anything else.</p>
+      <a class="btn btn-primary btn-lg" href="/#try">Try a video — free</a>
+    </div>
+
+    <!--related-->
+  </div>
+</section>
