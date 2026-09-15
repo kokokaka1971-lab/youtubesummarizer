@@ -1,0 +1,237 @@
+<section class="page-head">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="kicker">Guides</p>
+    <h1>YouTube Podcast Summarizer</h1>
+    <p class="lede">
+      A three-hour interview usually contains twenty minutes you needed. The problem is
+      never the twenty minutes — it is that you cannot tell where they are without
+      listening to the other hundred and sixty.
+    </p>
+    <div class="head-actions">
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize an episode</a>
+      <a class="btn btn-soft btn-lg" href="/features">See every feature</a>
+    </div>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="wrap wrap-narrow">
+    <!--image:youtube-podcast-summarizer-lead-->
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap-narrow">
+    <div class="prose">
+      <p>
+        Podcasts have become one of the main ways ideas get published, and one of the
+        least searchable. Pew Research Center's work on
+        <a href="https://www.pewresearch.org/journalism/2023/04/18/podcasts-as-a-source-of-news-and-information/" rel="nofollow noopener" target="_blank">podcasts
+        as a source of news and information</a> found a substantial share of listeners
+        rely on them for news — which makes the format's unsearchability a real
+        problem rather than an inconvenience.
+      </p>
+      <p>
+        Long-form conversation is also the hardest thing to summarize well, for reasons
+        worth understanding before you judge any tool on it. A summarizer that handles
+        a twenty-minute explainer cleanly can still make a mess of a rambling three-hour
+        interview, and the failure will not announce itself.
+      </p>
+
+      <h2>Why conversation is harder than a talk</h2>
+      <p>
+        A lecture has an outline. The speaker prepared, the argument moves in a
+        direction, and section boundaries are real even when unmarked.
+      </p>
+      <p>
+        An interview has none of that. Topics arrive because someone remembered
+        something. A thread opens, gets abandoned, and returns forty minutes later with
+        no acknowledgement that it ever stopped.
+      </p>
+      <p>
+        There are also two or more people, and they disagree. A summary that flattens
+        "the host pushed back on this and the guest conceded half of it" into a single
+        confident claim has lost the most interesting thing in the episode.
+      </p>
+      <p>
+        Disagreement is also where the compression risk concentrates. "One guest argues
+        X, though the host pushed back hard" reduces very naturally to "X" — and a
+        contested claim that arrives looking settled is worse than no summary at all.
+      </p>
+
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <caption>What makes podcasts harder to summarize</caption>
+          <thead>
+            <tr>
+              <th scope="col">Feature</th>
+              <th scope="col">Lecture or talk</th>
+              <th scope="col">Podcast or interview</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Structure</th><td>Prepared outline</td><td>Associative, doubles back</td></tr>
+            <tr><th scope="row">Speakers</th><td>Usually one</td><td>Two or more, disagreeing</td></tr>
+            <tr><th scope="row">Length</th><td>20–90 minutes</td><td>Often 2–4 hours</td></tr>
+            <tr><th scope="row">Signal density</th><td>High throughout</td><td>Concentrated in bursts</td></tr>
+            <tr><th scope="row">Main risk</th><td>Losing a caveat</td><td>Attributing a claim to the wrong person</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        That last row is the one to watch. Automatic captions carry no speaker labels,
+        so a two-person conversation arrives as a single undifferentiated stream where
+        the question and the answer read identically.
+      </p>
+
+      <!--image:podcast-two-speakers-->
+
+      <h2>Length is the other half of the problem</h2>
+      <p>
+        Podcasts are also where the queue problem bites hardest. Subscribing is free and
+        instant, listening costs hours, and the backlog only grows — which is why triage
+        matters more here than in any other format.
+      </p>
+      <p>
+        Podcast episodes are exactly the length at which most summarizers quietly
+        fail. A three-hour episode is well past the point where many tools truncate
+        the transcript, and the truncation is not announced.
+      </p>
+      <p>
+        The tell is simple. Look at the last timestamp in the summary and compare it to
+        the runtime. If the episode runs 2:50:00 and the final citation is at 0:52:00,
+        the tool read a third of it and wrote confidently about the whole.
+      </p>
+      <p>
+        We go into the mechanics in the guide to
+        <a href="/blog/why-timestamps-matter">why every summary should carry
+        timestamps</a> — the short version is that timestamps make this failure
+        visible, which is most of their value.
+      </p>
+
+      <!--image:podcast-long-runtime-->
+
+      <h2>What a good episode summary gives you</h2>
+      <p>
+        Setting expectations properly here matters, because the obvious thing to want
+        from a podcast summary is not the thing that turns out to be useful once you
+        have one.
+      </p>
+      <p>
+        Not a précis of the conversation, which is what most people picture and almost
+        nobody wants — you can see the shape of it by
+        <a href="/">summarizing an episode</a> you already know well. A map of where the substance is, so you can listen to the parts
+        that earn it and skip the twenty minutes of housekeeping at the top.
+      </p>
+      <ul>
+        <li><strong>Topic segments</strong> with timestamps, including threads that resume later.</li>
+        <li><strong>The claims each person made</strong>, kept attached to the person who made them.</li>
+        <li><strong>Points of disagreement</strong>, which are usually where the episode is worth hearing.</li>
+        <li><strong>A short list of the genuinely new things</strong>, separated from the standard material a guest says on every show.</li>
+      </ul>
+      <p>
+        That last one is undervalued. A frequent guest has a set of stories they tell
+        everywhere. The useful question is which five minutes of this appearance were
+        not in the last one.
+      </p>
+
+      <!--image:podcast-topic-map-->
+
+      <h2>What to do with the summary afterwards</h2>
+      <p>
+        A podcast summary is most useful as a decision, not as a document. Three
+        outcomes are worth planning for.
+      </p>
+      <p>
+        <strong>Skip it.</strong> The most common and most valuable result. Four
+        hundred words told you the episode covered nothing you needed, and you got your
+        evening back.
+      </p>
+      <p>
+        <strong>Listen to a segment.</strong> The map points at twenty minutes worth
+        hearing properly. Open the timestamp and listen to that stretch at normal
+        speed rather than the whole thing at 2x.
+      </p>
+      <p>
+        <strong>Keep the claim.</strong> Something quotable came up. Export it with the
+        timestamp attached, because a quote you cannot locate again is a quote you
+        cannot use.
+      </p>
+
+      <!--image:podcast-what-next-->
+
+      <h2>How people actually use it</h2>
+      <p>
+        Three patterns come up repeatedly, and none of them is "read this instead of
+        listening".
+      </p>
+      <p>
+        <strong>Triage.</strong> Six episodes in the queue, time for one. Summarize all
+        six, listen to the one that earns it properly.
+      </p>
+      <p>
+        <strong>Retrieval.</strong> You remember a guest saying something about pricing
+        four months ago. The summary plus a timestamp finds it in seconds.
+      </p>
+      <p>
+        <strong>Show notes.</strong> If you publish, the segment map is most of the
+        notes already — which is closer to
+        <a href="/use-cases/creators">how creators use this</a>.
+      </p>
+      <p>
+        What none of these is: a replacement for listening to a show you enjoy. Podcast
+        listening is often not an information-retrieval task at all, and summarising
+        something you listen to for company rather misses the point.
+      </p>
+
+      <!--image:podcast-show-notes-->
+
+      <h2>Where episode summaries go wrong</h2>
+      <p>
+        The common failure is treating the summary as the episode. Conversation carries
+        information that does not survive compression at all — hesitation, the thing
+        someone declined to say, the point where a guest changed their mind mid-sentence.
+      </p>
+      <p>
+        Those are frequently the moments people remember an episode for, and no summary
+        captures them. What a summary can tell you is where they happened, which is the
+        realistic goal: not reading instead of listening, but knowing which twenty
+        minutes to listen to properly.
+      </p>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details class="qa">
+          <summary>Can it handle a three-hour episode?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Yes. Long episodes are processed in overlapping passes rather than truncated, and timestamps spread across the full runtime so you can confirm the ending was covered.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Does it tell the speakers apart?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>It attributes claims from context where the conversation makes that clear. Automatic captions carry no speaker labels, so attribution is inferred rather than read off a label — worth checking on anything you plan to quote.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Does it work for podcasts not on YouTube?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Not yet. It works from YouTube's caption track, so an episode needs a YouTube version. Many shows publish one, but audio-only feeds are outside what this does today.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Can I get timestamps for a specific topic?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>The chapter map segments the episode by topic with a timestamp on each, including threads that are dropped and picked up again later in the conversation.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Will it tell me if an episode isn't worth listening to?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Indirectly, and that is often the most valuable outcome. A thin summary of a three-hour episode usually means the episode was thin — though check the last timestamp first, since a truncated read produces the same impression for a different reason.</p></div>
+        </details>
+      </div>
+    </div>
+
+    <div class="post-cta">
+      <h2>Clear your podcast queue</h2>
+      <p>Summarize the episodes you have been meaning to get to, then listen to the one that deserves it.</p>
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize an episode — free</a>
+    </div>
+
+    <!--related-->
+  </div>
+</section>

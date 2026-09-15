@@ -1,0 +1,248 @@
+<!--META
+title: YouTube Key Points Generator
+description: Pull the key points out of any YouTube video, each anchored to the second it came from. What makes a takeaway useful and what makes it filler.
+section: guides
+focus_keyword: youtube key points generator
+schema: article, faq
+lead_image: youtube-key-points-generator-lead
+links_to: /features
+-->
+
+<section class="page-head">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="kicker">Guides</p>
+    <h1>YouTube Key Points Generator</h1>
+    <p class="lede">
+      Six bullets that tell you what a video argued, each one clickable back to the
+      moment it came from. The difficulty is not producing bullets — it is deciding
+      which six.
+    </p>
+    <div class="head-actions">
+      <a class="btn btn-primary btn-lg" href="/#try">Get the key points</a>
+      <a class="btn btn-soft btn-lg" href="/features">See every feature</a>
+    </div>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="wrap wrap-narrow">
+    <!--image:youtube-key-points-generator-lead-->
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap-narrow">
+    <div class="prose">
+      <p>
+        Any tool can produce a bulleted list. Most of them produce roughly the list you
+        would get by reading the video's description and guessing, which is a strange
+        thing to run a model for.
+      </p>
+      <p>
+        A key point is a claim the video actually made — specific enough to disagree
+        with. Everything else is a topic label wearing a bullet point.
+      </p>
+
+      <h2>What separates a key point from filler</h2>
+      <p>
+        The test is whether someone who has not seen the video learns something they
+        could act on or argue with.
+      </p>
+      <p>
+        "The speaker discusses different approaches to onboarding" tells you nothing.
+        "Onboarding flows longer than three steps lost about 40% of signups in their
+        test" is a key point — it has a shape, and you can check it.
+      </p>
+      <p>
+        Note what the second one kept: the number, and the fact that it came from one
+        test rather than a general law. Compression tends to keep figures and drop the
+        conditions attached to them, which is how a specific result becomes a
+        confident-sounding rule.
+      </p>
+
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <caption>Filler vs a real takeaway</caption>
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Filler bullet</th>
+              <th scope="col">Key point</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Names a topic</th><td>Yes</td><td>Yes</td></tr>
+            <tr><th scope="row">States a claim</th><td>No</td><td>Yes</td></tr>
+            <tr><th scope="row">Could be wrong</th><td>No</td><td>Yes — which is the point</td></tr>
+            <tr><th scope="row">Survives without the video</th><td>No</td><td>Yes</td></tr>
+            <tr><th scope="row">Could be written from the title</th><td>Yes</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        That last row is the quickest audit of any tool. If the bullets could have been
+        produced without watching, they were.
+      </p>
+
+      <!--image:key-points-bullets-->
+
+      <h2>Why scanning is the whole job</h2>
+      <p>
+        There is a second reason to care about bullet quality, which is that key points
+        travel. A takeaway gets pasted into a message, a document, a slide — and it
+        arrives there stripped of the context that produced it, standing on its own as
+        a claim someone will act on.
+      </p>
+      <p>
+        People do not read summaries, they scan them. Decades of reading-behaviour
+        research from the
+        <a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" rel="nofollow noopener" target="_blank">Nielsen
+        Norman Group</a> found that users rarely read web pages word by word — they
+        scan, picking out words and sentences.
+      </p>
+      <p>
+        That has a design consequence. A key point has to carry its meaning in the
+        first few words, because the back half of a long bullet frequently does not
+        get read at all.
+      </p>
+      <p>
+        So the useful ordering is claim first, qualification second. Bullets that open
+        with "In this section, the speaker explains that…" have spent the only words
+        that were reliably read on throat-clearing.
+      </p>
+
+      <h2>Ordering by importance, not by chronology</h2>
+      <p>
+        A transcript is ordered by when things were said. A key points list should be
+        ordered by what matters.
+      </p>
+      <p>
+        This is one of the fastest ways to tell reformatting from summarising. If the
+        bullets follow the video's timeline exactly, nothing has been prioritised — and
+        prioritising is the job.
+      </p>
+      <p>
+        The strongest claim in a talk is frequently made forty minutes in, after the
+        setup and before the recap. A tool that always leads with the opening is
+        reporting order, not importance.
+      </p>
+      <p>
+        Prioritising also means being willing to leave things out. A video can spend
+        ten minutes on something that turns out to be setup for a point made in one
+        sentence, and the one sentence is the takeaway. Allocating bullets by how long
+        a topic ran gets this exactly backwards.
+      </p>
+
+      <!--image:key-points-priority-order-->
+
+      <h2>Every point carries its timestamp</h2>
+      <p>
+        A takeaway you cannot check is a rumour with good formatting. Each point here
+        links back to the second it came from, so verifying the one you plan to act on
+        costs a click rather than a rewatch.
+      </p>
+      <p>
+        That matters most for the claims that compress worst — numbers stripped of
+        their conditions, positions the speaker was describing rather than holding,
+        and anything hedged. We go further into this in
+        <a href="/blog/why-timestamps-matter">why every summary should carry
+        timestamps</a>.
+      </p>
+
+      <!--image:key-points-timestamp-check-->
+
+      <h2>How many points is the right number</h2>
+      <p>
+        There is no correct count in the abstract, only a correct count for a given
+        video. The useful question is whether the number was decided by the content or
+        by a template, and you can usually tell within a few seconds of reading.
+      </p>
+      <p>
+        A fixed count is a warning sign. Tools that always return exactly five bullets
+        are padding thin videos and truncating dense ones to hit a shape.
+      </p>
+      <p>
+        The number should follow the video. A tightly argued twenty-minute talk might
+        genuinely contain four claims. A three-hour interview might contain fifteen,
+        unevenly spread, with an hour in the middle that produced none.
+      </p>
+      <p>
+        That unevenness is information. If a forty-minute stretch generated nothing,
+        that is worth knowing before you decide to watch it — and a tool that
+        distributes bullets evenly across the runtime to look thorough has hidden the
+        most useful thing it learned.
+      </p>
+
+      <!--image:key-points-how-many-->
+
+      <h2>Four depths, because "key points" means different things</h2>
+      <p>
+        Someone deciding whether to watch needs three bullets. Someone writing up a
+        conference talk needs twenty with structure. The same video, two different
+        jobs.
+      </p>
+      <ul>
+        <li><strong>TL;DR</strong> — one line, enough to decide whether to continue.</li>
+        <li><strong>Key points</strong> — the five to eight claims the video rests on.</li>
+        <li><strong>Detailed notes</strong> — every section, with the supporting detail.</li>
+        <li><strong>Chapter map</strong> — the structure itself, for jumping around.</li>
+      </ul>
+      <p>
+        All four are available on the free tier, and all four are exportable. You can
+        see the full list on the <a href="/features">features page</a>.
+      </p>
+
+      <!--image:key-points-four-depths-->
+
+      <h2>Using key points without being misled by them</h2>
+      <p>
+        Bullets are persuasive in a way prose is not. A list looks settled — it has the
+        visual grammar of a conclusion, even when the underlying claims were tentative.
+      </p>
+      <p>
+        So the discipline is simple: before repeating a bullet anywhere it matters,
+        click its timestamp and hear the sentence it came from. You are checking for
+        one thing specifically — whether the speaker hedged in a way the bullet did not
+        preserve.
+      </p>
+      <p>
+        That takes ten seconds and it only needs doing for the one or two points you
+        will actually act on. The rest can stay unverified, because nothing turns on
+        them.
+      </p>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details class="qa">
+          <summary>How many key points will I get?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>It follows the video rather than a fixed number. A tightly argued twenty-minute talk might yield four; a sprawling interview might yield a dozen. A tool that always returns exactly five is padding or cutting to hit a target.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Are the points in the order they were said?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>No — they are ordered by importance, with a timestamp on each so you can still find them in sequence. Chronological order is what a transcript gives you.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Can I get key points from a video in another language?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Yes. A video in one of 38 supported languages can be summarised into another, so a Spanish talk can produce English takeaways without a separate translation step.</p></div>
+        </details>
+        <details class="qa">
+          <summary>What if the video makes no real claims?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Then you get a short, thin list — which is itself useful information about the video. Manufacturing five confident bullets from a video that argued nothing is how summaries become misleading.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Can I get more detail behind a key point?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Yes — switch to detailed notes for the same video, which keeps the structure but carries the supporting detail under each claim. Or click the timestamp and hear the speaker make the point themselves, which is usually faster.</p></div>
+        </details>
+      </div>
+    </div>
+
+    <div class="post-cta">
+      <h2>See what a video actually claimed</h2>
+      <p>Paste a link and check whether the bullets could have been written from the title alone.</p>
+      <a class="btn btn-primary btn-lg" href="/#try">Get key points — free</a>
+    </div>
+
+    <!--related-->
+  </div>
+</section>

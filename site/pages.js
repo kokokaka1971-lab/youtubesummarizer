@@ -216,7 +216,129 @@ export const PAGES = {
     section: '',
     title: 'Page not found',
     description: 'That page does not exist.'
-  }
+  },
+
+  /* ---- Guides (batch 01) ---- */
+  'free-youtube-summarizer-no-signup': {
+    path: '/free-youtube-summarizer-no-signup',
+    file: 'free-youtube-summarizer-no-signup.html',
+    section: 'guides',
+    title: 'Free YouTube Summarizer — No Sign-Up',
+    description:
+      'A free YouTube summarizer with no signup or login. What free actually covers, the limits tools hide, and how to test one in two minutes.',
+    cardKicker: 'Free tier',
+    cardImage: 'free-youtube-summarizer-no-signup-lead',
+    schema: ['article', 'faq']
+  },
+
+  'youtube-summarizer-with-timestamps': {
+    path: '/youtube-summarizer-with-timestamps',
+    file: 'youtube-summarizer-with-timestamps.html',
+    section: 'guides',
+    title: 'YouTube Summarizer With Timestamps',
+    description:
+      'A YouTube summarizer with timestamps on every claim, so you can jump straight back to the moment. How they work and how to spot fake ones.',
+    cardKicker: 'Timestamps',
+    cardImage: 'youtube-summarizer-with-timestamps-lead',
+    schema: ['article', 'faq']
+  },
+
+  'youtube-transcript-summarizer': {
+    path: '/youtube-transcript-summarizer',
+    file: 'youtube-transcript-summarizer.html',
+    section: 'guides',
+    title: 'YouTube Transcript Summarizer',
+    description:
+      'Turn a YouTube transcript into a summary you can check. What the caption track gives you, where auto-captions fail, and what has to happen next.',
+    cardKicker: 'Transcripts',
+    cardImage: 'youtube-transcript-summarizer-lead',
+    schema: ['article', 'faq']
+  },
+
+  'long-youtube-video-summarizer': {
+    path: '/long-youtube-video-summarizer',
+    file: 'long-youtube-video-summarizer.html',
+    section: 'guides',
+    title: 'Long YouTube Video Summarizer',
+    description:
+      'Summarize long YouTube videos without losing the middle. Why long videos fail silently in most tools, and how to check yours actually read to the end.',
+    cardKicker: 'Long videos',
+    cardImage: 'long-youtube-video-summarizer-lead',
+    schema: ['article', 'faq']
+  },
+
+  'youtube-key-points-generator': {
+    path: '/youtube-key-points-generator',
+    file: 'youtube-key-points-generator.html',
+    section: 'guides',
+    title: 'YouTube Key Points Generator',
+    description:
+      'Pull the key points out of any YouTube video, each anchored to the second it came from. What makes a takeaway useful and what makes it filler.',
+    cardKicker: 'Key points',
+    cardImage: 'youtube-key-points-generator-lead',
+    schema: ['article', 'faq']
+  },
+
+  'youtube-notes-generator': {
+    path: '/youtube-notes-generator',
+    file: 'youtube-notes-generator.html',
+    section: 'guides',
+    title: 'YouTube Notes Generator',
+    description:
+      'Turn a YouTube video into structured notes with timestamps you can click. Where generated notes help, and where they quietly replace the learning.',
+    cardKicker: 'Notes',
+    cardImage: 'youtube-notes-generator-lead',
+    schema: ['article', 'faq']
+  },
+
+  'best-youtube-summarizer': {
+    path: '/best-youtube-summarizer',
+    file: 'best-youtube-summarizer.html',
+    section: 'guides',
+    title: 'Best YouTube Summarizer: How to Choose',
+    description:
+      'How to judge a YouTube summarizer instead of trusting a ranked list. Seven tests you can run in ten minutes, and the failures they expose.',
+    cardKicker: 'Choosing a tool',
+    cardImage: 'best-youtube-summarizer-lead',
+    schema: ['article', 'faq']
+  },
+
+  'how-to-summarize-a-youtube-video': {
+    path: '/how-to-summarize-a-youtube-video',
+    file: 'how-to-summarize-a-youtube-video.html',
+    section: 'guides',
+    title: 'How to Summarize a YouTube Video',
+    description:
+      'How to summarize a YouTube video in three steps, plus the manual methods, what each one costs you, and the cases where none of them work.',
+    cardKicker: 'Getting started',
+    cardImage: 'how-to-summarize-a-youtube-video-lead',
+    schema: ['article', 'faq']
+  },
+
+  'youtube-podcast-summarizer': {
+    path: '/youtube-podcast-summarizer',
+    file: 'youtube-podcast-summarizer.html',
+    section: 'guides',
+    title: 'YouTube Podcast Summarizer',
+    description:
+      'Summarize long podcast episodes and interviews on YouTube, with timestamps on every claim so you can jump to the ten minutes worth hearing.',
+    cardKicker: 'Podcasts',
+    cardImage: 'youtube-podcast-summarizer-lead',
+    schema: ['article', 'faq']
+  },
+
+  'lecture-video-summarizer': {
+    path: '/lecture-video-summarizer',
+    file: 'lecture-video-summarizer.html',
+    section: 'guides',
+    title: 'Lecture Video Summarizer',
+    description:
+      'Turn recorded lectures into a chapter map and notes with timestamps, so revision means rewatching four minutes instead of ninety.',
+    cardKicker: 'Lectures',
+    cardImage: 'lecture-video-summarizer-lead',
+    schema: ['article', 'faq']
+  },
+
 };
 
 /** path → page, built once at import. */

@@ -46,9 +46,27 @@ function thumbFor(page) {
  * @param {number} limit how many cards to show
  */
 export function relatedHtml(slug, limit = 4) {
-  const posts = Object.entries(PAGES)
-    .filter(([key, p]) => p.section === 'blog' && key !== slug && key !== 'blog')
-    .sort((a, b) => String(b[1].datePublished || '').localeCompare(String(a[1].datePublished || '')))
+  const current = PAGES[slug];
+  const section = current && current.section;
+
+  // Cards come from the same section first, so a guide leads with other guides
+  // and only falls back to editorial once it runs out. That is what makes these
+  // read as a cluster rather than as a generic "more posts" strip.
+  const eligible = Object.entries(PAGES).filter(
+    ([key, p]) =>
+      key !== slug &&
+      key !== 'blog' &&
+      p.cardKicker &&
+      (p.section === 'blog' || p.section === section)
+  );
+
+  const rank = ([, p]) => (p.section === section ? 0 : 1);
+  const posts = eligible
+    .sort(
+      (a, b) =>
+        rank(a) - rank(b) ||
+        String(b[1].datePublished || '').localeCompare(String(a[1].datePublished || ''))
+    )
     .slice(0, limit);
 
   if (!posts.length) return '';

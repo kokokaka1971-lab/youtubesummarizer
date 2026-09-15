@@ -1,0 +1,239 @@
+<section class="page-head">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="kicker">Guides</p>
+    <h1>YouTube Summarizer With Timestamps</h1>
+    <p class="lede">
+      A summary tells you what a video said. A timestamp lets you check. One of those
+      is a convenience and the other is what makes the summary worth relying on.
+    </p>
+    <div class="head-actions">
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize a video</a>
+      <a class="btn btn-soft btn-lg" href="/features">See every feature</a>
+    </div>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="wrap wrap-narrow">
+    <!--image:youtube-summarizer-with-timestamps-lead-->
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap-narrow">
+    <div class="prose">
+      <p>
+        Almost every summarizer now advertises timestamps. Far fewer produce ones that
+        actually land on the thing they are attached to, and the gap between those two
+        groups is where most of the disappointment in this category lives.
+      </p>
+      <p>
+        The difference is invisible until you click, which is why it survives. This page
+        covers what a timestamped summary should give you, how the useless version is
+        produced, and the two-minute test that separates them.
+      </p>
+
+      <h2>What timestamps change</h2>
+      <p>
+        Compression always loses something. Taking ninety minutes down to six bullets
+        means discarding roughly 99% of the words, and some of what goes will turn out
+        to have mattered.
+      </p>
+      <p>
+        That is not fixable. What is fixable is the cost of recovering it. Without a
+        timestamp, checking a claim means rewatching the video — so nobody checks, and
+        the summary becomes something you either believe or ignore.
+      </p>
+      <p>
+        With one, checking costs a click. You only verify the one or two claims you are
+        about to act on, which is the only version of the problem anyone actually
+        solves.
+      </p>
+      <p>
+        You can see it on any video by
+        <a href="/">running one through the summarizer</a> and clicking a chapter.
+        This also changes what a summary is <em>for</em>. Without timestamps it is a
+        replacement for the video, which is a lot of trust to place in six bullets.
+        With them it is an index into the video, which is a much more modest claim and
+        a far more useful object.
+      </p>
+
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <caption>Summary without timestamps vs with</caption>
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">No timestamps</th>
+              <th scope="col">Timestamped</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Cost to verify a claim</th><td>Rewatch the video</td><td>One click</td></tr>
+            <tr><th scope="row">What you do in practice</th><td>Trust it or drop it</td><td>Check what you'll rely on</td></tr>
+            <tr><th scope="row">When it's wrong</th><td>You find out later, elsewhere</td><td>You find out in seconds</td></tr>
+            <tr><th scope="row">Usable as a source</th><td>No — nothing to cite</td><td>Yes — cite the moment</td></tr>
+            <tr><th scope="row">Good for</th><td>Deciding whether to watch</td><td>Working from the video</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!--image:timestamps-clickable-chapters-->
+
+      <h2>What it costs to keep them</h2>
+      <p>
+        It is worth being honest that carrying timings through is not free, because
+        that explains why so many tools drop them.
+      </p>
+      <p>
+        The transcript arrives as thousands of short fragments, each with a time. Every
+        useful transformation merges fragments — into sentences, sentences into topics,
+        topics into a single claim. At each merge, one line of output stops
+        corresponding to one piece of input.
+      </p>
+      <p>
+        Keeping the mapping means carrying a range of source times through every step
+        and collapsing them deliberately, rather than discarding them and reattaching
+        later. It makes each stage harder and the output no prettier, which is exactly
+        why it is the first thing cut.
+      </p>
+
+      <!--image:timestamps-pipeline-cost-->
+
+      <h2>How the fake version is made</h2>
+      <p>
+        Carrying timings through a summarization pipeline is genuinely awkward. The
+        transcript arrives as thousands of short fragments with times attached, and
+        every useful step — merging fragments into sentences, sentences into topics,
+        topics into a claim — breaks the one-to-one mapping.
+      </p>
+      <p>
+        The cheap shortcut is to summarize the text first and attach times afterwards:
+        search the transcript for words resembling the output, then cite whatever
+        matches best.
+      </p>
+      <p>
+        It demos well. It fails precisely on the claims that were most heavily
+        rewritten — which are, inevitably, the ones most worth checking. A timestamp
+        that is accurate only when the summary is already accurate is not a safeguard.
+      </p>
+      <p>
+        There is a reasonable objection to all of this: if you still have to check,
+        what did the summary buy you? The answer is that it moved the expensive part.
+      </p>
+      <p>
+        Without one, finding the four claims worth having means watching ninety
+        minutes. With one, you read six bullets, identify the single claim you are
+        about to rely on, and spend ten seconds confirming it. The verification did not
+        disappear — it narrowed from the whole video to one sentence.
+      </p>
+
+      <h2>The two-minute test</h2>
+      <p>
+        Run this on any tool before you rely on it. You are testing the mapping, not
+        the prose.
+      </p>
+      <ol>
+        <li>
+          <strong>Click three timestamps from different parts of the summary.</strong>
+          Each should land within a few seconds of the claim. Landing in roughly the
+          right topic a minute early means they were reconstructed.
+        </li>
+        <li>
+          <strong>Pick the most rewritten bullet.</strong> The one phrased least like
+          anything a person would say aloud. That is where post-hoc matching breaks
+          first.
+        </li>
+        <li>
+          <strong>Check the last section of a long video.</strong> If the final
+          timestamps cluster suspiciously early, the tool did not read to the end.
+        </li>
+      </ol>
+
+      <!--image:timestamps-verification-test-->
+
+      <h2>Why chapters and timestamps are not the same thing</h2>
+      <p>
+        YouTube chapters are markers the uploader wrote. They describe sections of the
+        video, and plenty of videos have none.
+      </p>
+      <p>
+        A timestamped summary works the other way round: it starts from what was said,
+        reconstructs the structure, and anchors each claim to the second it came from.
+        It works whether or not the uploader bothered with chapters.
+      </p>
+      <p>
+        Google's documentation on
+        <a href="https://developers.google.com/search/docs/appearance/video" rel="nofollow noopener" target="_blank">video
+        key moments</a> describes the same idea from the search side — specific points
+        in a video, each addressing a distinct topic, so a viewer can jump to the part
+        they need instead of scrubbing.
+      </p>
+
+      <!--image:timestamps-chapters-vs-markers-->
+
+      <h2>What you get here</h2>
+      <p>
+        Every claim in the output carries the second it came from, and every one is
+        clickable. The <a href="/features">full feature list</a> covers how this sits
+        alongside the four summary depths and Markdown export. The timings are carried through each transformation rather than
+        matched back afterwards.
+      </p>
+      <ul>
+        <li>Chapter maps rebuilt from the content, not from uploader markers.</li>
+        <li>Timestamps on takeaways, not just on section headings.</li>
+        <li>Markdown export that keeps the links, so notes stay checkable.</li>
+        <li>The same behaviour on the free tier — this is not a paid extra.</li>
+      </ul>
+      <p>
+        When a video has no caption track, you are told. A timestamped summary of a
+        video nobody could read is just a more convincing kind of guess, which is the
+        argument we make at length in
+        <a href="/blog/why-timestamps-matter">why every summary should carry
+        timestamps</a>.
+      </p>
+
+      <!--image:timestamps-markdown-export-->
+
+      <p>
+        None of this makes a summary a substitute for watching something that deserves
+        watching. It makes it an index — and an index whose page numbers are wrong is
+        worse than no index, because you stop checking after the second time it sends
+        you to the wrong place.
+      </p>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details class="qa">
+          <summary>Do the timestamps link back to the video?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Yes. Each one is a link that opens the video at that second, so checking a claim is a click rather than a scrub through the timeline.</p></div>
+        </details>
+        <details class="qa">
+          <summary>How accurate are they?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>They point at the moment the claim was made, because the timings travel with the text through every step. They are not reattached afterwards by matching words, which is the method that drifts.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Does it work if the video has no chapters?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Yes. Uploader chapters are ignored entirely — the structure is rebuilt from what was actually said, so a video with no chapters still gets a full chapter map.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Can I export the summary with timestamps intact?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Markdown export keeps every link. That matters more than it sounds: notes that lose their timestamps become unverifiable the moment they leave the page.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Why do some tools have timestamps that are slightly off?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Because the times were attached after the summary was written, by matching output words back against the transcript. That works when the wording barely changed and drifts badly when it did — which is precisely the claims that were most rewritten.</p></div>
+        </details>
+      </div>
+    </div>
+
+    <div class="post-cta">
+      <h2>Click three timestamps and see</h2>
+      <p>The fastest way to judge any summarizer is to check whether its links land where they claim.</p>
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize a video — free</a>
+    </div>
+
+    <!--related-->
+  </div>
+</section>

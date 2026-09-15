@@ -145,7 +145,13 @@ def register(meta, slug, section):
     )
     marker = '\n};'
     idx = src.rindex(marker)
-    io.open(PAGES_JS, 'w', encoding='utf-8', newline='\n').write(src[:idx] + '\n' + entry + src[idx:])
+    # The final existing entry may have no trailing comma. Appending after it
+    # would produce invalid JS, so add one first.
+    head, tail = src[:idx], src[idx:]
+    if head.rstrip().endswith('}'):
+        stripped = head.rstrip()
+        head = stripped + ',' + head[len(stripped):]
+    io.open(PAGES_JS, 'w', encoding='utf-8', newline='\n').write(head + '\n' + entry + tail)
     return True
 
 

@@ -11,7 +11,7 @@ Featured photos are 1.91:1, so a 4:3 crop takes the centre and drops the sides.
 Output is 400x300 — 2x the ~200px the cards render at.
 """
 
-import os, sys
+import json, os, sys
 
 try:
     from PIL import Image
@@ -22,7 +22,12 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IMG = os.path.join(ROOT, 'public', 'assets', 'img')
 
 # Featured photo per blog post.
-LEADS = ['blog-how-to-study', 'blog-timestamps', 'blog-transcripts']
+# Every page that can appear as a "Keep reading" card needs a thumbnail.
+# Read straight from pages.js so adding a page does not mean editing this list.
+import re as _re
+_pages = open(os.path.join(ROOT, 'site', 'pages.js'), encoding='utf-8').read()
+_manifest = json.load(open(os.path.join(ROOT, 'site', 'image-manifest.json'), encoding='utf-8'))
+LEADS = [_manifest[s]['file'][:-4] for s in _re.findall(r"cardImage: '([^']+)'", _pages) if s in _manifest]
 
 W, H = 400, 300
 made = 0

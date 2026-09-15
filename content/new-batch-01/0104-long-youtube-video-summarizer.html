@@ -1,0 +1,260 @@
+<!--META
+title: Long YouTube Video Summarizer
+description: Summarize long YouTube videos without losing the middle. Why long videos fail silently in most tools, and how to check yours actually read to the end.
+section: guides
+focus_keyword: long youtube video summarizer
+schema: article, faq
+lead_image: long-youtube-video-summarizer-lead
+links_to: /
+-->
+
+<section class="page-head">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="kicker">Guides</p>
+    <h1>Long YouTube Video Summarizer</h1>
+    <p class="lede">
+      Long videos are where summarising is most useful and most likely to fail — and
+      the failure is silent. You get a confident summary of the first forty minutes
+      and no indication that the rest was never read.
+    </p>
+    <div class="head-actions">
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize a long video</a>
+      <a class="btn btn-soft btn-lg" href="/features">See every feature</a>
+    </div>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="wrap wrap-narrow">
+    <!--image:long-youtube-video-summarizer-lead-->
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap-narrow">
+    <div class="prose">
+      <p>
+        A three-hour podcast is the video you most want summarised and the one most
+        likely to come back wrong. Not wrong in an obvious way — wrong in the way that
+        looks completely fine.
+      </p>
+      <p>
+        The output reads well, covers real ground, and quietly omits an hour in the
+        middle. Nothing marks the gap, so the only way to notice is to already know
+        what was in the part that went missing.
+      </p>
+
+      <h2>Why length breaks things</h2>
+      <p>
+        Three separate limits bite as a video gets longer, and they fail in different
+        ways.
+      </p>
+      <p>
+        <strong>Fetch limits.</strong> Some tools cap the transcript they will retrieve.
+        Past that mark the input simply stops, and the summary describes only what was
+        collected.
+      </p>
+      <p>
+        <strong>Context limits.</strong> A model can only read so much at once. Twelve
+        thousand words for ninety minutes is manageable; a four-hour stream is not, so
+        the transcript gets truncated or chunked.
+      </p>
+      <p>
+        <strong>Attention limits.</strong> The subtle one. Even when everything fits,
+        research on long-context models — including the work known as
+        <a href="https://aclanthology.org/2024.tacl-1.9/" rel="nofollow noopener" target="_blank">Lost
+        in the Middle</a> — found that performance degrades when relevant information
+        sits in the middle of a long input rather than at the beginning or end.
+      </p>
+      <p>
+        That last one explains a pattern people report constantly: the opening is
+        covered well, the conclusion is covered well, and the argument in between
+        thins out.
+      </p>
+
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <caption>How long videos fail, by limit type</caption>
+          <thead>
+            <tr>
+              <th scope="col">Limit</th>
+              <th scope="col">What you see</th>
+              <th scope="col">How to detect it</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Fetch cap</th>
+              <td>Summary stops covering the video partway</td>
+              <td>No timestamps past a certain mark</td>
+            </tr>
+            <tr>
+              <th scope="row">Context cap</th>
+              <td>Whole sections missing, no error</td>
+              <td>Ask about something from the final third</td>
+            </tr>
+            <tr>
+              <th scope="row">Attention drop</th>
+              <td>Start and end solid, middle vague</td>
+              <td>Middle bullets are general, not specific</td>
+            </tr>
+            <tr>
+              <th scope="row">Hard refusal</th>
+              <td>An explicit "video too long"</td>
+              <td>Obvious — and the honest failure</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!--image:long-video-missing-middle-->
+
+      <h2>The silent version is the dangerous one</h2>
+      <p>
+        A tool that refuses a four-hour video has told you something true. You go
+        elsewhere, and nothing is lost but a minute.
+      </p>
+      <p>
+        A tool that accepts it and returns a partial summary with no warning has done
+        something worse than refusing. You now hold a document that looks complete,
+        and you will act on it as though it is.
+      </p>
+      <p>
+        There is a documented case of a long-video summary jumping from the 46-minute
+        mark straight to 2:44:00, with everything between simply absent from the
+        output. The summary itself gave no sign.
+      </p>
+      <p>
+        What makes this hard to catch is that the output is not wrong. Every sentence
+        in it is accurate about the part that was read. It fails the way a witness who
+        left halfway through fails — not by lying, but by describing events they did
+        not see as though the account were complete.
+      </p>
+
+      <h2>How to check a tool actually read to the end</h2>
+      <p>
+        Three checks, about a minute, and they work on any summarizer.
+      </p>
+      <ol>
+        <li>
+          <strong>Look at the last timestamp.</strong> If the video runs 2:40:00 and
+          the final timestamp is 0:48:00, you have your answer immediately.
+        </li>
+        <li>
+          <strong>Ask about the ending.</strong> Pick something specific from the last
+          fifteen minutes. If the summary cannot account for it, the input was
+          truncated.
+        </li>
+        <li>
+          <strong>Check timestamp spacing.</strong> Evenly spread across the runtime is
+          healthy. Clustered at the front means the tail was skimmed or skipped.
+        </li>
+      </ol>
+
+      <!--image:long-video-timestamp-spread-->
+
+      <h2>What we do differently</h2>
+      <p>
+        When you <a href="/">summarize a long YouTube video</a> here, it is chunked
+        with overlap and summarised in passes, then the passes are reconciled — so the middle gets the same treatment as the opening rather
+        than whatever attention is left over.
+      </p>
+      <ul>
+        <li>No arbitrary length cap; runtime is not the constraint.</li>
+        <li>Timestamps spread across the whole video, so gaps are visible at a glance.</li>
+        <li>Chapter maps that cover the ending, not just the setup.</li>
+        <li>An explicit message when a transcript genuinely cannot be retrieved.</li>
+      </ul>
+      <p>
+        There is no length tier and no upgrade prompt at the two-hour mark —
+        <a href="/pricing">the free tier</a> treats a three-hour stream as one summary.
+        The real constraint is whether a caption track exists at all, which is a
+        property of the video rather than its length. A livestream with captions
+        disabled is a harder problem than a four-hour talk with them enabled.
+      </p>
+      <p>
+        Processing time scales with the transcript rather than the runtime, so a dense
+        two-hour lecture can take longer than a rambling three-hour stream. That is
+        worth knowing if you are working through a queue: the slow ones are the ones
+        with the most in them.
+      </p>
+
+      <!--image:long-video-chunked-passes-->
+
+      <h2>Which long videos are worth summarizing at all</h2>
+      <p>
+        Length alone does not make a video a good candidate. What matters is how
+        unevenly the value is distributed through it.
+      </p>
+      <p>
+        A three-hour interview where twenty minutes matter is the ideal case — the
+        summary finds the twenty. A three-hour workshop where every minute builds on
+        the last is close to the worst case, because there is no part you can safely
+        skip and a map does not help you skip it.
+      </p>
+      <p>
+        The other factor is whether the content lives in the words. A four-hour coding
+        stream is mostly screen, and the transcript is someone narrating what you
+        cannot see. No tool recovers information that was never spoken.
+      </p>
+
+      <!--image:long-video-worth-it-->
+
+      <h2>Where long summaries still earn their keep</h2>
+      <p>
+        Conference recordings, lecture capture, podcast interviews, AMA streams,
+        earnings calls — anything where the useful five minutes are buried somewhere
+        you cannot predict.
+      </p>
+      <p>
+        The point is not to avoid watching. It is to find which five minutes deserve
+        watching, then watch those properly. That is also the argument in
+        <a href="/blog/how-to-study-from-youtube">how to actually study from
+        YouTube</a>, where the same logic applies to lectures.
+      </p>
+
+      <!--image:long-video-conference-talk-->
+
+      <p>
+        One habit worth adopting with long videos: check coverage before you read the
+        summary, not after. Glancing at the final timestamp takes two seconds and tells
+        you whether you are reading a summary of the video or a summary of its first
+        third. Doing it afterwards means you have already formed an impression from
+        something incomplete, and impressions are hard to un-form.
+      </p>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details class="qa">
+          <summary>What's the longest video you can summarize?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>There is no fixed ceiling. Long videos are processed in overlapping passes rather than truncated, so a three-hour stream is a longer job rather than an impossible one.</p></div>
+        </details>
+        <details class="qa">
+          <summary>How do I know the whole video was covered?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Check the last timestamp against the runtime. If the summary stops well before the video does, it did not read to the end — that check works on any tool, including this one.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Why do some tools skip the middle of long videos?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Either the transcript was truncated to fit, or the model read it all but attended to the edges more than the centre. Both produce output that looks complete, which is why the check above matters.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Do long videos cost more or take longer?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>They take longer to process, since there is more transcript to read. On the free tier a long video counts as one of your five, the same as a short one.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Can I summarize just part of a long video?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>The chapter map effectively does this for you: it segments the whole runtime, so you can read the section covering the part you care about and ignore the rest. There is no need to clip the video first.</p></div>
+        </details>
+      </div>
+    </div>
+
+    <div class="post-cta">
+      <h2>Test it on your longest video</h2>
+      <p>Take the three-hour recording you have been avoiding and check where the last timestamp lands.</p>
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize a long video — free</a>
+    </div>
+
+    <!--related-->
+  </div>
+</section>

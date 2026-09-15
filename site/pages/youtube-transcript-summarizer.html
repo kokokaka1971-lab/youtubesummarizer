@@ -1,0 +1,243 @@
+<section class="page-head">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="kicker">Guides</p>
+    <h1>YouTube Transcript Summarizer</h1>
+    <p class="lede">
+      A transcript is every word in the order it was spoken. A summary is what those
+      words amounted to. Getting from one to the other is four real steps, and most
+      tools skip three of them.
+    </p>
+    <div class="head-actions">
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize a transcript</a>
+      <a class="btn btn-soft btn-lg" href="/how-it-works">How it works</a>
+    </div>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="wrap wrap-narrow">
+    <!--image:youtube-transcript-summarizer-lead-->
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap-narrow">
+    <div class="prose">
+      <p>
+        You can already get a transcript. YouTube will show you one for most videos,
+        and dozens of tools will export it. That is not the hard part — you can
+        <a href="/">paste a link and get the summary instead</a> in about the same
+        time it takes to open the transcript panel.
+      </p>
+      <p>
+        The hard part is that a transcript of a ninety-minute talk is around twelve
+        thousand words — a long magazine feature, unstructured and unedited. You have
+        swapped a video you cannot skim for text you will not finish.
+      </p>
+
+      <h2>What a raw transcript is like</h2>
+      <p>
+        Speech is not writing. A competent, engaging speaker transcribes like this:
+      </p>
+      <blockquote>
+        <p>
+          so the thing is — and I'll come back to this — um, when you look at the
+          second case, the second case, right, it's it's basically the same as the
+          first except, and this is the important bit, except the constraint is reversed
+        </p>
+      </blockquote>
+      <p>
+        Roughly 45 words carrying about 12 words of content. Multiply that across an
+        hour and a half and the arithmetic stops being funny.
+      </p>
+      <p>
+        Skimming does not rescue it either. Skimming relies on topic sentences and
+        paragraph shape to tell you what to skip, and a transcript has neither. You end
+        up reading most of it or none of it, and in practice it is none.
+      </p>
+      <p>
+        Worse, the structure is invisible. A speaker signals a new section with a pause,
+        a slide change, a shift in tone — none of which survives into text. The
+        transcript is a flat wall where the original had shape.
+      </p>
+
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <caption>Transcript vs summary, for a 90-minute video</caption>
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Transcript</th>
+              <th scope="col">Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Length</th><td>~12,000 words</td><td>~400 words</td></tr>
+            <tr><th scope="row">Reading time</th><td>Close to an hour</td><td>A couple of minutes</td></tr>
+            <tr><th scope="row">Ordered by</th><td>When it was said</td><td>What matters</td></tr>
+            <tr><th scope="row">Structure</th><td>None — one flat block</td><td>Sections with timestamps</td></tr>
+            <tr><th scope="row">Best for</th><td>Exact quotes, search, captions</td><td>Deciding what to watch, and where</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!--image:transcript-wall-of-text-->
+
+      <h2>Auto-captions make it harder</h2>
+      <p>
+        Most videos have no human-written captions, so what you actually get is
+        automatic transcription — and that adds its own damage.
+      </p>
+      <p>
+        There is no reliable punctuation, no paragraph breaks and no speaker labels. A
+        two-person interview arrives as one undifferentiated stream where the question
+        and the answer sound like the same voice.
+      </p>
+      <p>
+        Then there are substitutions. Automatic captioning is least accurate on exactly
+        the words carrying the most meaning: technical terms, proper nouns, anything
+        said once. The W3C's
+        <a href="https://www.w3.org/WAI/media/av/captions/" rel="nofollow noopener" target="_blank">guidance
+        on captions</a> is direct that automatic captions are frequently inadequate on
+        their own and need correction to be relied upon.
+      </p>
+      <p>
+        Those errors do not arrive flagged. They arrive as confident, plausible, wrong
+        words inside otherwise sensible sentences — considerably harder to notice than
+        a gap would have been.
+      </p>
+
+      <!--image:transcript-auto-captions-->
+
+      <h2>The four things that have to happen</h2>
+      <p>
+        Between a caption track and something worth reading, four transformations are
+        needed — the same four set out in
+        <a href="/how-it-works">how the summarizer works</a>. Skipping any of them produces reformatting rather than summarising.
+      </p>
+      <ol>
+        <li>
+          <strong>Disfluency goes, meaning stays.</strong> Stripping the "um"s is easy.
+          The hard part is that repetition-for-emphasis looks identical to
+          repetition-because-they-lost-their-thread, and cutting the wrong one removes
+          what the speaker most wanted you to notice.
+        </li>
+        <li>
+          <strong>Structure is recovered.</strong> The sections were real — the speaker
+          had an outline. Rebuilding it means inferring topic shifts from the content
+          itself, not applying a formatting pass.
+        </li>
+        <li>
+          <strong>Claims are separated from scaffolding.</strong> Most of a talk is
+          setup, analogies and recaps. Telling a claim from a vivid restatement of the
+          previous claim is most of the work.
+        </li>
+        <li>
+          <strong>Timings survive all of it.</strong> After three transformations each
+          output line still has to know where it came from. This is the step most
+          tools drop, because its absence is invisible until you want to check
+          something.
+        </li>
+      </ol>
+
+      <!--image:transcript-four-steps-->
+
+      <h2>Why most tools stop at step one</h2>
+      <p>
+        There is a tell worth knowing. If the output's length scales with the video's
+        length, it is reformatting. A real summary of a twenty-minute video and a real
+        summary of a two-hour video should be roughly the same size, because both are
+        answering the same question.
+      </p>
+      <p>
+        Not because the rest is hard. Because fetching a caption track costs almost
+        nothing, returns instantly, and produces something that looks unmistakably like
+        output.
+      </p>
+      <p>
+        It is long, it is clearly derived from your video, and it arrives fast enough
+        to feel impressive. Every incentive points at shipping that and calling it a
+        summarizer.
+      </p>
+      <p>
+        The four steps above cost real money per video and take a few seconds longer,
+        and the benefit is visible only to someone who already knows what they were
+        supposed to get. Nobody opens a reformatted transcript and thinks "this tool
+        skipped topic segmentation" — they think the video was less interesting than
+        they hoped.
+      </p>
+
+      <!--image:transcript-why-tools-stop-->
+
+      <h2>When you actually want the transcript</h2>
+      <p>
+        None of this makes transcripts bad. They are the right tool for a narrow set of
+        jobs, and worth reaching for deliberately.
+      </p>
+      <p>
+        If you need exact wording for a quote, only the transcript will do — a summary
+        has paraphrased by definition. If you are checking whether a term came up at
+        all, ctrl-F over raw text beats any amount of compression. If you are
+        captioning or translating, you want the source rather than an interpretation
+        of it.
+      </p>
+      <p>
+        The failure is not offering a transcript. It is offering one in answer to
+        "what's in this video?" — a question it structurally cannot answer, as we argue
+        in <a href="/blog/transcripts-are-not-summaries">a transcript is not a
+        summary</a>.
+      </p>
+      <p>
+        The cost of getting this wrong is not just wasted time. Having read four
+        thousand words that went nowhere, the natural conclusion is that summarising
+        video does not really work — the tool's limitation gets filed as a fact about
+        the material, which is the most expensive kind of bug because nobody reports
+        it.
+      </p>
+
+      <!--image:transcript-when-to-use-->
+
+      <p>
+        The practical habit worth forming is to treat the transcript and the summary as
+        two views of one thing rather than as competing products. Read the summary to
+        decide what matters, then drop into the transcript at that timestamp when you
+        need the exact words. Neither view answers the other's question, and reaching
+        for the wrong one is what makes people conclude that summarising video does not
+        work.
+      </p>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details class="qa">
+          <summary>Do I need to fetch the transcript myself?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>No. Paste the video link and the caption track is retrieved for you, then summarised. There is no copy-paste step and no separate transcript tool to run first.</p></div>
+        </details>
+        <details class="qa">
+          <summary>What if the video has no captions at all?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>You are told there is no transcript. The alternative — generating a plausible summary from the title and description — produces something indistinguishable from the real thing, which is worse than nothing.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Can I get the transcript as well as the summary?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Yes, and you should expect both from any tool. The summary answers what the video argued; the transcript stays underneath for the moments you need exact wording.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Does it work on auto-generated captions?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Yes, which is most videos. Bear in mind that errors in the caption track flow into anything built from it — a summary cannot recover a word the transcription never got right.</p></div>
+        </details>
+        <details class="qa">
+          <summary>Will the summary be wrong if the captions are wrong?<span class="qa-chev" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>It can be. A summary is built from the transcript, so a mis-transcribed technical term flows straight through. If a term in the output looks odd for the subject, check it at the timestamp before relying on it.</p></div>
+        </details>
+      </div>
+    </div>
+
+    <div class="post-cta">
+      <h2>Skip the twelve thousand words</h2>
+      <p>Paste a link and get the argument, with the transcript still underneath when you need it.</p>
+      <a class="btn btn-primary btn-lg" href="/#try">Summarize a video — free</a>
+    </div>
+
+    <!--related-->
+  </div>
+</section>
