@@ -99,6 +99,28 @@ exactly what gets painted: `width`/`height` on the `<img>` reserve the right box
 and the photo's own dominant colour fills it while it loads — no layout shift.
 Each page's lead photo also becomes its `og:image`.
 
+## Deploying
+
+There is no CI: `dist/` is uploaded to Hostinger by hand, so a commit changes
+nothing on the live site until someone uploads. Two ways to do it.
+
+**hPanel File Manager (recommended).** `npm run build`, zip `dist/`, then upload
+and extract into `public_html`. Runs over HTTPS, so no credential ever crosses
+the network in the clear.
+
+**`python tools/deploy.py`.** Reads `FTP_HOST`/`FTP_PORT`/`FTP_USER`/`FTP_PASS`/
+`FTP_DIR` from the gitignored `.env` and uploads `dist/` file by file;
+`--dry-run` shows what would change first. Note that the login already lands
+inside `public_html`, so `FTP_DIR=.`.
+
+The catch is transport. The script asks for explicit FTPS and uses it when the
+certificate verifies, but Hostinger's certificate is issued for its own
+hostnames rather than the bare IP, and that IP has no reverse DNS — so
+verification fails and it falls back to plain FTP, which sends the password in
+the clear. Prefer the File Manager, or enable SSH/SFTP on the account (hPanel →
+Advanced → SSH Access, port 65002 on plans that include it) and deploy over that
+instead. If the password has ever gone over plain FTP, rotate it.
+
 ## Site map
 
 19 pages, all rendered through the same shell.
